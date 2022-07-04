@@ -1,7 +1,9 @@
-#Markdown exercice
-##Avec tout ce qui est demander
-###avec 2 sous-titres
+# Markdown exercice
 
+## Avec tout ce qui est demander
+
+### avec 2 sous-titres
+  
 1. Liste
 2. Ordo
 3. Voila
