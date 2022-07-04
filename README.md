@@ -3,9 +3,9 @@
 
 En groupe avec :
 
-1- Lucas
-2- Doriano
-3- Anthony
-4- Axel
+1. Lucas
+2. Doriano
+3. Anthony
+4. Axel
 
 https://github.com/AxelKirac/Markdown-Learning/blob/main/markdown.md
