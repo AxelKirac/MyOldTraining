@@ -1,3 +1,69 @@
 table, tr, td, th {
     border: 1px solid black;
 }
+
+body {
+    max-width:90% ; margin:auto;
+    background: -webkit-linear-gradient(90deg, rgb(96, 21, 21), rgb(255, 0, 0));
+    background: linear-gradient(90deg, rgb(96, 21, 21), rgb(255, 0, 0));
+    background-image: url(doge.jpeg); background-repeat:no-repeat; background-position: right 0px bottom 0px;background-size: cover;
+    
+}
+
+.quotes {
+   margin:80px auto ; width:45% ; font-size:160% ; background-color: silver;
+   border-left:3px solid firebrick; padding:30px ;
+}
+
+.villagers { border-left: 3px solid red; font-style:italic;
+
+}
+
+
+
+.farmer { border-left: 3px solid blue; font-style:italic; background-image: url(chat.png); background-position: right 5px bottom 2px; background-repeat: no-repeat; background-size: 20px; padding-right: 25px;
+
+}
+
+.child {
+    background-color: yellow;
+}
+
+.good {
+    color:green; background-image: url(bien.png); background-position: right 5px bottom 2px; background-repeat: no-repeat; background-size: 20px; padding-right: 25px;
+}
+
+.bad {
+    color:red; background-image: url(mal.png); background-position: right 5px bottom -5px; background-repeat: no-repeat; background-size: 20px; padding-right: 25px;
+}
+
+.white {
+    background-color: white;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.unique1 {
+    
+}
+
+img {
+    float:right;
+}
+
+.notification{
+    background:#FFFFDD;
+    padding:.5rem 1rem;
+    border:3px solid #DDDDCC;
+    width:250px;
+    font-weight:bold;
+    color: #333300;
+    position:fixed;
+    right: 0px;
+    /* rajoute le code nécessaire ici*/
+  }
+
+
+
