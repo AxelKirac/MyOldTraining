@@ -1,0 +1,62 @@
+body {
+    background-image: url("/asset/star.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.div.main {
+    border: 1px solid red;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+
+
+
+p.text {
+    font-family: 'Lorem Ipsum', sans-serif;
+    color: yellow;
+    font-size: 80px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    transform: scaleY(1.7);
+    transform: perspective(400px) rotateX(20deg);
+    perspective-origin: bottom;
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    
+
+
+}
+
+img.becode {
+    margin-left: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes scroll {
+    0% {
+        transform: rotateX(30deg) translate3D(0, 120rem, 0) rotateX(35deg);
+        opacity: 1;
+    }
+    55% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateX(21deg) translate3d(0, -120rem, 0) rotateX(35deg);
+        opacity: 0;
+    }
+
+}
+
