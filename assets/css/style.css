@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark, body.dark {
+  background-color: rgb(20, 20, 20);
+}
+
+html.light, body.light {
+  background-color: rgb(235, 235, 235);
+}
+
+.menu_btn:hover:not(.theme_switch) {
+  background-color: rgb(205, 205, 205);
+}
+
+.theme_switch.light {
+  color: rgb(235, 235, 235);
+  background-color: rgb(35, 35, 35);
+}
+
+.theme_switch.dark {
+  color: rgb(35, 35, 35);
+  background-color: rgb(235, 235, 235);
+}
+
+.menu {
+  list-style-type: none;
+  overflow: hidden;
+}
+.menu_btn {
+  display: block;
+  float: left;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: large;
+}
+
+.theme_switch {
+  float: right;
+}
+
+.taskbook {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 650px) {
+  .taskbook {
+    flex-direction: row;
+  }
+}
+
+.toDo_newTask {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}

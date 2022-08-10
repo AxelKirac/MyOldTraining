@@ -10,9 +10,84 @@
         <script defer src="main.js"></script>
         <script defer src="assets/scripts/toggleTheme.js"></script>
     </head>
-    <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+    <body class="light">
+        <header>
+            <nav>
+                <hr>
+                <ul class="menu">
+                    <li class="menu_btn sort">Sort</li>
+                    <li class="menu_btn filter">Filter</li>
+                    <li class="menu_btn theme_switch light">Dark mode</li>
+                </ul>
+                <hr>
+            </nav>
+        </header>
+        <main>
+            <h1 class="main_title">Planner</h1>
+            <div class="taskbook">
+                <section class="toDo">
+                    <div class="toDo_header">
+                        <h1 class="toDo_header_title">To Do</h1>
+                        <hr>
+                    </div>
+                    <div class="toDo_tasks">
+                        <article class="task">
+                            <h1 class="task_name">Name</h1>
+                            <p class="task_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, assumenda molestias reprehenderit ipsa inventore laudantium magnam dolore non doloremque. Placeat fugiat cumque natus architecto voluptates facilis perspiciatis tempore explicabo qui.</p>
+                            <p class="task_delay">In 5 days.</p>
+                        </article>
+                    </div>
+                    <div class="toDo_newTask">
+                        <p class="toDo_newTask_icon">+</p>
+                        <p class="toDo_newTask_title">New task</p>
+                    </div>
+                </section>
+                <section class="doing">
+                    <div class="doing_header">
+                        <h1 class="doing_header_title">Doing</h1>
+                        <hr>
+                    </div>
+                    <div class="doing_tasks">
+                        <article class="task">
+                            <h1 class="task_name">Name</h1>
+                            <p class="task_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur illo delectus quas reprehenderit quia provident minus, corrupti, voluptas sint dolores possimus nisi, fuga quo! Eos necessitatibus perspiciatis magni animi.</p>
+                            <p class="task_delay">In 5 days.</p>
+                        </article>
+                    </div>
+                    <div class="doing_newTask">
+                        <p class="doing_newTask_icon">+</p>
+                        <p class="doing_newTask_title">New task</p>
+                    </div>
+                </section>
+                <section class="done">
+                    <div class="done_header">
+                        <h1 class="done_header_title">Done</h1>
+                        <hr>
+                    </div>
+                    <div class="done_tasks">
+                        <article class="task">
+                            <h1 class="task_name">Name</h1>
+                            <p class="task_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quisquam laborum voluptatum tempora modi illum. Labore, corrupti vitae. Suscipit ipsum tempore est voluptate deleniti fugiat odio rem quae, porro sequi.</p>
+                            <p class="task_delay">In 5 days.</p>
+                        </article>
+                    </div>
+                    <div class="done_newTask">
+                        <p class="done_newTask_icon">+</p>
+                        <p class="done_newTask_title">New task</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <div class="footer">
+                <label for="languages" class="footer_languages_label">Language</label>
+                <select id="languages" class="footer_languages">
+                    <option class="footer_languages_language" value="en" selected>English</option>
+                    <option class="footer_languages_language" value="fr">French</option>
+                </select>
+                <p class="footer_text">&copy; 2022 Planner</p>
+            </div>
+        </footer>
     </body>
 </html>

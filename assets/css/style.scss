@@ -1,2 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 @import "darkTheme";
 @import "lightTheme";
+
+.menu {
+    list-style-type: none;
+    overflow: hidden;
+    &_btn {
+        display: block;
+        float: left;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: large;
+    }
+}
+.theme_switch {
+    float: right;
+}
+.taskbook {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 650px)
+    {
+        flex-direction: row;
+    }
+}
+.toDo { 
+    &_newTask {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}

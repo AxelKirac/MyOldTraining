@@ -1,4 +1,3 @@
-
 let dark = false;
 const switchTheme = document.querySelector('.theme_switch');
 switchTheme.addEventListener('click', () => {
@@ -9,4 +8,4 @@ switchTheme.addEventListener('click', () => {
         e.classList.add(dark ? 'dark' : 'light');
         e.classList.remove(dark ? 'light' : 'dark');
     }
-})
+});

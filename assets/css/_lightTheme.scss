@@ -1,0 +1,16 @@
+html.light, body.light {
+    background-color: rgb(235, 235, 235);
+}
+.menu {
+    &_btn:hover:not(.theme_switch) {
+        background-color: rgb(205, 205, 205);
+    }
+}
+.theme_switch.light {
+    color: rgb(235, 235, 235);
+    background-color: rgb(35, 35, 35);
+}
+.theme_switch.dark {
+    color: rgb(35, 35, 35);
+    background-color: rgb(235, 235, 235);
+}
