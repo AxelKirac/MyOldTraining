@@ -12,50 +12,30 @@ class CustomTask {
     }
 }
 
-
-
 let todobutton = document.querySelector('.dropdown-content-todo > .dropdown-content-checkbox')
-let todotasks = document.querySelector('.toDo_tasks')
-function nodisplaytodo() {
-
-    if(todobutton.checked) {
-    todotasks.style.display = 'block';
-    }
-
-    else {
-        todotasks.style.display = 'none';
-    }
-
-}
-todobutton.addEventListener("click", nodisplaytodo);
+let todotasks = document.querySelector('.toDo_tasks');
+todobutton.addEventListener("click", () => {
+    noDisplayBlock(todobutton, todotasks);
+});
 
 let doingbutton = document.querySelector('.dropdown-content-doing > .dropdown-content-checkbox')
-let doingtasks = document.querySelector('.doing_tasks')
-function nodisplaydoing() {
-    if(doingbutton.checked) {
-    doingtasks.style.display = 'block';
-    }
-
-    else {
-        doingtasks.style.display = 'none';
-    }
-
-}
-doingbutton.addEventListener("click", nodisplaydoing);
+let doingtasks = document.querySelector('.doing_tasks');
+doingbutton.addEventListener("click", () => {
+    noDisplayBlock(doingbutton, doingtasks);
+});
 
 let donebutton = document.querySelector('.dropdown-content-done > .dropdown-content-checkbox')
-let donetasks = document.querySelector('.done_tasks')
-function nodisplaydone() {
+let donetasks = document.querySelector('.done_tasks');
+donebutton.addEventListener("click", () => {
+    noDisplayBlock(donebutton, donetasks);
+});
 
-    if(donebutton.checked) {
-        donetasks.style.display = 'block';
+function noDisplayBlock(btn, task) {
+    if(btn.checked) {
+        task.style.display = 'block';
     }
-
     else {
-        donetasks.style.display = 'none';
+        task.style.display = 'none';
     }
 
 }
-donebutton.addEventListener("click", nodisplaydone);
-
-
