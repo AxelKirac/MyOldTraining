@@ -164,10 +164,15 @@ header {
   }
 }
 
-.toDo_newTask, .doing_newTask, .done_newTask {
+.toDo_newTask_title, .doing_newTask_title {
   display: flex;
   flex-direction: row;
   gap: 5px;
+}
+
+.maketask {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {

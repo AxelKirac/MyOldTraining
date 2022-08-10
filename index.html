@@ -8,6 +8,7 @@
         <!--<link rel="icon" href="assets/img/logo.jpg">-->
         <link rel="stylesheet" href="assets/css/style.css">
         <script defer src="main.js"></script>
+        <script defer src="assets/scripts/taskMaker.js"></script>
         <script defer src="assets/scripts/toggleTheme.js"></script>
     </head>
     <body class="light">
@@ -25,15 +26,15 @@
                     <div class="dropbtn light">Filter</div>
                     <div class="dropdown-content light">
                         <div class="dropdown-content-todo">
-                            <input type="checkbox" class="dropdown-content-checkbox" value="true">
+                            <input type="checkbox" class="dropdown-content-checkbox" checked>
                             <p>To do</p>
                         </div>
                         <div class="dropdown-content-doing">
-                            <input type="checkbox" class="dropdown-content-checkbox" value="true">
+                            <input type="checkbox" class="dropdown-content-checkbox" checked>
                             <p>Doing</p>
                         </div>
                         <div class="dropdown-content-done">
-                            <input type="checkbox" class="dropdown-content-checkbox" value="true">
+                            <input type="checkbox" class="dropdown-content-checkbox" checked>
                             <p>Done</p>
                         </div>
                     </div>
@@ -57,8 +58,17 @@
                         </article>
                     </div>
                     <div class="toDo_newTask">
-                        <p class="toDo_newTask_icon">+</p>
-                        <p class="toDo_newTask_title">New task</p>
+                        <div class="toDo_newTask_title">
+                            <p class="toDo_newTask_icon">+</p>
+                            <p class="toDo_newTask_title">New task</p>
+                        </div>
+                        <div class="maketask">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" minlength="2" maxlength="20" size="10" required>
+                            <label for="description">Description:</label>
+                            <textarea name="description" cols="30" rows="10"></textarea>
+                            <input type="submit" value="Post">
+                        </div>
                     </div>
                 </section>
                 <section class="doing">
@@ -74,8 +84,17 @@
                         </article>
                     </div>
                     <div class="doing_newTask">
-                        <p class="doing_newTask_icon">+</p>
-                        <p class="doing_newTask_title">New task</p>
+                        <div class="doing_newTask_title">
+                            <p class="doing_newTask_icon">+</p>
+                            <p class="doing_newTask_title">New task</p>
+                        </div>
+                        <div class="maketask">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" minlength="2" maxlength="20" size="10" required>
+                            <label for="description">Description:</label>
+                            <textarea name="description" cols="30" rows="10"></textarea>
+                            <input type="submit" value="Send">
+                        </div>
                     </div>
                 </section>
                 <section class="done">

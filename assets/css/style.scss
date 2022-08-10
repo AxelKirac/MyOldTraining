@@ -17,13 +17,20 @@
         flex-direction: row;
     }
 }
-.toDo, .doing, .done { 
+.toDo, .doing {
     &_newTask {
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
+        &_title {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
     }
 }
+.maketask {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer {
     display: flex;
     flex-direction: row;
