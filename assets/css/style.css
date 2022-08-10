@@ -53,7 +53,7 @@ html.light, body.light {
   }
 }
 
-.toDo_newTask {
+.toDo_newTask, .doing_newTask, .done_newTask {
   display: flex;
   flex-direction: row;
   gap: 5px;
