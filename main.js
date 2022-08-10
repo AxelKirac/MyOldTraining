@@ -32,7 +32,7 @@ x.addEventListener("click", nodisplay1);
 let a = document.querySelector('.dropdown-content-doing > .dropdown-content-checkbox')
 let b = document.querySelector('.doing_tasks')
 function nodisplay2() {
-
+    console.log(a)
     if(a.checked) {
     b.style.display = 'block';
     }
@@ -46,7 +46,7 @@ a.addEventListener("click", nodisplay2);
 
 let c = document.querySelector('.dropdown-content-done > .dropdown-content-checkbox')
 let d = document.querySelector('.done_tasks')
-function nodisplay2() {
+function nodisplay3() {
 
     if(c.checked) {
         d.style.display = 'block';
@@ -57,6 +57,6 @@ function nodisplay2() {
     }
 
 }
-c.addEventListener("click", nodisplay2);
+c.addEventListener("click", nodisplay3);
 
 
