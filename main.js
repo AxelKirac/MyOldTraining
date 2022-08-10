@@ -11,3 +11,22 @@ class CustomTask {
         return remains;
     }
 }
+
+let x = document.querySelector('.dropdown-content-todo > .dropdown-content-checkbox')
+let y = document.querySelector('.toDo_tasks')
+
+function nodisplay1() {
+    console.log(x)
+
+    if(x=false) {
+    y.style.display = 'none';
+    }
+
+    else if (x=true) {
+        y.style.display = 'block';
+    }
+
+}
+
+x.addEventListener("click", nodisplay1);
+
