@@ -12,14 +12,24 @@
     </head>
     <body class="light">
         <header>
-            <nav>
-                <hr>
-                <ul class="menu">
-                    <li class="menu_btn sort">Sort</li>
-                    <li class="menu_btn filter">Filter</li>
-                    <li class="menu_btn theme_switch light">Dark mode</li>
-                </ul>
-                <hr>
+            <nav class="menu light">
+                <div class="menu_btn sort dropdown light">
+                    <div class="dropbtn light">Sort</div>
+                    <div class="dropdown-content light">
+                      <a href="#">Name</a>
+                      <a href="#">Priority</a>
+                      <a href="#">Timeline</a>
+                    </div>
+                </div>
+                <div class="menu_btn sort dropdown light">
+                    <div class="dropbtn light">Filter</div>
+                    <div class="dropdown-content light">
+                      <a href="#">To do</a>
+                      <a href="#">Doing</a>
+                      <a href="#">Done</a>
+                    </div>
+                </div>
+                <div class="menu_btn theme_switch light">Dark mode</div>
             </nav>
         </header>
         <main>
