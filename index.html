@@ -65,17 +65,19 @@
                         </div>
                         <div class="maketask">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" minlength="2" maxlength="20" size="10" required>
-                            <label for="priority">Priority</label>
-                            <select name="priority">
-                                <option value="high" selected>High</option>
-                                <option value="medium" selected>Medium</option>
+                            <input class="name" type="text" name="name" maxlength="20" size="10">
+                            <p class="name_error" style="display: none;"></p>
+                            <label for="priority">Priority:</label>
+                            <select name="priority" class="priority">
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
                                 <option value="low" selected>Low</option>
                             </select>
                             <label for="description">Description:</label>
-                            <textarea name="description" cols="30" rows="10"></textarea>
+                            <textarea name="description" class="description" cols="30" rows="10"></textarea>
+                            <p class="description_error" style="display: none;"></p>
                             <label for="dueTo">Due to:</label>
-                            <input type="date" name="dueTo" value="2022-08-10">
+                            <input type="date" name="dueTo" class="dueTo">
                             <input type="submit" value="Post task" class="postToDoTask">
                         </div>
                     </div>
@@ -99,17 +101,19 @@
                         </div>
                         <div class="maketask">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" minlength="2" maxlength="20" size="10" required>
-                            <label for="priority">Priority</label>
-                            <select name="priority">
-                                <option value="high" selected>High</option>
-                                <option value="medium" selected>Medium</option>
+                            <input class="name" type="text" name="name" maxlength="20" size="10">
+                            <p class="name_error" style="display: none;"></p>
+                            <label for="priority">Priority:</label>
+                            <select name="priority" class="priority">
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
                                 <option value="low" selected>Low</option>
                             </select>
                             <label for="description">Description:</label>
-                            <textarea name="description" cols="30" rows="10"></textarea>
+                            <textarea name="description" class="description" cols="30" rows="10"></textarea>
+                            <p class="description_error" style="display: none;"></p>
                             <label for="dueTo">Due to:</label>
-                            <input type="date" name="dueTo" value="2022-08-10">
+                            <input type="date" name="dueTo" class="dueTo">
                             <input type="submit" value="Post task" class="postDoingTask">
                         </div>
                     </div>
