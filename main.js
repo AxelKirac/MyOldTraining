@@ -14,49 +14,48 @@ class CustomTask {
 
 
 
-let x = document.querySelector('.dropdown-content-todo > .dropdown-content-checkbox')
-let y = document.querySelector('.toDo_tasks')
-function nodisplay1() {
+let todobutton = document.querySelector('.dropdown-content-todo > .dropdown-content-checkbox')
+let todotasks = document.querySelector('.toDo_tasks')
+function nodisplaytodo() {
 
-    if(x.checked) {
-    y.style.display = 'block';
+    if(todobutton.checked) {
+    todotasks.style.display = 'block';
     }
 
     else {
-        y.style.display = 'none';
+        todotasks.style.display = 'none';
     }
 
 }
-x.addEventListener("click", nodisplay1);
+todobutton.addEventListener("click", nodisplaytodo);
 
-let a = document.querySelector('.dropdown-content-doing > .dropdown-content-checkbox')
-let b = document.querySelector('.doing_tasks')
-function nodisplay2() {
-    console.log(a)
-    if(a.checked) {
-    b.style.display = 'block';
+let doingbutton = document.querySelector('.dropdown-content-doing > .dropdown-content-checkbox')
+let doingtasks = document.querySelector('.doing_tasks')
+function nodisplaydoing() {
+    if(doingbutton.checked) {
+    doingtasks.style.display = 'block';
     }
 
     else {
-        b.style.display = 'none';
+        doingtasks.style.display = 'none';
     }
 
 }
-a.addEventListener("click", nodisplay2);
+doingbutton.addEventListener("click", nodisplaydoing);
 
-let c = document.querySelector('.dropdown-content-done > .dropdown-content-checkbox')
-let d = document.querySelector('.done_tasks')
-function nodisplay3() {
+let donebutton = document.querySelector('.dropdown-content-done > .dropdown-content-checkbox')
+let donetasks = document.querySelector('.done_tasks')
+function nodisplaydone() {
 
-    if(c.checked) {
-        d.style.display = 'block';
+    if(donebutton.checked) {
+        donetasks.style.display = 'block';
     }
 
     else {
-        d.style.display = 'none';
+        donetasks.style.display = 'none';
     }
 
 }
-c.addEventListener("click", nodisplay3);
+donebutton.addEventListener("click", nodisplaydone);
 
 
