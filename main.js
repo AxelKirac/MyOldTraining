@@ -13,6 +13,24 @@ class CustomTask {
         return remains;
     }
 }
+function loadDatas()
+{
+    let taskId = localStorage.getItem('taskId');
+    if(taskId)
+    {
+        TASK_ID = taskId;
+    }
+    let user_Tasks = localStorage.getItem('userTasks');
+    if(user_Tasks)
+    {
+        userTasks = user_Tasks;
+    }
+}
+function saveDatas()
+{
+    localStorage.setItem('taskId', TASK_ID);
+    localStorage.setItem('userTasks', userTasks);
+}
 // Get the input Date format
 function inputActualDateFormat()
 {
@@ -30,26 +48,7 @@ for(let dT of allDueTo)
 
 let TASK_ID = 0;
 let userTasks = [];
-
-function loadDatas()
-{
-    let taskId = localStorage.getItem('taskId');
-    if(taskId)
-    {
-        TASK_ID = taskId;
-    }
-    let user_Tasks = localStorage.getItem('userTasks');
-    if(user_Tasks)
-    {
-        userTasks = user_Tasks;
-    }
-
-}
-function saveDatas()
-{
-    localStorage.setItem('taskId', TASK_ID);
-    localStorage.setItem('userTasks', userTasks);
-}
+loadDatas();
 
 const postToDoTask = document.querySelector('.postToDoTask');
 postToDoTask.addEventListener('click', () => {
@@ -104,4 +103,6 @@ postDoingTask.addEventListener('click', () => {
 function pushNewData()
 {
     let newData = userTasks[userTasks.length - 1];
+
+    saveDatas();
 }
