@@ -12,21 +12,51 @@ class CustomTask {
     }
 }
 
+
+
 let x = document.querySelector('.dropdown-content-todo > .dropdown-content-checkbox')
 let y = document.querySelector('.toDo_tasks')
-
 function nodisplay1() {
-    console.log(x)
 
-    if(x=false) {
-    y.style.display = 'none';
+    if(x.checked) {
+    y.style.display = 'block';
     }
 
-    else if (x=true) {
-        y.style.display = 'block';
+    else {
+        y.style.display = 'none';
     }
 
 }
-
 x.addEventListener("click", nodisplay1);
+
+let a = document.querySelector('.dropdown-content-doing > .dropdown-content-checkbox')
+let b = document.querySelector('.doing_tasks')
+function nodisplay2() {
+
+    if(a.checked) {
+    b.style.display = 'block';
+    }
+
+    else {
+        b.style.display = 'none';
+    }
+
+}
+a.addEventListener("click", nodisplay2);
+
+let c = document.querySelector('.dropdown-content-done > .dropdown-content-checkbox')
+let d = document.querySelector('.done_tasks')
+function nodisplay2() {
+
+    if(c.checked) {
+        d.style.display = 'block';
+    }
+
+    else {
+        d.style.display = 'none';
+    }
+
+}
+c.addEventListener("click", nodisplay2);
+
 
