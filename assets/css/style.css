@@ -26,6 +26,41 @@ html.light, body.light {
   background-color: rgb(235, 235, 235);
 }
 
+.task {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.task_name {
+  font-size: 30px;
+}
+
+.task_delay {
+  margin-top: 5px;
+}
+
+.task_description, .task_delay {
+  margin-left: 10px;
+}
+
+.toDo_tasks, .doing_tasks, .done_tasks {
+  margin-left: 15px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.toDo_header_title, .doing_header_title, .done_header_title, .task_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.done_newTask, .toDo_newTask, .doing_newTask {
+  margin-left: 13px;
+}
+
 .menu {
   list-style-type: none;
   overflow: hidden;
@@ -64,4 +99,4 @@ html.light, body.light {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}
+}/*# sourceMappingURL=style.css.map */
