@@ -76,29 +76,6 @@ header {
   margin-left: auto;
 }
 
-.taskbook {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 650px) {
-  .taskbook {
-    flex-direction: row;
-  }
-}
-
-.toDo_newTask, .doing_newTask, .done_newTask {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
 .dropdown {
   display: inline-block;
 }
@@ -126,4 +103,27 @@ header {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+
+.taskbook {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 650px) {
+  .taskbook {
+    flex-direction: row;
+  }
+}
+
+.toDo_newTask, .doing_newTask, .done_newTask {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
