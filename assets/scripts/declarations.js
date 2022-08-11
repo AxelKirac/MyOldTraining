@@ -42,7 +42,8 @@ const LANGUAGE_DB = {
             nTask: 'New task'
         },
         'THEME_INPUT': {
-            category: 'Dark mode'
+            category: 'Dark mode',
+            opposite: 'Light mode'
         },
         'LANGUAGE_INPUT': {
             name: 'Language :',
@@ -96,7 +97,8 @@ const LANGUAGE_DB = {
             nTask: 'Nouvelle tâche'
         },
         'THEME_INPUT': {
-            category: 'Mode sombre'
+            category: 'Mode sombre',
+            opposite: 'Mode claire'
         },
         'LANGUAGE_INPUT': {
             name: 'Langue :',

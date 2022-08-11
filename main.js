@@ -35,7 +35,7 @@ const fetchMenuNames = (sortMenu, filterMenu, darkBtn) => {
     innerP[1].innerHTML = filterMenu.prop1;
     innerP[2].innerHTML = filterMenu.prop2;
     // Dark BTN
-    menuBtns[2].innerHTML = darkBtn.category;
+    menuBtns[2].innerHTML = !dark ? darkBtn.category : darkBtn.opposite;
 };
 const fetchFlexTab = (datas) => {
     document.querySelector('.toDo_header_title').innerHTML = datas.prop0;
