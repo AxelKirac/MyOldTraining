@@ -1,96 +1,60 @@
-let sorting_timeline = document.querySelector('.sorting_timeline');
-
-sorting_timeline.addEventListener("click", () => {
-
-    const sortSpecificTask = (tasks) => {
-        const ordered = [...tasks].sort((a, b) => {
+class Sorting {
+    constructor(name, sort)
+    {
+        this.query = `.sorting_${name}`;
+        this.sort = sort;
+    }
+}
+const TASK_QUERY = [
+    '.toDo_tasks > .task',
+    '.doing_tasks > .task',
+    '.done_tasks > .task'
+];
+const ALL_PRIORITY = [
+    'high',
+    'medium',
+    'low'
+];
+const SORTING = [
+    new Sorting('name', (tasks) => {
+        return [...tasks].sort((a, b) => {
+            return a.getAttribute('name').localeCompare(b.getAttribute('name'));
+        });
+    }),
+    new Sorting('timeline', (tasks) => {
+        return [...tasks].sort((a, b) => {
             return a.getAttribute('dueDate') - b.getAttribute('dueDate');
         });
-
-        ordered.forEach((lm, index) => {
-            lm.style.order = index
-        })
-
-    };
-
-    let toDo = document.querySelectorAll('.toDo_tasks > .task');
-    sortSpecificTask(toDo)
-    let doing = document.querySelectorAll('.doing_tasks > .task');
-    sortSpecificTask(doing)
-    let done = document.querySelectorAll('.done_tasks > .task');
-    sortSpecificTask(done)
-
-})
-
-
-let sorting_name = document.querySelector('.sorting_name');
-
-sorting_name.addEventListener("click", () => {
-
-    const sortSpecificTask = (tasks) => {
-        const ordered = [...tasks].sort((a, b) => {
-            
-            return a.getAttribute('name').localeCompare(b.getAttribute('name'))
-           
-        });
-
-        ordered.forEach((lm, index) => {
-            lm.style.order = index
-        })
-
-    };
-
-    let toDo = document.querySelectorAll('.toDo_tasks > .task');
-    sortSpecificTask(toDo)
-    let doing = document.querySelectorAll('.doing_tasks > .task');
-    sortSpecificTask(doing)
-    let done = document.querySelectorAll('.done_tasks > .task');
-    sortSpecificTask(done)
-
-})
-
-let sorting_priority = document.querySelector('.sorting_priority');
-
-sorting_priority.addEventListener("click", () => {
-
-    const sortSpecificTask = (tasks) => {
-        
-        const low = [...tasks].filter((v, i) => {
-            return v.getAttribute('priority')==='low'
-        })
-        const medium = [...tasks].filter((v, i) => {
-            return v.getAttribute('priority')==='medium'
-        })
-        const high = [...tasks].filter((v, i) => {
-            return v.getAttribute('priority')==='high'
-        })
-
-        low.sort((a, b) => {
-            return a.getAttribute('dueDate') - b.getAttribute('dueDate');
-        })
-
-        medium.sort((a, b) => {
-            return a.getAttribute('dueDate') - b.getAttribute('dueDate');
-        }) 
-
-        high.sort((a, b) => {
-            return a.getAttribute('dueDate') - b.getAttribute('dueDate');
-        }) 
-        
-        const merge = [...high, ...medium, ...low]
-
-        merge.forEach((lm, index) => {
-            lm.style.order = index
-        })
-
-    };
-
-    let toDo = document.querySelectorAll('.toDo_tasks > .task');
-    sortSpecificTask(toDo)
-    let doing = document.querySelectorAll('.doing_tasks > .task');
-    sortSpecificTask(doing)
-    let done = document.querySelectorAll('.done_tasks > .task');
-    sortSpecificTask(done)
-
-})
-
+    }),
+    new Sorting('priority', (tasks) => {
+        let ordered = [];
+        for(let priority of ALL_PRIORITY)
+        {
+            const p = [...tasks].filter((v, i) => {
+                return v.getAttribute('priority') === priority;
+            });
+            p.sort((a, b) => {
+                return a.getAttribute('dueDate') - b.getAttribute('dueDate');
+            });
+            ordered.push(...p);
+        }
+        return ordered;
+    })
+];
+for(const sorting of SORTING)
+{
+    const sortOption = document.querySelector(sorting.query);
+    sortOption.addEventListener('click', () => {
+        const sortSpecificTask = (tasks) => {
+            const ordered = sorting.sort(tasks);
+            ordered.forEach((lm, index) => {
+                lm.style.order = index
+            });
+        };
+        for(let t of TASK_QUERY)
+        {
+            let taskToSort = document.querySelectorAll(t);
+            sortSpecificTask(taskToSort);
+        }
+    });
+}
