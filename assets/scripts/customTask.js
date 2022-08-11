@@ -28,6 +28,13 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     let data = ev.dataTransfer.getData("text");
+    let TARGET = ev.target;
+    let CONTENT = ev.target.getAttribute('content');
+    if(!CONTENT)
+    {
+        CONTENT = ev.target.closest('.task').parentNode.getAttribute('content');
+        TARGET = document.querySelector(`.${CONTENT === 'todo' ? 'toDo' : CONTENT}_tasks`);
+    }
     data = Number(data);
     let category;
     for(let i = 0; i < userTasks.length; i++)
@@ -35,14 +42,14 @@ function drop(ev) {
         if(userTasks[i].id == data)
         {
             category = userTasks[i].category;
-            userTasks[i].setCategory(ev.target.getAttribute('value'));
+            userTasks[i].setCategory(CONTENT);
             break;
         }
     }
     if(category !== undefined && category !== null)
     {
         category = category === 'todo' ? 'toDo' : category;
-        ev.target.appendChild(document.querySelector(`.${category}_tasks > .task[value='${data}']`));
+        TARGET.appendChild(document.querySelector(`.${category}_tasks > .task[value='${data}']`));
         saveDatas();
     }
 }
