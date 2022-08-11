@@ -10,7 +10,7 @@ function loadDatas()
     {
         userTasks.push(new CustomTask(
         localStorage.getItem(`userTasks[${i}].category`),
-        localStorage.getItem(`userTasks[${i}].id`),
+        Number(localStorage.getItem(`userTasks[${i}].id`)),
         localStorage.getItem(`userTasks[${i}].name`),
         localStorage.getItem(`userTasks[${i}].priority`),
         localStorage.getItem(`userTasks[${i}].description`),
@@ -35,7 +35,8 @@ function saveDatas()
         localStorage.setItem(`userTasks[${i}].name`, userTask.name);
         localStorage.setItem(`userTasks[${i}].priority`, userTask.priority);
         localStorage.setItem(`userTasks[${i}].description`, userTask.description);
-        localStorage.setItem(`userTasks[${i++}].dueDate`, inputDateFormat(userTask.dueDate));
+        localStorage.setItem(`userTasks[${i}].dueDate`, inputDateFormat(userTask.dueDate));
+        i++;
     }
 }
 // Get the input Date format
@@ -79,7 +80,7 @@ function pushNewElement(newData)
 
     let limit = document.createElement('p');
     limit.classList.add('task_delay');
-    dv.setAttribute('value', newData.DueDate);
+    limit.setAttribute('value', newData.DueDate);
     limit.innerHTML = `In ${newData.DueDate} days.`;
     nwTask.appendChild(limit);
 
@@ -88,6 +89,8 @@ function pushNewElement(newData)
 }
 function removeElement(id, removeTask = false)
 {
+    id = Number(id);
+    console.log('..')
     for(let utask of userTasks)
     {
         if(utask.id == id)
@@ -124,6 +127,7 @@ function removeElement(id, removeTask = false)
 }
 function pushNewData()
 {
+    TASK_ID++;
     let newData = userTasks[userTasks.length - 1];
     pushNewElement(newData);
     saveDatas();

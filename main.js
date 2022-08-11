@@ -17,7 +17,7 @@ postToDoTask.addEventListener('click', () => {
     let dueTo = document.querySelector('.toDo_newTask > .maketask > .dueTo');
     if(name.value.length >= 2 && description.value.length >= 1)
     {
-        userTasks.push(new CustomTask('todo', TASK_ID++, name.value, priority.value, description.value, new Date(dueTo.value)));
+        userTasks.push(new CustomTask('todo', TASK_ID, name.value, priority.value, description.value, new Date(dueTo.value)));
         name.value = '';
         priority.value = 'low';
         description.value = '';
@@ -42,7 +42,7 @@ postDoingTask.addEventListener('click', () => {
     let dueTo = document.querySelector('.doing_newTask > .maketask > .dueTo').value;
     if(name.value.length >= 2 && description.value.length >= 1)
     {
-        userTasks.push(new CustomTask('doing', TASK_ID++, name.value, priority.value, description.value, new Date(dueTo.value)));
+        userTasks.push(new CustomTask('doing', TASK_ID, name.value, priority.value, description.value, new Date(dueTo.value)));
         name.value = '';
         priority.value = 'low';
         description.value = '';
