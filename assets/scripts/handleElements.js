@@ -15,19 +15,19 @@ function loadDatas()
         localStorage.getItem(`userTasks[${i}].priority`),
         localStorage.getItem(`userTasks[${i}].description`),
         new Date(localStorage.getItem(`userTasks[${i}].dueDate`))));
-        pushNewElement(userTasks[userTasks.length - 1]);
+        pushNewElement(userTasks[i]);
     }
 }
 function saveDatas()
 {
     localStorage.clear();
-    let i = 0;
     localStorage.setItem('userTasks.length', userTasks.length);
     if(userTasks.length == 0)
     {
         TASK_ID = 0;
     }
     localStorage.setItem('taskId', TASK_ID);
+    let i = 0;
     for(let userTask of userTasks)
     {
         localStorage.setItem(`userTasks[${i}].id`, userTask.id);
