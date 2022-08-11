@@ -58,3 +58,14 @@ postDoingTask.addEventListener('click', () => {
         pushNewData();
     }
 });
+
+
+const toDoTask = document.querySelector('.toDo_tasks');
+const doingTask = document.querySelector('.doing_tasks');
+const doneTask = document.querySelector('.done_tasks');
+toDoTask.ondragover = allowDrop;
+doingTask.ondragover = allowDrop;
+doneTask.ondragover = allowDrop;
+toDoTask.ondrop = drop;
+doingTask.ondrop = drop;
+doneTask.ondrop = drop;

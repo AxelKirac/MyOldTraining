@@ -21,6 +21,7 @@
     &_tasks {
         display: flex;
         flex-direction: column;
+        min-height: 25px;
     }
 }
 .toDo, .doing {

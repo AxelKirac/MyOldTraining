@@ -61,6 +61,8 @@ function pushNewElement(newData)
     nwTask.setAttribute('name', newData.name);
     nwTask.setAttribute('priority', newData.priority);
     nwTask.setAttribute('dueDate', newData.DueDate);
+    nwTask.draggable = true;
+    nwTask.ondragstart = drag;
 
     let dv = document.createElement('div');
     dv.classList.add('task_delete');
@@ -85,34 +87,34 @@ function pushNewElement(newData)
     limit.classList.add('task_delay');
     limit.innerHTML = `In ${newData.DueDate} days.`;
     nwTask.appendChild(limit);
-
-    let taskElem = document.querySelector(newData.category === 'doing' ? '.doing_tasks' : '.toDo_tasks');
+    
+    let taskElem = document.querySelector(newData.category === 'doing' ? '.doing_tasks' : newData.category === 'todo' ? '.toDo_tasks' : '.done_tasks');
     taskElem.appendChild(nwTask);
 }
 function removeElement(id, removeTask = false)
 {
     id = Number(id);
-    console.log('..')
     for(let utask of userTasks)
     {
         if(utask.id == id)
         {
             let cat = utask.category;
+            let task;
             if(cat === 'todo')
             {
-                let task = document.querySelector(`.toDo_tasks > .task[value='${id}']`);
+                task = document.querySelector(`.toDo_tasks > .task[value='${id}']`);
                 let elemList = document.querySelector('.toDo_tasks');
                 elemList.removeChild(task);
             }
             else if(cat === 'doing')
             {
-                let task = document.querySelector(`.doing_tasks > .task[value='${id}]'`);
+                task = document.querySelector(`.doing_tasks > .task[value='${id}']`);
                 let elemList = document.querySelector('.doing_tasks');
                 elemList.removeChild(task);
             }
             else
             {
-                let task = document.querySelector(`.done_tasks > .task[value='${id}']`);
+                task = document.querySelector(`.done_tasks > .task[value='${id}']`);
                 let elemList = document.querySelector('.done_tasks');
                 elemList.removeChild(task);
             }
