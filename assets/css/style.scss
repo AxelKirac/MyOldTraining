@@ -17,6 +17,12 @@
         flex-direction: row;
     }
 }
+.toDo, .doing, .done {
+    &_tasks {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .toDo, .doing {
     &_newTask {
         &_title {

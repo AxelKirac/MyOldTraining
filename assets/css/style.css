@@ -164,6 +164,11 @@ header {
   }
 }
 
+.toDo_tasks, .doing_tasks, .done_tasks {
+  display: flex;
+  flex-direction: column;
+}
+
 .toDo_newTask_title, .doing_newTask_title {
   display: flex;
   flex-direction: row;
