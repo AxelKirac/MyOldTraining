@@ -42,47 +42,10 @@ function newTaskElement(event, todoQuery, doingQuery)
     switch(event)
     {
         case 'todo':
-            newTaskDrp = document.querySelector(todoQuery);
-            break;
+            return document.querySelector(todoQuery);
         case 'doing':
-            newTaskDrp = document.querySelector(doingQuery);
-            break;
+            return document.querySelector(doingQuery);
     }
     return null;
 
-}
-
-
-function newTaskDropdown(event) {
-    let newTaskDrp;
-    switch(event)
-    {
-        case 'todo':
-            newTaskDrp = document.querySelector('.toDo_newTask > .maketask');
-            break;
-        case 'doing':
-            newTaskDrp = document.querySelector('.doing_newTask > .maketask');
-            break;
-        default:
-            newTaskDrp = null;
-            break;
-    }
-    return newTaskDrp;
-
-}
-function newTaskIcon(event) {
-    let newTaskIcn;
-    switch(event)
-    {
-        case 'todo':
-            newTaskIcn = document.querySelector('.toDo_newTask_title > .toDo_newTask_icon');
-            break;
-        case 'doing':
-            newTaskIcn = document.querySelector('.doing_newTask_title > .doing_newTask_icon');
-            break;
-        default:
-            newTaskIcn = null;
-            break;
-    }
-    return newTaskIcn;
 }

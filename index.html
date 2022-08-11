@@ -16,10 +16,10 @@
         <script defer src="assets/scripts/filter.js"></script>
         <script defer src="assets/scripts/handleElements.js"></script>
         <script defer src="assets/scripts/sorting.js"></script>
-        <script defer src="assets/scripts/taskMaker.js"></script>
-        <script defer src="assets/scripts/toggleTheme.js"></script>
-        <script defer src="assets/scripts/taskCreator.js"></script>
         <script defer src="main.js"></script>
+        <script defer src="assets/scripts/taskMaker.js"></script>
+        <script defer src="assets/scripts/taskCreator.js"></script>
+        <script defer src="assets/scripts/toggleTheme.js"></script>
     </head>
     <body class="light">
         <header>
@@ -67,23 +67,7 @@
                             <p class="toDo_newTask_icon">+</p>
                             <p class="toDo_newTask_title">New task</p>
                         </div>
-                        <div class="maketask">
-                            <label for="name">Name:</label>
-                            <input class="name" type="text" name="name" maxlength="20" size="10">
-                            <p class="name_error" style="display: none;"></p>
-                            <label for="priority">Priority:</label>
-                            <select name="priority" class="priority">
-                                <option value="high">High</option>
-                                <option value="medium">Medium</option>
-                                <option value="low" selected>Low</option>
-                            </select>
-                            <label for="description">Description:</label>
-                            <textarea name="description" class="description" cols="30" rows="10"></textarea>
-                            <p class="description_error" style="display: none;"></p>
-                            <label for="dueTo">Due to:</label>
-                            <input type="date" name="dueTo" class="dueTo">
-                            <input type="submit" value="Post task" class="postToDoTask">
-                        </div>
+                        <div class="maketask"></div>
                     </div>
                 </section>
                 <section class="doing">
@@ -98,23 +82,7 @@
                             <p class="doing_newTask_icon">+</p>
                             <p class="doing_newTask_title">New task</p>
                         </div>
-                        <div class="maketask">
-                            <label for="name">Name:</label>
-                            <input class="name" type="text" name="name" maxlength="20" size="10">
-                            <p class="name_error" style="display: none;"></p>
-                            <label for="priority">Priority:</label>
-                            <select name="priority" class="priority">
-                                <option value="high">High</option>
-                                <option value="medium">Medium</option>
-                                <option value="low" selected>Low</option>
-                            </select>
-                            <label for="description">Description:</label>
-                            <textarea name="description" class="description" cols="30" rows="10"></textarea>
-                            <p class="description_error" style="display: none;"></p>
-                            <label for="dueTo">Due to:</label>
-                            <input type="date" name="dueTo" class="dueTo">
-                            <input type="submit" value="Post task" class="postDoingTask">
-                        </div>
+                        <div class="maketask"></div>
                     </div>
                 </section>
                 <section class="done">
@@ -130,6 +98,11 @@
         <footer>
             <hr>
             <div class="footer">
+                <label for="languages" class="footer_languages_label">Language</label>
+                <select id="languages" class="footer_languages">
+                    <option class="footer_languages_language" value="en" selected>English</option>
+                    <option class="footer_languages_language" value="fr">French</option>
+                </select>
                 <p class="footer_text">&copy; 2022 Planner</p>
             </div>
         </footer>

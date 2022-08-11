@@ -8,8 +8,11 @@ class TaskMaker {
 }
 const newTaskMaking = [
     new TaskMaker('.postToDoTask', 'todo', 'toDo'),
-    new TaskMaker('.postToDoTask', 'doing', 'doing')
+    new TaskMaker('.postDoingTask', 'doing', 'doing')
 ];
+/*
+    Create event listener on our newly made inputs
+*/
 for(const task of newTaskMaking)
 {
     const post = document.querySelector(task.taskQuery);

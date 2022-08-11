@@ -176,6 +176,10 @@ header {
   gap: 5px;
 }
 
+.done_tasks > .task > .task_delay {
+  display: none;
+}
+
 .maketask {
   display: none;
   flex-direction: column;

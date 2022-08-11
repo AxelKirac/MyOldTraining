@@ -40,7 +40,8 @@ function pushNewElement(newData)
 
     let limit = document.createElement('p');
     limit.classList.add('task_delay');
-    limit.innerHTML = `In ${newData.DueDate} days.`;
+    const getLanguage = LANGUAGE_DB[document.querySelector('#languages').value]['DATE_WRITE'];
+    limit.innerHTML = getLanguage(newData.DueDate);
     nwTask.appendChild(limit);
     
     let taskElem = document.querySelector(newData.category === 'doing' ? '.doing_tasks' : newData.category === 'todo' ? '.toDo_tasks' : '.done_tasks');
