@@ -72,7 +72,9 @@ const LANGUAGE_DB = {
                 return `Yesterday.`;
             }
             return `${Math.abs(days)} days late.`;
-        }
+        },
+        'NAME_ERROR': 'There must be at least two characters in the name.',
+        'DESC_ERROR': 'There must be at least one character in the description.'
     },
     'fr': {
         'NEW_TASK_INPUT': {
@@ -129,7 +131,9 @@ const LANGUAGE_DB = {
                 return `Hier.`;
             }
             return `${Math.abs(days)} jours de retard.`;
-        }
+        },
+        'NAME_ERROR': 'Le nom doit contenir au minimum deux caractères.',
+        'DESC_ERROR': 'Il doit y avoir au minimum un caractère dans la description.'
     },
     'ge': {
         'NEW_TASK_INPUT': {
@@ -186,7 +190,9 @@ const LANGUAGE_DB = {
                 return `Gestern.`;
             }
             return `${Math.abs(days)} tage spät.`;
-        }
+        },
+        'NAME_ERROR': 'Der Name muss aus mindestens zwei Zeichen bestehen.',
+        'DESC_ERROR': 'Die Beschreibung muss mindestens ein Zeichen enthalten.'
     },
     'du': {
         'NEW_TASK_INPUT': {
@@ -243,6 +249,8 @@ const LANGUAGE_DB = {
                 return `Gisteren.`;
             }
             return `${Math.abs(days)} dagen te laat.`;
-        }
+        },
+        'NAME_ERROR': 'De naam moet uit ten minste twee tekens bestaan.',
+        'DESC_ERROR': 'Er moet ten minste één teken in de beschrijving staan.'
     }
 };

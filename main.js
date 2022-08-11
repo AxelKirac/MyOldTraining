@@ -4,20 +4,20 @@ const generateMaketaskInput = (name, postName, content) => {
     const mTask = document.querySelector(`.${name}_newTask > .maketask`);
     mTask.innerHTML = `
     <label for="name">${content.name}</label>
-    <input class="name" type="text" name="name" maxlength="20" size="10">
-    <p class="name_error" style="display: none;"></p>
+    <input class="name light" type="text" name="name" maxlength="20" size="10">
+    <p class="name_error light" style="display: none;"></p>
     <label for="priority">${content.priority}</label>
-    <select name="priority" class="priority">
+    <select name="priority" class="priority light">
         <option value="high">${content.pHigh}</option>
         <option value="medium">${content.pMed}</option>
         <option value="low" selected>${content.pLow}</option>
     </select>
     <label for="description">${content.description}</label>
-    <textarea name="description" class="description" cols="30" rows="10"></textarea>
-    <p class="description_error" style="display: none;"></p>
+    <textarea name="description" class="description light" cols="30" rows="10"></textarea>
+    <p class="description_error light" style="display: none;"></p>
     <label for="dueTo">${content.dueTo}</label>
-    <input type="date" name="dueTo" class="dueTo" value="${inputActualDateFormat()}">
-    <input type="submit" value="${content.post}" class="post${postName}Task">
+    <input type="date" name="dueTo" class="dueTo light" value="${inputActualDateFormat()}">
+    <input type="submit" value="${content.post}" class="post${postName}Task light">
     `;
 };
 const fetchMenuNames = (sortMenu, filterMenu, darkBtn) => {
