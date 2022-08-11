@@ -8,6 +8,11 @@ html.light, body.light {
   background-color: rgb(235, 235, 235);
 }
 
+.task.light {
+  border: 1px solid black;
+  width: 300px;
+}
+
 .dropbtn.light:hover {
   color: rgb(35, 35, 35);
 }
@@ -33,12 +38,16 @@ html.dark, body.dark {
   background-color: rgb(20, 20, 20);
 }
 
+.task.dark {
+  border: 1px solid #fff;
+}
+
 .dropbtn.dark:hover {
-  color: rgb(220, 220, 220);
+  color: rgb(20, 20, 20);
 }
 
 .menu.dark {
-  border-bottom: 1px solid rgb(101, 101, 101);
+  border-bottom: 1px solid #9a9a9a;
 }
 
 .menu_btn.dark:hover:not(.theme_switch) {
@@ -55,7 +64,6 @@ html.dark, body.dark {
 }
 
 .task {
-  border: 1px solid black;
   width: 300px;
 }
 

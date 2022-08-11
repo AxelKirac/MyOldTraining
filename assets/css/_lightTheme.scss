@@ -1,6 +1,10 @@
 html.light, body.light {
     background-color: rgb(235, 235, 235);
 }
+.task.light {
+    border: 1px solid black;
+    width: 300px;
+}
 .dropbtn.light:hover {
     color: rgb(35, 35, 35);
 }

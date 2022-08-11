@@ -12,6 +12,7 @@ function pushNewElement(newData)
 {
     let nwTask = document.createElement('article');
     nwTask.classList.add('task');
+    nwTask.classList.add(dark ? 'dark' : 'light');
     nwTask.setAttribute('value', newData.id);
     nwTask.setAttribute('name', newData.name);
     nwTask.setAttribute('priority', newData.priority);

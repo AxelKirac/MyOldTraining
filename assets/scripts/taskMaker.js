@@ -47,5 +47,4 @@ function newTaskElement(event, todoQuery, doingQuery)
             return document.querySelector(doingQuery);
     }
     return null;
-
 }
