@@ -32,7 +32,7 @@ const LANGUAGE_DB = {
             category: 'Sort',
             prop0: 'Name',
             prop1: 'Priority',
-            prop2: 'Timeline'
+            prop2: 'Deadline'
         },
         'FILTER_INPUT': {
             category: 'Filter',
@@ -49,7 +49,8 @@ const LANGUAGE_DB = {
             name: 'Language :',
             list: [
                 {key: 'English', value: 'en', default: true},
-                {key: 'French', value: 'fr'}
+                {key: 'French', value: 'fr'},
+                {key: 'German', value: 'ge'}
             ]
         },
         'DATE_WRITE': (days) => {
@@ -87,7 +88,7 @@ const LANGUAGE_DB = {
             category: 'Trier',
             prop0: 'Nom',
             prop1: 'Priorité',
-            prop2: 'Remise'
+            prop2: 'Date de remise'
         },
         'FILTER_INPUT': {
             category: 'Filtre',
@@ -104,7 +105,8 @@ const LANGUAGE_DB = {
             name: 'Langue :',
             list: [
                 {key: 'Anglais', value: 'en'},
-                {key: 'Français', value: 'fr', default: true}
+                {key: 'Français', value: 'fr', default: true},
+                {key: 'Allemand', value: 'ge'}
             ]
         },
         'DATE_WRITE': (days) => {
@@ -125,6 +127,62 @@ const LANGUAGE_DB = {
                 return `Hier.`;
             }
             return `${Math.abs(days)} jours de retard.`;
+        }
+    },
+    'ge': {
+        'NEW_TASK_INPUT': {
+            name: 'Name:',
+            priority: 'Priorität:',
+            pLow: 'Niedrig',
+            pMed: 'Mittel',
+            pHigh: 'Hoch',
+            description: 'Beschreibung:',
+            dueTo: 'Datum der Abgabe:',
+            post: 'Aufgabe posten'
+        },
+        'SORT_INPUT': {
+            category: 'Sortieren',
+            prop0: 'Name',
+            prop1: 'Priorität',
+            prop2: 'Frist'
+        },
+        'FILTER_INPUT': {
+            category: 'Filter',
+            prop0: 'Zu tun',
+            prop1: 'Tun',
+            prop2: 'Erledigt',
+            nTask: 'Neue Aufgabe'
+        },
+        'THEME_INPUT': {
+            category: 'Dunkler modus',
+            opposite: 'Licht modus'
+        },
+        'LANGUAGE_INPUT': {
+            name: 'Sprache:',
+            list: [
+                {key: 'Englisch', value: 'en'},
+                {key: 'Französisch', value: 'fr'},
+                {key: 'Deutsch', value: 'ge', default: true}
+            ]
+        },
+        'DATE_WRITE': (days) => {
+            if(days > 1)
+            {
+                return `In ${days} tagen.`;
+            }
+            else if(days == 1)
+            {
+                return `Morgen.`;
+            }
+            else if(days == 0)
+            {
+                return `Heute.`;
+            }
+            else if(days == -1)
+            {
+                return `Gestern.`;
+            }
+            return `${Math.abs(days)} tage spät.`;
         }
     }
 };
