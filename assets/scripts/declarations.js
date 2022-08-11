@@ -50,7 +50,8 @@ const LANGUAGE_DB = {
             list: [
                 {key: 'English', value: 'en', default: true},
                 {key: 'French', value: 'fr'},
-                {key: 'German', value: 'ge'}
+                {key: 'German', value: 'ge'},
+                {key: 'Deutch', value: 'du'}
             ]
         },
         'DATE_WRITE': (days) => {
@@ -106,7 +107,8 @@ const LANGUAGE_DB = {
             list: [
                 {key: 'Anglais', value: 'en'},
                 {key: 'Français', value: 'fr', default: true},
-                {key: 'Allemand', value: 'ge'}
+                {key: 'Allemand', value: 'ge'},
+                {key: 'Néerlandais', value: 'du'}
             ]
         },
         'DATE_WRITE': (days) => {
@@ -162,7 +164,8 @@ const LANGUAGE_DB = {
             list: [
                 {key: 'Englisch', value: 'en'},
                 {key: 'Französisch', value: 'fr'},
-                {key: 'Deutsch', value: 'ge', default: true}
+                {key: 'Deutsch', value: 'ge', default: true},
+                {key: 'Holländisch', value: 'du'}
             ]
         },
         'DATE_WRITE': (days) => {
@@ -183,6 +186,63 @@ const LANGUAGE_DB = {
                 return `Gestern.`;
             }
             return `${Math.abs(days)} tage spät.`;
+        }
+    },
+    'du': {
+        'NEW_TASK_INPUT': {
+            name: 'Name:',
+            priority: 'Prioriteit:',
+            pLow: 'Lage',
+            pMed: 'Gemiddelde',
+            pHigh: 'Hoge',
+            description: 'Beschrijving:',
+            dueTo: 'Te wijten aan:',
+            post: 'Posttaak'
+        },
+        'SORT_INPUT': {
+            category: 'Sortieren',
+            prop0: 'Name',
+            prop1: 'Prioriteit',
+            prop2: 'Uiterste datum'
+        },
+        'FILTER_INPUT': {
+            category: 'Filter',
+            prop0: 'Te doen',
+            prop1: 'Doet',
+            prop2: 'Gedaan',
+            nTask: 'Nieuwe taak'
+        },
+        'THEME_INPUT': {
+            category: 'Donkere modus',
+            opposite: 'Licht modus'
+        },
+        'LANGUAGE_INPUT': {
+            name: 'Taal:',
+            list: [
+                {key: 'Engels', value: 'en'},
+                {key: 'Frans', value: 'fr'},
+                {key: 'Duits', value: 'ge'},
+                {key: 'Nederlands', value: 'du', default: true}
+            ]
+        },
+        'DATE_WRITE': (days) => {
+            if(days > 1)
+            {
+                return `Over ${days} dagen.`;
+            }
+            else if(days == 1)
+            {
+                return `Morgen.`;
+            }
+            else if(days == 0)
+            {
+                return `Vandaag.`;
+            }
+            else if(days == -1)
+            {
+                return `Gisteren.`;
+            }
+            return `${Math.abs(days)} dagen te laat.`;
         }
     }
 };
