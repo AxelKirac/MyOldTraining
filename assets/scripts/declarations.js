@@ -37,8 +37,8 @@ const LANGUAGE_DB = {
         'FILTER_INPUT': {
             category: 'Filter',
             prop0: 'To do',
-            prop1: 'Doing',
-            prop2: 'Done',
+            prop1: 'In progress',
+            prop2: 'Finished',
             nTask: 'New task'
         },
         'THEME_INPUT': {
@@ -190,25 +190,25 @@ const LANGUAGE_DB = {
     },
     'du': {
         'NEW_TASK_INPUT': {
-            name: 'Name:',
+            name: 'Naam:',
             priority: 'Prioriteit:',
             pLow: 'Lage',
             pMed: 'Gemiddelde',
             pHigh: 'Hoge',
             description: 'Beschrijving:',
-            dueTo: 'Te wijten aan:',
+            dueTo: 'In te dienen bij:',
             post: 'Posttaak'
         },
         'SORT_INPUT': {
             category: 'Sortieren',
-            prop0: 'Name',
+            prop0: 'Naam',
             prop1: 'Prioriteit',
             prop2: 'Uiterste datum'
         },
         'FILTER_INPUT': {
             category: 'Filter',
             prop0: 'Te doen',
-            prop1: 'Doet',
+            prop1: 'In uitvoering',
             prop2: 'Gedaan',
             nTask: 'Nieuwe taak'
         },
