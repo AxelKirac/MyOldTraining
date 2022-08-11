@@ -36,10 +36,10 @@ postToDoTask.addEventListener('click', () => {
 
 const postDoingTask = document.querySelector('.postDoingTask');
 postDoingTask.addEventListener('click', () => {
-    let name = document.querySelector('.doing_newTask > .maketask > .name').value;
-    let priority = document.querySelector('.doing_newTask > .maketask > .priority').value;
-    let description = document.querySelector('.doing_newTask > .maketask > .description').value;
-    let dueTo = document.querySelector('.doing_newTask > .maketask > .dueTo').value;
+    let name = document.querySelector('.doing_newTask > .maketask > .name');
+    let priority = document.querySelector('.doing_newTask > .maketask > .priority');
+    let description = document.querySelector('.doing_newTask > .maketask > .description');
+    let dueTo = document.querySelector('.doing_newTask > .maketask > .dueTo');
     if(name.value.length >= 2 && description.value.length >= 1)
     {
         userTasks.push(new CustomTask('doing', TASK_ID, name.value, priority.value, description.value, new Date(dueTo.value)));
