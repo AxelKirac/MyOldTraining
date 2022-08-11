@@ -38,7 +38,7 @@ const fetchMenuNames = (sortMenu, filterMenu, darkBtn) => {
     menuBtns[2].innerHTML = darkBtn.category;
 };
 const fetchFlexTab = (datas) => {
-    document.querySelector('.toDo_header_title').innerHTML = datas.prop2;
+    document.querySelector('.toDo_header_title').innerHTML = datas.prop0;
     document.querySelector('.doing_header_title').innerHTML = datas.prop1;
     document.querySelector('.done_header_title').innerHTML = datas.prop2;
     const dd = [
