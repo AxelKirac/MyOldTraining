@@ -51,7 +51,7 @@ const LANGUAGE_DB = {
                 {key: 'English', value: 'en', default: true},
                 {key: 'French', value: 'fr'},
                 {key: 'German', value: 'ge'},
-                {key: 'Deutch', value: 'du'}
+                {key: 'Dutch', value: 'du'}
             ]
         },
         'DATE_WRITE': (days) => {
