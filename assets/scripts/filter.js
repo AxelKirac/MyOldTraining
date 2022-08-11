@@ -1,27 +1,26 @@
-let todobutton = document.querySelector('.dropdown-content-todo > .dropdown-content-checkbox')
-let todotasks = document.querySelector('.toDo_tasks');
-todobutton.addEventListener("click", () => {
-    noDisplayBlock(todobutton, todotasks);
-});
-
-let doingbutton = document.querySelector('.dropdown-content-doing > .dropdown-content-checkbox')
-let doingtasks = document.querySelector('.doing_tasks');
-doingbutton.addEventListener("click", () => {
-    noDisplayBlock(doingbutton, doingtasks);
-});
-
-let donebutton = document.querySelector('.dropdown-content-done > .dropdown-content-checkbox')
-let donetasks = document.querySelector('.done_tasks');
-donebutton.addEventListener("click", () => {
-    noDisplayBlock(donebutton, donetasks);
-});
-
-function noDisplayBlock(btn, task) {
-    if(btn.checked) {
-        task.style.display = 'block';
+class Filter {
+    constructor(button, task)
+    {
+        this.button = button;
+        this.task = task;
     }
-    else {
-        task.style.display = 'none';
-    }
+}
 
+let FILTERS = [
+    new Filter('.dropdown-content-todo > .dropdown-content-checkbox', '.toDo_tasks'),
+    new Filter('.dropdown-content-doing > .dropdown-content-checkbox', '.doing_tasks'),
+    new Filter('.dropdown-content-done > .dropdown-content-checkbox', '.done_tasks')
+];
+for(const filter of FILTERS)
+{
+    let btn = document.querySelector(filter.button)
+    let task = document.querySelector(filter.task);
+    btn.addEventListener("click", () => {
+        if(btn.checked) {
+            task.style.display = 'block';
+        }
+        else {
+            task.style.display = 'none';
+        }
+    });
 }
