@@ -58,6 +58,9 @@ function pushNewElement(newData)
     let nwTask = document.createElement('article');
     nwTask.classList.add('task');
     nwTask.setAttribute('value', newData.id);
+    nwTask.setAttribute('name', newData.name);
+    nwTask.setAttribute('priority', newData.priority);
+    nwTask.setAttribute('dueDate', newData.DueDate);
 
     let dv = document.createElement('div');
     dv.classList.add('task_delete');
@@ -80,7 +83,6 @@ function pushNewElement(newData)
 
     let limit = document.createElement('p');
     limit.classList.add('task_delay');
-    limit.setAttribute('value', newData.DueDate);
     limit.innerHTML = `In ${newData.DueDate} days.`;
     nwTask.appendChild(limit);
 
