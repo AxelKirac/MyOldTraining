@@ -5,16 +5,6 @@ class Sorting {
         this.sort = sort;
     }
 }
-const TASK_QUERY = [
-    '.toDo_tasks > .task',
-    '.doing_tasks > .task',
-    '.done_tasks > .task'
-];
-const ALL_PRIORITY = [
-    'high',
-    'medium',
-    'low'
-];
 const SORTING = [
     new Sorting('name', (tasks) => {
         return [...tasks].sort((a, b) => {

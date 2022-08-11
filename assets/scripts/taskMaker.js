@@ -8,7 +8,7 @@ doingNewTask.addEventListener('click', (e) => {
 });
 
 function toggleIcon(event) {
-    let icon = newTaskIcon(event);
+    let icon = newTaskElement(event, '.toDo_newTask_title > .toDo_newTask_icon', '.doing_newTask_title > .doing_newTask_icon');
     if(icon !== null)
     {
         if(icon.innerHTML === '-')
@@ -24,7 +24,7 @@ function toggleIcon(event) {
     }
 }
 function toggleDropdown(event, isVisible) {
-    let drop = newTaskDropdown(event);
+    let drop = newTaskElement(event, '.toDo_newTask > .maketask', '.doing_newTask > .maketask');
     if(drop !== null)
     {
         if(isVisible)
@@ -37,6 +37,22 @@ function toggleDropdown(event, isVisible) {
         }
     }
 }
+function newTaskElement(event, todoQuery, doingQuery)
+{
+    switch(event)
+    {
+        case 'todo':
+            newTaskDrp = document.querySelector(todoQuery);
+            break;
+        case 'doing':
+            newTaskDrp = document.querySelector(doingQuery);
+            break;
+    }
+    return null;
+
+}
+
+
 function newTaskDropdown(event) {
     let newTaskDrp;
     switch(event)

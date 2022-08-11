@@ -1,51 +1,6 @@
-function loadDatas()
-{
-    let taskId = Number(localStorage.getItem('taskId'));
-    if(taskId)
-    {
-        TASK_ID = taskId;
-    }
-    let taskNbr = Number(localStorage.getItem('userTasks.length'));
-    for(let i = 0; i < taskNbr; i++)
-    {
-        userTasks.push(new CustomTask(
-        localStorage.getItem(`userTasks[${i}].category`),
-        Number(localStorage.getItem(`userTasks[${i}].id`)),
-        localStorage.getItem(`userTasks[${i}].name`),
-        localStorage.getItem(`userTasks[${i}].priority`),
-        localStorage.getItem(`userTasks[${i}].description`),
-        new Date(localStorage.getItem(`userTasks[${i}].dueDate`))));
-        pushNewElement(userTasks[i]);
-    }
-}
-function saveDatas()
-{
-    localStorage.clear();
-    localStorage.setItem('userTasks.length', userTasks.length);
-    if(userTasks.length == 0)
-    {
-        TASK_ID = 0;
-    }
-    localStorage.setItem('taskId', TASK_ID);
-    let i = 0;
-    for(let userTask of userTasks)
-    {
-        localStorage.setItem(`userTasks[${i}].id`, userTask.id);
-        localStorage.setItem(`userTasks[${i}].category`, userTask.category);
-        localStorage.setItem(`userTasks[${i}].name`, userTask.name);
-        localStorage.setItem(`userTasks[${i}].priority`, userTask.priority);
-        localStorage.setItem(`userTasks[${i}].description`, userTask.description);
-        localStorage.setItem(`userTasks[${i}].dueDate`, inputDateFormat(userTask.dueDate));
-        i++;
-    }
-}
-// Get the input Date format
 function inputActualDateFormat()
 {
-    let getTodayDate = new Date();
-    let d = getTodayDate.getDate();
-    let m = getTodayDate.getMonth() + 1;
-    return `${getTodayDate.getFullYear()}-${m < 10 ? `0${m}` : m}-${d < 10 ? `0${d}` : d}`;
+    return inputDateFormat(new Date());
 }
 function inputDateFormat(getTodayDate)
 {
@@ -98,26 +53,8 @@ function removeElement(id, removeTask = false)
     {
         if(utask.id == id)
         {
-            let cat = utask.category;
-            let task;
-            if(cat === 'todo')
-            {
-                task = document.querySelector(`.toDo_tasks > .task[value='${id}']`);
-                let elemList = document.querySelector('.toDo_tasks');
-                elemList.removeChild(task);
-            }
-            else if(cat === 'doing')
-            {
-                task = document.querySelector(`.doing_tasks > .task[value='${id}']`);
-                let elemList = document.querySelector('.doing_tasks');
-                elemList.removeChild(task);
-            }
-            else
-            {
-                task = document.querySelector(`.done_tasks > .task[value='${id}']`);
-                let elemList = document.querySelector('.done_tasks');
-                elemList.removeChild(task);
-            }
+            let elemList = document.querySelector(`.${utask.Category}_tasks`);
+            elemList.removeChild(document.querySelector(`.${utask.Category}_tasks > .task[value='${id}']`));
             if(removeTask)
             {
                 userTasks = userTasks.filter((x) => {

@@ -1,4 +1,3 @@
-let dark = false;
 const switchTheme = document.querySelector('.theme_switch');
 switchTheme.addEventListener('click', () => {
     dark = !dark;

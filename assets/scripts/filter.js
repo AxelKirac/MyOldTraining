@@ -5,11 +5,10 @@ class Filter {
         this.task = task;
     }
 }
-
-let FILTERS = [
-    new Filter('.dropdown-content-todo > .dropdown-content-checkbox', '.toDo_tasks'),
-    new Filter('.dropdown-content-doing > .dropdown-content-checkbox', '.doing_tasks'),
-    new Filter('.dropdown-content-done > .dropdown-content-checkbox', '.done_tasks')
+const FILTERS = [
+    new Filter('.dropdown-content-todo > .dropdown-content-checkbox', '.toDo'),
+    new Filter('.dropdown-content-doing > .dropdown-content-checkbox', '.doing'),
+    new Filter('.dropdown-content-done > .dropdown-content-checkbox', '.done')
 ];
 for(const filter of FILTERS)
 {
