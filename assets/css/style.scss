@@ -23,7 +23,9 @@ body {
     &_tasks {
         display: flex;
         flex-direction: column;
+        width: 100%;
         min-height: 25px;
+        background-color: red;
     }
 }
 .toDo, .doing {
