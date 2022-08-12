@@ -18,6 +18,19 @@ html.light, body.light {
     color: rgb(235, 235, 235);
     background-color: rgb(35, 35, 35);
 }
-.dropdown-content.light a:hover {
-    background-color: rgb(195, 195, 195);
+.dropdown-content-todo, .dropdown-content-doing, .dropdown-content-done {
+    color: black;
+}
+.dropdown-content {
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content.light p {
+    color: black;
+}
+.dropdown-content-todo.light, .dropdown-content-doing.light, .dropdown-content-done.light,
+.sorting_name.light, .sorting_priority.light, .sorting_timeline.light {
+    &:hover {
+        background-color: rgb(195, 195, 195);
+    }
 }
