@@ -1,59 +1,54 @@
-$DARK_COLOR_A: #C374F2;
-$DARK_COLOR_B: #F479FC;
-$DARK_COLOR_C: #E67AB4;
-$DARK_COLOR_D: #FF8785;
-$DARK_COLOR_E: #F28B74;
-$DARK_COLOR_W: black;
-/*
-html.dark, body.dark {
-    background-color: rgb(20, 20, 20);
+$DARK_COLOR_Z: #5f1f85;
+$DARK_COLOR_A: #452A57;
+$DARK_COLOR_B: #5D2F61;
+$DARK_COLOR_C: #4A273A;
+$DARK_COLOR_D: #4A2726;
+$DARK_COLOR_E: #57322A;
+$DARK_COLOR_W:rgb(255 - 235, 255 - 235, 255 - 235);
+
+
+$DARK_TEXT_COLOR_A:rgb(255 - 35, 255 - 35, 255 - 35);
+$DARK_TEXT_COLOR_A_HOVER:rgb(255 - 100, 255 - 100, 255 - 100);
+
+$DT_COLOR_BD:rgb(255 - 35, 255 - 35, 255 - 35);
+body.dark {
+    color: #fff;
+}
+main.dark {
+    color: #fff;
 }
 .task.dark {
-    border: 1px solid #fff;
+    background-color: #701d5a;
 }
-.dropbtn.dark:hover {
-    color: rgb(20, 20, 20);
+.task_name.dark {
+    color: $DARK_TEXT_COLOR_A;
 }
-.menu.dark {
-    border-bottom: 1px solid #9a9a9a;
+.toDo_tasks.dark, .doing_tasks.dark, .done_tasks.dark {
+    background-color: $DARK_COLOR_E;
 }
-.menu_btn.dark:hover:not(.theme_switch) {
-    background-color: rgb(50, 50, 50);
-}
-.theme_switch.dark {
-    color: rgb(20, 20, 20);
-    background-color: rgb(220, 220, 220);
-}
-.dropdown-content.dark a:hover {
-    background-color: rgb(60, 60, 60);
-}
-*/
-
-$DARK_TEXT_COLOR_A:rgb(35, 35, 35);
-$DARK_TEXT_COLOR_A_HOVER:rgb(100, 100, 100);
-
-$DT_COLOR_B:rgb(35, 35, 35);
-
-
 html.dark, body.dark {
     background-color: $DARK_COLOR_A;
 }
+.task_description.dark {
+    background-color: $DARK_COLOR_B;
+}
 .menu.dark {
+    background-color: $DARK_COLOR_Z;
     border-bottom: 1px solid $DARK_COLOR_E;
 }
 .theme_switch.dark {
     color: $DARK_COLOR_W;
-    background-color: $DT_COLOR_B;
+    background-color: $DT_COLOR_BD;
     &:hover {
-        color: #fff;
+        color: #000;
     }
 }
 .dropdown-content-todo.dark, .dropdown-content-doing.dark, .dropdown-content-done.dark {
     color: $DARK_TEXT_COLOR_A;
 }
-.dropdown-content {
+.dropdown-content.dark {
     background-color: $DARK_COLOR_B;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
 }
 .dropdown-content.dark p {
     color: $DARK_TEXT_COLOR_A;
@@ -62,6 +57,12 @@ html.dark, body.dark {
     background-color: $DARK_COLOR_B;
 }
 
+.doing_newTask.dark, .toDo_newTask.dark {
+    background-color: $DARK_COLOR_C;
+    &:hover {
+        background-color: $DARK_COLOR_B;
+    }
+}
 
 // HOVER MENU
 .menu_btn.dark:hover:not(.theme_switch) {
@@ -96,6 +97,6 @@ footer.dark {
     border-top: 1px solid $DARK_COLOR_E;
 }
 
-.main_title {
-    text-align: center;
+#languages.dark, .footer_languages_language.dark {
+    color: #fff;
 }

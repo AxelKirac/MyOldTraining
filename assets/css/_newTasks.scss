@@ -28,10 +28,14 @@ textarea, .name {
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    background-color: $LIGHT_COLOR_C;
     border-radius: 25px;
-    &:hover {
-        background-color: $LIGHT_COLOR_B;
+}
 
-    }
+.task_delete {
+    position: absolute;
+    cursor: pointer;
+    font-weight: bolder;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
 }

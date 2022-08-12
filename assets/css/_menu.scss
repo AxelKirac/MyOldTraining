@@ -9,14 +9,14 @@ header {
     z-index: 2;
     &_btn {
         display: block;
-        @media (max-width: 240px)
-        {
-            text-align: center;
-        }
         padding: 5px;
         padding-left: 15px;
         padding-right: 15px;
         font-size: large;
+        @media (max-width: 240px)
+        {
+            text-align: center;
+        }
     }
 }
 .main_title {

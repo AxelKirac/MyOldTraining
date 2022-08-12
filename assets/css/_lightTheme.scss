@@ -1,3 +1,4 @@
+$LIGHT_COLOR_Z: #b83dff;
 $LIGHT_COLOR_A: #C374F2;
 $LIGHT_COLOR_B: #F479FC;
 $LIGHT_COLOR_C: #E67AB4;
@@ -5,17 +6,38 @@ $LIGHT_COLOR_D: #FF8785;
 $LIGHT_COLOR_E: #F28B74;
 $LIGHT_COLOR_W:rgb(235, 235, 235);
 
+
 $LIGHT_TEXT_COLOR_A:rgb(35, 35, 35);
 $LIGHT_TEXT_COLOR_A_HOVER:rgb(100, 100, 100);
 
 $DT_COLOR_B:rgb(35, 35, 35);
 
-
+main.light {
+    color: black;
+}
+.task.light {
+    background-color: #b8168d;
+}
+.task_delete {
+    color: rgb(225, 0, 0);
+    &:hover {
+        color: red;
+    }
+}
+.task_name.light {
+    color: $LIGHT_TEXT_COLOR_A;
+}
+.toDo_tasks.light, .doing_tasks.light, .done_tasks.light {
+    background-color: $LIGHT_COLOR_E;
+}
 html.light, body.light {
     background-color: $LIGHT_COLOR_A;
 }
+.task_description.light {
+    background-color: $LIGHT_COLOR_B;
+}
 .menu.light {
-    background-color: $LIGHT_COLOR_A;
+    background-color: $LIGHT_COLOR_Z;
     border-bottom: 1px solid $LIGHT_COLOR_E;
 }
 .theme_switch.light {
@@ -28,7 +50,7 @@ html.light, body.light {
 .dropdown-content-todo.light, .dropdown-content-doing.light, .dropdown-content-done.light {
     color: $LIGHT_TEXT_COLOR_A;
 }
-.dropdown-content {
+.dropdown-content.light {
     background-color: $LIGHT_COLOR_B;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -37,6 +59,13 @@ html.light, body.light {
 }
 #languages.light {
     background-color: $LIGHT_COLOR_B;
+}
+
+.doing_newTask.light, .toDo_newTask.light {
+    background-color: $LIGHT_COLOR_C;
+    &:hover {
+        background-color: $LIGHT_COLOR_B;
+    }
 }
 
 
@@ -72,7 +101,6 @@ html.light, body.light {
 footer.light {
     border-top: 1px solid $LIGHT_COLOR_E;
 }
-
-.main_title {
-    text-align: center;
+.footer_languages_language.light {
+    color: #000;
 }

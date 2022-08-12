@@ -1,27 +1,23 @@
-main {
-    color: black;
-}
 
-@media (max-width: 650px) {
-    .taskbook {
-        display:flex ;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
 
 .taskbook {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     gap: 10px;
     @media (min-width: 650px)
     {
         flex-direction: row;
         justify-content: center;
+        align-items: flex-start;
         margin-top: 40px;
-        }
+    }
+}
+.task {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .task_name {
@@ -37,12 +33,8 @@ main {
 .task_description {
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.task_description {
-    background-color:$LIGHT_COLOR_B ;
-    min-height: 85px;
-    border-radius: 3%;
+    min-height: 25px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -51,8 +43,7 @@ main {
     margin-top: 5px;
     display: flex;
     flex-direction: row;
-    background-color: #b8168d;
-    border-radius: 3%;
+    border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -64,21 +55,17 @@ main {
 }
 
 .task_name {
+    margin-top: 15px;
     margin-bottom: 15px;
 }
-
+.main_title {
+    text-align: center;
+}
 .toDo_header_title, .doing_header_title, .done_header_title, .task_name {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
-// .done_newTask, .toDo_newTask, .doing_newTask {
-//     margin-left: 13px;
-// }
-
-
-
 .toDo, .doing, .done {
     display: inline-flex;
     flex-direction: column;
@@ -88,19 +75,4 @@ main {
     opacity: 90%;
     width: 300px;
     padding: 10px;
-    border: 1px solid black;
-    
-    @media (min-width: 650px)
-    {
-        
 }
-}
-
-// .main_title {
-//     @media (min-width: 650px) {
-//          & {
-//             position: fixed;
-//             margin-left: 400px;
-//         }
-//     }
-// }

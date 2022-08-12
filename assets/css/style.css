@@ -14,12 +14,39 @@
    supported by Chrome, Edge, Opera and Firefox */
 }
 
+main.light {
+  color: black;
+}
+
+.task.light {
+  background-color: #b8168d;
+}
+
+.task_delete {
+  color: rgb(225, 0, 0);
+}
+.task_delete:hover {
+  color: red;
+}
+
+.task_name.light {
+  color: rgb(35, 35, 35);
+}
+
+.toDo_tasks.light, .doing_tasks.light, .done_tasks.light {
+  background-color: #F28B74;
+}
+
 html.light, body.light {
   background-color: #C374F2;
 }
 
+.task_description.light {
+  background-color: #F479FC;
+}
+
 .menu.light {
-  background-color: #C374F2;
+  background-color: #b83dff;
   border-bottom: 1px solid #F28B74;
 }
 
@@ -35,7 +62,7 @@ html.light, body.light {
   color: rgb(35, 35, 35);
 }
 
-.dropdown-content {
+.dropdown-content.light {
   background-color: #F479FC;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
@@ -45,6 +72,13 @@ html.light, body.light {
 }
 
 #languages.light {
+  background-color: #F479FC;
+}
+
+.doing_newTask.light, .toDo_newTask.light {
+  background-color: #E67AB4;
+}
+.doing_newTask.light:hover, .toDo_newTask.light:hover {
   background-color: #F479FC;
 }
 
@@ -74,95 +108,103 @@ footer.light {
   border-top: 1px solid #F28B74;
 }
 
-.main_title {
-  text-align: center;
+.footer_languages_language.light {
+  color: #000;
 }
 
-/*
-html.dark, body.dark {
-    background-color: rgb(20, 20, 20);
-}
-.task.dark {
-    border: 1px solid #fff;
-}
-.dropbtn.dark:hover {
-    color: rgb(20, 20, 20);
-}
-.menu.dark {
-    border-bottom: 1px solid #9a9a9a;
-}
-.menu_btn.dark:hover:not(.theme_switch) {
-    background-color: rgb(50, 50, 50);
-}
-.theme_switch.dark {
-    color: rgb(20, 20, 20);
-    background-color: rgb(220, 220, 220);
-}
-.dropdown-content.dark a:hover {
-    background-color: rgb(60, 60, 60);
-}
-*/
-html.dark, body.dark {
-  background-color: #C374F2;
-}
-
-.menu.dark {
-  border-bottom: 1px solid #F28B74;
-}
-
-.theme_switch.dark {
-  color: black;
-  background-color: rgb(35, 35, 35);
-}
-.theme_switch.dark:hover {
+body.dark {
   color: #fff;
 }
 
-.dropdown-content-todo.dark, .dropdown-content-doing.dark, .dropdown-content-done.dark {
-  color: rgb(35, 35, 35);
+main.dark {
+  color: #fff;
 }
 
-.dropdown-content {
-  background-color: #F479FC;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+.task.dark {
+  background-color: #701d5a;
+}
+
+.task_name.dark {
+  color: rgb(220, 220, 220);
+}
+
+.toDo_tasks.dark, .doing_tasks.dark, .done_tasks.dark {
+  background-color: #57322A;
+}
+
+html.dark, body.dark {
+  background-color: #452A57;
+}
+
+.task_description.dark {
+  background-color: #5D2F61;
+}
+
+.menu.dark {
+  background-color: #5f1f85;
+  border-bottom: 1px solid #57322A;
+}
+
+.theme_switch.dark {
+  color: rgb(20, 20, 20);
+  background-color: rgb(220, 220, 220);
+}
+.theme_switch.dark:hover {
+  color: #000;
+}
+
+.dropdown-content-todo.dark, .dropdown-content-doing.dark, .dropdown-content-done.dark {
+  color: rgb(220, 220, 220);
+}
+
+.dropdown-content.dark {
+  background-color: #5D2F61;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
 }
 
 .dropdown-content.dark p {
-  color: rgb(35, 35, 35);
+  color: rgb(220, 220, 220);
 }
 
 #languages.dark {
-  background-color: #F479FC;
+  background-color: #5D2F61;
+}
+
+.doing_newTask.dark, .toDo_newTask.dark {
+  background-color: #4A273A;
+}
+.doing_newTask.dark:hover, .toDo_newTask.dark:hover {
+  background-color: #5D2F61;
 }
 
 .menu_btn.dark:hover:not(.theme_switch) {
-  color: rgb(100, 100, 100);
-  background-color: #F479FC;
+  color: rgb(155, 155, 155);
+  background-color: #5D2F61;
 }
 
 .dropdown-content.dark:hover p:hover {
-  color: rgb(100, 100, 100);
+  color: rgb(155, 155, 155);
 }
 
 .dropdown-content-todo.dark:hover p, .dropdown-content-doing.dark:hover p, .dropdown-content-done.dark:hover p {
-  color: rgb(100, 100, 100);
+  color: rgb(155, 155, 155);
 }
 
 .dropdown-content-todo.dark:hover, .dropdown-content-doing.dark:hover, .dropdown-content-done.dark:hover,
 .sorting_name.dark:hover, .sorting_priority.dark:hover, .sorting_timeline.dark:hover {
-  background-color: #E67AB4;
+  background-color: #4A273A;
 }
 
 .toDo.dark, .doing.dark, .done.dark {
-  background-color: #FF8785;
+  background-color: #4A2726;
 }
 
 footer.dark {
-  border-top: 1px solid #F28B74;
+  border-top: 1px solid #57322A;
 }
 
-.main_title {
-  text-align: center;
+#languages.dark, .footer_languages_language.dark {
+  color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -193,29 +235,26 @@ footer.dark {
   scrollbar-width: thin !important;
 }
 
-main {
-  color: black;
-}
-
-@media (max-width: 650px) {
-  .taskbook {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .taskbook {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 10px;
 }
 @media (min-width: 650px) {
   .taskbook {
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     margin-top: 40px;
   }
+}
+
+.task {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .task_name {
@@ -231,12 +270,8 @@ main {
 .task_description {
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.task_description {
-  background-color: #F479FC;
-  min-height: 85px;
-  border-radius: 3%;
+  min-height: 25px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
@@ -244,8 +279,7 @@ main {
   margin-top: 5px;
   display: flex;
   flex-direction: row;
-  background-color: #b8168d;
-  border-radius: 3%;
+  border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -257,7 +291,12 @@ main {
 }
 
 .task_name {
+  margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.main_title {
+  text-align: center;
 }
 
 .toDo_header_title, .doing_header_title, .done_header_title, .task_name {
@@ -275,8 +314,8 @@ main {
   opacity: 90%;
   width: 300px;
   padding: 10px;
-  border: 1px solid black;
 }
+
 header {
   height: 40px;
 }
@@ -388,11 +427,16 @@ textarea:focus, .name:focus {
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 15px;
-  background-color: #E67AB4;
   border-radius: 25px;
 }
-.doing_newTask:hover, .toDo_newTask:hover {
-  background-color: #F479FC;
+
+.task_delete {
+  position: absolute;
+  cursor: pointer;
+  font-weight: bolder;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
 }
 
 footer {
@@ -448,4 +492,4 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}/*# sourceMappingURL=style.css.map */
+}
