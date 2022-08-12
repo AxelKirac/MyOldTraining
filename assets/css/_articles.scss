@@ -64,7 +64,9 @@ main {
     @media (min-width: 650px)
     {
         flex-direction: row;
-    }
+        justify-content: center;
+        margin-top: 40px;
+        }
 }
 
 .toDo, .doing, .done {
@@ -76,5 +78,20 @@ main {
     opacity: 90%;
     width: 300px;
     margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid black;
     
+    @media (min-width: 650px)
+    {
+        
 }
+}
+
+// .main_title {
+//     @media (min-width: 650px) {
+//          & {
+//             position: fixed;
+//             margin-left: 400px;
+//         }
+//     }
+// }

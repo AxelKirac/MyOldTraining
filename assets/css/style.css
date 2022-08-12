@@ -158,6 +158,8 @@ main {
 @media (min-width: 650px) {
   .taskbook {
     flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
   }
 }
 
@@ -170,8 +172,9 @@ main {
   opacity: 90%;
   width: 300px;
   margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid black;
 }
-
 header {
   height: 40px;
 }
@@ -302,4 +305,4 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}
+}/*# sourceMappingURL=style.css.map */
