@@ -10,21 +10,24 @@ html.light, body.light {
 }
 
 .task.light {
-  border: 1px solid black;
+  border: 1px solid rgb(35, 35, 35);
   width: 300px;
 }
 
 .menu.light {
-  border-bottom: 1px solid #FF8785;
+  border-bottom: 1px solid #F28B74;
 }
 
 .theme_switch.light {
-  color: rgb(35, 35, 35);
+  color: rgb(220, 220, 220);
   background-color: rgb(35, 35, 35);
 }
+.theme_switch.light:hover {
+  color: #fff;
+}
 
-.dropdown-content-todo, .dropdown-content-doing, .dropdown-content-done {
-  color: black;
+.dropdown-content-todo.light, .dropdown-content-doing.light, .dropdown-content-done.light {
+  color: rgb(35, 35, 35);
 }
 
 .dropdown-content {
@@ -54,7 +57,7 @@ html.light, body.light {
   background-color: #E67AB4;
 }
 
-.toDo, .doing, .done {
+.toDo.light, .doing.light, .done.light {
   background-color: rgb(220, 220, 220);
 }
 
