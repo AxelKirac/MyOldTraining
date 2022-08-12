@@ -101,6 +101,69 @@ html.dark, body.dark {
     background-color: rgb(60, 60, 60);
 }
 */
+html.dark, body.dark {
+  background-color: #C374F2;
+}
+
+.menu.dark {
+  border-bottom: 1px solid #F28B74;
+}
+
+.theme_switch.dark {
+  color: black;
+  background-color: rgb(35, 35, 35);
+}
+.theme_switch.dark:hover {
+  color: #fff;
+}
+
+.dropdown-content-todo.dark, .dropdown-content-doing.dark, .dropdown-content-done.dark {
+  color: rgb(35, 35, 35);
+}
+
+.dropdown-content {
+  background-color: #F479FC;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content.dark p {
+  color: rgb(35, 35, 35);
+}
+
+#languages.dark {
+  background-color: #F479FC;
+}
+
+.menu_btn.dark:hover:not(.theme_switch) {
+  color: rgb(100, 100, 100);
+  background-color: #F479FC;
+}
+
+.dropdown-content.dark:hover p:hover {
+  color: rgb(100, 100, 100);
+}
+
+.dropdown-content-todo.dark:hover p, .dropdown-content-doing.dark:hover p, .dropdown-content-done.dark:hover p {
+  color: rgb(100, 100, 100);
+}
+
+.dropdown-content-todo.dark:hover, .dropdown-content-doing.dark:hover, .dropdown-content-done.dark:hover,
+.sorting_name.dark:hover, .sorting_priority.dark:hover, .sorting_timeline.dark:hover {
+  background-color: #E67AB4;
+}
+
+.toDo.dark, .doing.dark, .done.dark {
+  background-color: #FF8785;
+}
+
+footer.dark {
+  border-top: 1px solid #F28B74;
+}
+
+.main_title {
+  text-align: center;
+}
+
 main {
   color: white;
 }
