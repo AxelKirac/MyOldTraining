@@ -72,3 +72,6 @@ html.light, body.light {
 .toDo.light, .doing.light, .done.light {
     background-color: $LIGHT_COLOR_W;
 }
+footer.light {
+    border-top: 1px solid $LIGHT_COLOR_E;
+}

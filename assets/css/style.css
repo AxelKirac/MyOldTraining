@@ -74,6 +74,10 @@ html.light, body.light {
   background-color: rgb(235, 235, 235);
 }
 
+footer.light {
+  border-top: 1px solid #F28B74;
+}
+
 /*
 html.dark, body.dark {
     background-color: rgb(20, 20, 20);
@@ -238,7 +242,6 @@ footer {
   align-items: center;
   padding-top: 5px;
   margin-top: 5px;
-  border-top: 1px solid #F28B74;
 }
 
 .footer {
@@ -285,4 +288,4 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}/*# sourceMappingURL=style.css.map */
+}
