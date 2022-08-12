@@ -48,6 +48,10 @@ html.light, body.light {
   color: rgb(35, 35, 35);
 }
 
+#languages.light {
+  background-color: #F479FC;
+}
+
 .menu_btn.light:hover:not(.theme_switch) {
   color: rgb(100, 100, 100);
   background-color: #F479FC;
@@ -226,6 +230,29 @@ header {
 .dropdown-content-checkbox {
   width: 25px;
   height: 25px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  margin-top: 5px;
+  border-top: 1px solid #F28B74;
+}
+
+.footer {
+  margin-bottom: 5px;
+}
+
+#languages {
+  padding: 5px;
+  border: none;
+}
+
+.footer_languages_language {
+  font-style: italic;
 }
 
 body {

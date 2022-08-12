@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    margin-top: 5px;
+    border-top: 1px solid $LIGHT_COLOR_E;
+}
+.footer {
+    margin-bottom: 5px;
+}
+#languages {
+    padding: 5px;
+    border:none;
+}
+.footer_languages_language {
+    font-style: italic;
+}
