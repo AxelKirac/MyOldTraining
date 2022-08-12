@@ -194,7 +194,7 @@ footer.dark {
 }
 
 main {
-  color: white;
+  color: black;
 }
 
 @media (max-width: 650px) {
@@ -234,7 +234,7 @@ main {
 }
 
 .task_description {
-  border: 1px solid #F479FC;
+  border: 1px solid black;
   min-height: 85px;
   border-radius: 3%;
 }
@@ -243,10 +243,20 @@ main {
   margin-top: 5px;
   display: flex;
   flex-direction: row;
-  border: 1px solid #F479FC;
+  background-color: #b8168d;
   border-radius: 3%;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.task_delete {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.task_name {
+  margin-bottom: 15px;
 }
 
 .toDo_header_title, .doing_header_title, .done_header_title, .task_name {
@@ -437,4 +447,4 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}
+}/*# sourceMappingURL=style.css.map */
