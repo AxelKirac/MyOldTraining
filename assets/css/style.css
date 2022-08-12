@@ -94,10 +94,14 @@ html.dark, body.dark {
     background-color: rgb(60, 60, 60);
 }
 */
-.task {
-  width: 300px;
+@media (max-width: 650px) {
+  .taskbook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
 .task_name {
   font-size: 30px;
 }
@@ -115,16 +119,14 @@ html.dark, body.dark {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 3%;
 }
 
 .toDo_header_title, .doing_header_title, .done_header_title, .task_name {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.done_newTask, .toDo_newTask, .doing_newTask {
-  margin-left: 13px;
 }
 
 .taskbook {
@@ -137,18 +139,15 @@ html.dark, body.dark {
   }
 }
 
-.toDo {
+.toDo, .doing, .done {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 3%;
-  background-color: white;
-}
-@media (max-width: 650px) {
-  .toDo {
-    margin: 5px 20px 5px 20px;
-  }
+  opacity: 90%;
+  width: 300px;
+  margin-top: 10px;
 }
 
 header {
@@ -237,7 +236,6 @@ body {
   flex-direction: column;
   width: 100%;
   min-height: 25px;
-  background-color: red;
 }
 
 .toDo_newTask_title, .doing_newTask_title {
@@ -260,4 +258,4 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}
+}/*# sourceMappingURL=style.css.map */
