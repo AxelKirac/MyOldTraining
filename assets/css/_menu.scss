@@ -5,7 +5,8 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     &_btn {
         display: block;
         @media (max-width: 240px)
