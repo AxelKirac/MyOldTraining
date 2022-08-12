@@ -234,7 +234,7 @@ main {
 }
 
 .task_description {
-  border: 1px solid black;
+  background-color: #F479FC;
   min-height: 85px;
   border-radius: 3%;
 }
