@@ -1,5 +1,11 @@
-.task {
-    width: 300px;
+@media (max-width: 650px) {
+    .taskbook {
+    display:flex ;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 
 .task_name {
@@ -20,7 +26,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 3%;
+
 }
+
+
 
 .toDo_header_title, .doing_header_title, .done_header_title, .task_name {
     display: flex;
@@ -28,9 +39,9 @@
     justify-content: center;
 }
 
-.done_newTask, .toDo_newTask, .doing_newTask {
-    margin-left: 13px;
-}
+// .done_newTask, .toDo_newTask, .doing_newTask {
+//     margin-left: 13px;
+// }
 
 .taskbook {
     display: flex;
@@ -41,19 +52,14 @@
     }
 }
 
-.toDo {
+.toDo, .doing, .done {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 3%;
-    background-color: white;
+    opacity: 90%;
+    width: 300px;
+    margin-top: 10px;
     
-    @media (max-width: 650px)
-    {
-        & {
-        margin: 5px 20px 5px 20px;
-    }
-}
-
 }
