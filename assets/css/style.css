@@ -107,6 +107,20 @@ html.dark, body.dark {
   margin-left: 13px;
 }
 
+.taskbook {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 650px) {
+  .taskbook {
+    flex-direction: row;
+  }
+}
+
+.toDo_tasks {
+  border: 1px solid red;
+}
+
 header {
   height: 40px;
 }
@@ -167,16 +181,6 @@ header {
   text-decoration: none;
 }
 
-.taskbook {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 650px) {
-  .taskbook {
-    flex-direction: row;
-  }
-}
-
 .toDo_tasks, .doing_tasks, .done_tasks {
   display: flex;
   flex-direction: column;
@@ -203,4 +207,4 @@ header {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}
+}/*# sourceMappingURL=style.css.map */

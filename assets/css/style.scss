@@ -17,14 +17,6 @@
 
 $worksans:'Work Sans', sans-serif;
 
-.taskbook {
-    display: flex;
-    flex-direction: column;
-    @media (min-width: 650px)
-    {
-        flex-direction: row;
-    }
-}
 .toDo, .doing, .done {
     &_tasks {
         display: flex;
