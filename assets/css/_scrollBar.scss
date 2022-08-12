@@ -4,19 +4,20 @@
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
+    background-color: $LIGHT_TEXT_COLOR_A;
     border-radius: 5px;
 }
 ::-webkit-scrollbar-corner {
     background-color: transparent;
 }
 ::-webkit-scrollbar-thumb:vertical {
+    background-color: $LIGHT_TEXT_COLOR_A_HOVER;
     border-width: 5px 4px;
 }
 // Scrollbar width support for firefox
 :root {
     scrollbar-width: thin !important;
 }
-.taskbook {
-    overflow: scroll;
+* {
     scrollbar-width: thin !important;
 }

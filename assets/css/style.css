@@ -165,6 +165,34 @@ footer.dark {
   text-align: center;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(35, 35, 35);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: rgb(100, 100, 100);
+  border-width: 5px 4px;
+}
+
+:root {
+  scrollbar-width: thin !important;
+}
+
+* {
+  scrollbar-width: thin !important;
+}
+
 main {
   color: white;
 }
