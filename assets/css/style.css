@@ -176,6 +176,19 @@ main {
     align-items: center;
   }
 }
+.taskbook {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 650px) {
+  .taskbook {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
 .task_name {
   font-size: 30px;
 }
@@ -213,28 +226,15 @@ main {
   justify-content: center;
 }
 
-.taskbook {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 650px) {
-  .taskbook {
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 40px;
-  }
-}
-
 .toDo, .doing, .done {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 3%;
+  border-radius: 15px;
   opacity: 90%;
   width: 300px;
-  margin-top: 10px;
-  margin-left: 10px;
+  padding: 10px;
   border: 1px solid black;
 }
 header {
