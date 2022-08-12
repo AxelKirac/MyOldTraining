@@ -73,6 +73,10 @@ footer.light {
   border-top: 1px solid #F28B74;
 }
 
+.main_title {
+  text-align: center;
+}
+
 /*
 html.dark, body.dark {
     background-color: rgb(20, 20, 20);
