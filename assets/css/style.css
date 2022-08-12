@@ -213,6 +213,11 @@ header {
   text-decoration: none;
 }
 
+.dropdown-content-checkbox {
+  width: 25px;
+  height: 25px;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
 }
