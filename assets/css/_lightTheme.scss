@@ -3,6 +3,13 @@ $LIGHT_COLOR_B: #F479FC;
 $LIGHT_COLOR_C: #E67AB4;
 $LIGHT_COLOR_D: #FF8785;
 $LIGHT_COLOR_E: #F28B74;
+$LIGHT_COLOR_W:rgb(220, 220, 220);
+
+$LIGHT_TEXT_COLOR_A:rgb(35, 35, 35);
+$LIGHT_TEXT_COLOR_A_HOVER:rgb(100, 100, 100);
+
+$DT_COLOR_B:rgb(35, 35, 35);
+
 
 html.light, body.light {
     background-color: $LIGHT_COLOR_A;
@@ -11,18 +18,12 @@ html.light, body.light {
     border: 1px solid black;
     width: 300px;
 }
-.dropbtn.light:hover {
-    color: rgb(35, 35, 35);
-}
 .menu.light {
     border-bottom: 1px solid #FF8785;
 }
-.menu_btn.light:hover:not(.theme_switch) {
-    background-color: $LIGHT_COLOR_B;
-}
 .theme_switch.light {
-    color: rgb(235, 235, 235);
-    background-color: rgb(35, 35, 35);
+    color: $LIGHT_TEXT_COLOR_A;
+    background-color: $DT_COLOR_B;
 }
 .dropdown-content-todo, .dropdown-content-doing, .dropdown-content-done {
     color: black;
@@ -32,11 +33,36 @@ html.light, body.light {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .dropdown-content.light p {
-    color: black;
+    color: $LIGHT_TEXT_COLOR_A;
+}
+
+
+// HOVER MENU
+.menu_btn.light:hover:not(.theme_switch) {
+    color: $LIGHT_TEXT_COLOR_A_HOVER;
+    background-color: $LIGHT_COLOR_B;
+}
+.dropdown-content.light:hover {
+    p:hover {
+        color: $LIGHT_TEXT_COLOR_A_HOVER;
+    }
+}
+.dropdown-content {
+    &-todo.light, &-doing.light, &-done.light {
+        &:hover {
+            p {
+                color: $LIGHT_TEXT_COLOR_A_HOVER;
+            }
+        }
+    }
 }
 .dropdown-content-todo.light, .dropdown-content-doing.light, .dropdown-content-done.light,
 .sorting_name.light, .sorting_priority.light, .sorting_timeline.light {
     &:hover {
         background-color: $LIGHT_COLOR_C;
     }
+}
+
+.toDo, .doing, .done {
+    background-color: $LIGHT_COLOR_W;
 }

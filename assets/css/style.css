@@ -14,20 +14,12 @@ html.light, body.light {
   width: 300px;
 }
 
-.dropbtn.light:hover {
-  color: rgb(35, 35, 35);
-}
-
 .menu.light {
   border-bottom: 1px solid #FF8785;
 }
 
-.menu_btn.light:hover:not(.theme_switch) {
-  background-color: #F479FC;
-}
-
 .theme_switch.light {
-  color: rgb(235, 235, 235);
+  color: rgb(35, 35, 35);
   background-color: rgb(35, 35, 35);
 }
 
@@ -41,12 +33,29 @@ html.light, body.light {
 }
 
 .dropdown-content.light p {
-  color: black;
+  color: rgb(35, 35, 35);
+}
+
+.menu_btn.light:hover:not(.theme_switch) {
+  color: rgb(100, 100, 100);
+  background-color: #F479FC;
+}
+
+.dropdown-content.light:hover p:hover {
+  color: rgb(100, 100, 100);
+}
+
+.dropdown-content-todo.light:hover p, .dropdown-content-doing.light:hover p, .dropdown-content-done.light:hover p {
+  color: rgb(100, 100, 100);
 }
 
 .dropdown-content-todo.light:hover, .dropdown-content-doing.light:hover, .dropdown-content-done.light:hover,
 .sorting_name.light:hover, .sorting_priority.light:hover, .sorting_timeline.light:hover {
   background-color: #E67AB4;
+}
+
+.toDo, .doing, .done {
+  background-color: rgb(220, 220, 220);
 }
 
 /*
