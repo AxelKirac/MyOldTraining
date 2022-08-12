@@ -14,10 +14,6 @@ $DT_COLOR_B:rgb(35, 35, 35);
 html.light, body.light {
     background-color: $LIGHT_COLOR_A;
 }
-.task.light {
-    border: 1px solid $LIGHT_TEXT_COLOR_A;
-    width: 300px;
-}
 .menu.light {
     border-bottom: 1px solid $LIGHT_COLOR_E;
 }
