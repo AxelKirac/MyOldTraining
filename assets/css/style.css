@@ -280,8 +280,6 @@ footer.dark {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .task_delete {
