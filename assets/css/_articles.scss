@@ -5,7 +5,17 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 10px;
-    @media (min-width: 630px)
+    @media (min-width: 630px) and (max-width: 924px)
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 40px;
+    }
+    @media (min-width: 925px)
     {
         flex-direction: row;
         justify-content: center;
