@@ -1,3 +1,7 @@
+main {
+    color: white;
+}
+
 @media (max-width: 650px) {
     .taskbook {
     display:flex ;
@@ -14,10 +18,19 @@
 
 .task_delay {
     margin-top: 5px;
+    margin-left: 195px;
+    font-style: italic;
 }
 
-.task_description, .task_delay {
+.task_description {
     margin-left: 10px;
+    margin-right: 10px;
+}
+
+.task_description {
+    border: 1px solid $LIGHT_COLOR_B;
+    min-height: 85px;
+    border-radius: 3%;
 }
 
 
@@ -26,8 +39,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px solid black;
+    border: 1px solid $LIGHT_COLOR_B;
     border-radius: 3%;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
