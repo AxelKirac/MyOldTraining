@@ -31,6 +31,10 @@ main.dark {
   color: #fff;
 }
 
+.name_error, .description_error {
+  color: red;
+}
+
 .task.light {
   background-color: #E67AB4;
 }
@@ -116,7 +120,7 @@ main.dark {
   background-color: #FF8785;
 }
 .toDo.dark, .doing.dark, .done.dark {
-  background-color: #4A2726;
+  background-color: #3b201f;
 }
 .toDo_tasks.light, .doing_tasks.light, .done_tasks.light {
   background-color: #e88670;
@@ -129,13 +133,13 @@ main.dark {
   background-color: #E67AB4;
 }
 .doing_newTask.light:hover, .toDo_newTask.light:hover {
-  background-color: #F479FC;
+  background-color: #e88670;
 }
 .doing_newTask.dark, .toDo_newTask.dark {
   background-color: #4A273A;
 }
 .doing_newTask.dark:hover, .toDo_newTask.dark:hover {
-  background-color: #5D2F61;
+  background-color: #57322A;
 }
 
 footer.dark {
@@ -170,30 +174,47 @@ footer.light {
 }
 
 textarea.description.light {
+  color: #000;
+  caret-color: #000;
   background-color: rgb(235, 235, 235);
 }
 textarea.description.dark {
+  color: #fff;
+  caret-color: #fff;
   background-color: rgb(20, 20, 20);
 }
 
 select.priority.light {
+  color: #000;
   background-color: rgb(235, 235, 235);
 }
 select.priority.dark {
+  color: #fff;
   background-color: rgb(20, 20, 20);
 }
 
 input.postToDoTask.light:hover, input.postDoingTask.light:hover {
+  color: #000;
   background-color: #fff;
 }
 input.postToDoTask.dark:hover, input.postDoingTask.dark:hover {
+  color: #fff;
   background-color: #000;
 }
 
+input.name.light {
+  caret-color: #000;
+}
+input.name.dark {
+  caret-color: #fff;
+}
+
 input.name.light, input.dueTo.light, input.postToDoTask.light, input.postDoingTask.light {
+  color: #000;
   background-color: rgb(235, 235, 235);
 }
 input.name.dark, input.dueTo.dark, input.postToDoTask.dark, input.postDoingTask.dark {
+  color: #fff;
   background-color: rgb(20, 20, 20);
 }
 

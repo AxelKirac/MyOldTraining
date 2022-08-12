@@ -19,7 +19,7 @@ $DARK_COLOR_Z: #5f1f85;
 $DARK_COLOR_A: #452A57;
 $DARK_COLOR_B: #5D2F61;
 $DARK_COLOR_C: #4A273A;
-$DARK_COLOR_D: #4A2726;
+$DARK_COLOR_D: #3b201f;
 $DARK_COLOR_E: #57322A;
 $DARK_COLOR_W:rgb(255 - 235, 255 - 235, 255 - 235);
 $DARK_COLOR_X:#000;
@@ -49,6 +49,9 @@ main {
     &.dark {
         color: $DARK_COLOR_Y;
     }
+}
+.name_error, .description_error {
+    color: red;
 }
 .task {
     &.light {
@@ -171,13 +174,13 @@ main {
         &.light {
             background-color: $LIGHT_COLOR_C;
             &:hover {
-                background-color: $LIGHT_COLOR_B;
+                background-color: $LIGHT_COLOR_E;
             }
         }
         &.dark {
             background-color: $DARK_COLOR_C;
             &:hover {
-                background-color: $DARK_COLOR_B;
+                background-color: $DARK_COLOR_E;
             }
         }
     }
@@ -219,33 +222,51 @@ footer {
 }
 textarea.description {
     &.light {
+        color: $LIGHT_COLOR_Y;
+        caret-color: $LIGHT_COLOR_Y;
         background-color: $LIGHT_COLOR_W;
     }
     &.dark {
+        color: $DARK_COLOR_Y;
+        caret-color: $DARK_COLOR_Y;
         background-color: $DARK_COLOR_W;
     }
 }
 select.priority {
     &.light {
+        color: $LIGHT_COLOR_Y;
         background-color: $LIGHT_COLOR_W;
     }
     &.dark {
+        color: $DARK_COLOR_Y;
         background-color: $DARK_COLOR_W;
     }
 }
 input.postToDoTask, input.postDoingTask {
     &.light:hover {
+        color: $LIGHT_COLOR_Y;
         background-color: $LIGHT_COLOR_X;
     }
     &.dark:hover {
+        color: $DARK_COLOR_Y;
         background-color: $DARK_COLOR_X;
+    }
+}
+input.name {
+    &.light {
+        caret-color: $LIGHT_COLOR_Y;
+    }
+    &.dark {
+        caret-color: $DARK_COLOR_Y;
     }
 }
 input.name, input.dueTo, input.postToDoTask, input.postDoingTask {
     &.light {
+        color: $LIGHT_COLOR_Y;
         background-color: $LIGHT_COLOR_W;
     }
     &.dark {
+        color: $DARK_COLOR_Y;
         background-color: $DARK_COLOR_W;
     }
 }
