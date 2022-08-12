@@ -83,6 +83,7 @@ const translator = (language) => {
     fetchMenuNames(language['SORT_INPUT'], language['FILTER_INPUT'], language['THEME_INPUT']);
     fetchFlexTab(language['FILTER_INPUT']);
     languageGenerate(language['LANGUAGE_INPUT']);
+    listenSubmit();
 };
 translator(LANGUAGE_DB['en']);
 const switchLanguage = document.querySelector('#languages');

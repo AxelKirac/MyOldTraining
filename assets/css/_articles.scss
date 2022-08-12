@@ -32,3 +32,16 @@
 .done_newTask, .toDo_newTask, .doing_newTask {
     margin-left: 13px;
 }
+
+.taskbook {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 650px)
+    {
+        flex-direction: row;
+    }
+}
+
+.toDo_tasks {
+    border: 1px solid red
+}

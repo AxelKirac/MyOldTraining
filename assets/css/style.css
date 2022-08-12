@@ -107,6 +107,20 @@ html.dark, body.dark {
   margin-left: 13px;
 }
 
+.taskbook {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 650px) {
+  .taskbook {
+    flex-direction: row;
+  }
+}
+
+.toDo_tasks {
+  border: 1px solid red;
+}
+
 header {
   height: 40px;
 }
@@ -180,16 +194,6 @@ header {
 
 body {
   font-family: "Work Sans", sans-serif;
-}
-
-.taskbook {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 650px) {
-  .taskbook {
-    flex-direction: row;
-  }
 }
 
 .toDo_tasks, .doing_tasks, .done_tasks {
