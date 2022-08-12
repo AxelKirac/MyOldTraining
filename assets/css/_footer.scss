@@ -8,11 +8,12 @@ footer {
 }
 .footer {
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 #languages {
     padding: 5px;
     border:none;
-}
-.footer_languages_language {
-    font-style: italic;
 }

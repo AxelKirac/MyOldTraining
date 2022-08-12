@@ -1,9 +1,19 @@
 function loadDatas()
 {
+    let dTheme = localStorage.getItem('darkTheme');
+    if(dTheme)
+    {
+        dark = dTheme === 'true';
+    }
     let taskId = Number(localStorage.getItem('taskId'));
     if(taskId)
     {
         TASK_ID = taskId;
+    }
+    let lang = localStorage.getItem('language');
+    if(lang)
+    {
+        DEFAULT_LANGUAGE = lang;
     }
     let taskNbr = Number(localStorage.getItem('userTasks.length'));
     for(let i = 0; i < taskNbr; i++)
@@ -21,6 +31,8 @@ function loadDatas()
 function saveDatas()
 {
     localStorage.clear();
+    localStorage.setItem('darkTheme', dark);
+    localStorage.setItem('language', DEFAULT_LANGUAGE);
     localStorage.setItem('userTasks.length', userTasks.length);
     if(userTasks.length == 0)
     {

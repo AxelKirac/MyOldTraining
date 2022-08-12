@@ -1,69 +1,55 @@
-
-
 .taskbook {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 10px;
-    @media (min-width: 650px)
+    @media (min-width: 630px)
     {
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: flex-start;
         margin-top: 40px;
     }
 }
 .task {
+    position: relative;
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
-}
-
-.task_name {
-    font-size: 30px;
-}
-
-.task_delay {
-    width: 100%;
-    padding-right: 10px;
-    text-align: right;
-    font-style: italic;
-}
-
-.task_description {
-    margin-left: 10px;
-    margin-right: 10px;
-    min-height: 25px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-
-.toDo_tasks, .doing_tasks, .done_tasks {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-}
-
-.task_delete {
-    font-size: 20px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.task_name {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    &_delete {
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        font-size: 20px;
+        font-weight: bolder;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &_name {
+        font-size: 30px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+    &_description {
+        margin-left: 15px;
+        margin-right: 15px;
+        min-height: 25px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    &_delay {
+        width: 100%;
+        padding-right: 10px;
+        text-align: right;
+        font-style: italic;
+        opacity: 0.5;
+    }
 }
 .main_title {
     text-align: center;
-}
-.toDo_header_title, .doing_header_title, .done_header_title, .task_name {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 .toDo, .doing, .done {
     display: inline-flex;
@@ -74,4 +60,41 @@
     opacity: 90%;
     width: 300px;
     padding: 10px;
+    &_tasks {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 100%;
+        min-height: 25px;
+    }
+    &_header {
+        width: 100%;
+        &_title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        hr {
+            width: 100%;
+        }
+    }
+}
+
+.toDo, .doing {
+    &_newTask {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: calc(100% - 10px);
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 25px;
+        &_title {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+    }
 }

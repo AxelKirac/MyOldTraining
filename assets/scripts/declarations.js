@@ -1,3 +1,4 @@
+let DEFAULT_LANGUAGE = 'en';
 let TASK_ID = 0;
 let userTasks = [];
 let dark = false;

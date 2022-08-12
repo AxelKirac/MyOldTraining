@@ -84,10 +84,12 @@ const translator = (language) => {
     fetchFlexTab(language['FILTER_INPUT']);
     languageGenerate(language['LANGUAGE_INPUT']);
     listenSubmit();
+    updateTheme();
 };
-translator(LANGUAGE_DB['en']);
+translator(LANGUAGE_DB[DEFAULT_LANGUAGE]);
 const switchLanguage = document.querySelector('#languages');
 switchLanguage.addEventListener('change', (e) => {
+    DEFAULT_LANGUAGE = e.target.value;
     translator(LANGUAGE_DB[e.target.value]);
     rewriteDatas();
 });

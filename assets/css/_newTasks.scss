@@ -1,3 +1,7 @@
+.maketask {
+    display: none;
+    flex-direction: column;
+}
 textarea, .name {
     padding: 3px;
     resize: none;
@@ -21,21 +25,6 @@ textarea, .name {
     border: none;
     border-radius: 25px;
 }
-.doing_newTask, .toDo_newTask {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 25px;
-}
-
-.task_delete {
-    position: absolute;
+input.postToDoTask, input.postDoingTask {
     cursor: pointer;
-    font-weight: bolder;
-    width: 15px;
-    height: 15px;
-    border-radius: 5px;
 }
