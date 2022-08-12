@@ -4,10 +4,13 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 @import "lightTheme";
 @import "darkTheme";
 @import "articles";
 @import "menu";
+
+$worksans:'Work Sans', sans-serif;
 
 .taskbook {
     display: flex;
