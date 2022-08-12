@@ -201,7 +201,6 @@ main {
   margin-top: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   border: 1px solid #F479FC;
   border-radius: 3%;
   margin-left: 10px;
@@ -229,7 +228,7 @@ main {
 .toDo, .doing, .done {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 3%;
   opacity: 90%;
@@ -315,6 +314,46 @@ header {
   height: 25px;
 }
 
+textarea, .name {
+  padding: 3px;
+  resize: none;
+  border: none;
+  white-space: pre;
+  caret-color: #000;
+}
+textarea:focus, .name:focus {
+  outline: none;
+}
+
+.dueTo, .priority {
+  padding: 3px;
+  resize: none;
+  border: none;
+}
+.dueTo:focus, .priority:focus {
+  outline: none;
+}
+
+.postToDoTask, .postDoingTask {
+  margin-top: 5px;
+  border: none;
+  border-radius: 25px;
+}
+
+.doing_newTask, .toDo_newTask {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: #E67AB4;
+  border-radius: 25px;
+}
+.doing_newTask:hover, .toDo_newTask:hover {
+  background-color: #F479FC;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -368,4 +407,4 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}/*# sourceMappingURL=style.css.map */
+}

@@ -38,12 +38,10 @@ main {
     margin-top: 5px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     border: 1px solid $LIGHT_COLOR_B;
     border-radius: 3%;
     margin-left: 10px;
     margin-right: 10px;
-
 }
 
 
@@ -72,7 +70,7 @@ main {
 .toDo, .doing, .done {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     border-radius: 3%;
     opacity: 90%;

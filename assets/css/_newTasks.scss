@@ -1,0 +1,37 @@
+textarea, .name {
+    padding: 3px;
+    resize: none;
+    border: none;
+    white-space: pre;
+    caret-color: #000;
+    &:focus {
+        outline: none;
+    }
+}
+.dueTo, .priority {
+    padding: 3px;
+    resize: none;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+.postToDoTask, .postDoingTask {
+    margin-top: 5px;
+    border: none;
+    border-radius: 25px;
+}
+.doing_newTask, .toDo_newTask {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: $LIGHT_COLOR_C;
+    border-radius: 25px;
+    &:hover {
+        background-color: $LIGHT_COLOR_B;
+
+    }
+}
