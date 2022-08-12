@@ -71,7 +71,7 @@ html.light, body.light {
 }
 
 .toDo.light, .doing.light, .done.light {
-  background-color: rgb(235, 235, 235);
+  background-color: #FF8785;
 }
 
 footer.light {
@@ -102,6 +102,10 @@ html.dark, body.dark {
     background-color: rgb(60, 60, 60);
 }
 */
+main {
+  color: white;
+}
+
 @media (max-width: 650px) {
   .taskbook {
     display: flex;
@@ -116,10 +120,19 @@ html.dark, body.dark {
 
 .task_delay {
   margin-top: 5px;
+  margin-left: 195px;
+  font-style: italic;
 }
 
-.task_description, .task_delay {
+.task_description {
   margin-left: 10px;
+  margin-right: 10px;
+}
+
+.task_description {
+  border: 1px solid #F479FC;
+  min-height: 85px;
+  border-radius: 3%;
 }
 
 .toDo_tasks, .doing_tasks, .done_tasks {
@@ -127,8 +140,10 @@ html.dark, body.dark {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid black;
+  border: 1px solid #F479FC;
   border-radius: 3%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .toDo_header_title, .doing_header_title, .done_header_title, .task_name {
@@ -288,4 +303,4 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}
+}/*# sourceMappingURL=style.css.map */
