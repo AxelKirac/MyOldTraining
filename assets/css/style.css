@@ -6,7 +6,7 @@
 }
 
 html.light, body.light {
-  background-color: rgb(235, 235, 235);
+  background-color: #C374F2;
 }
 
 .task.light {
@@ -19,11 +19,11 @@ html.light, body.light {
 }
 
 .menu.light {
-  border-bottom: 1px solid #9a9a9a;
+  border-bottom: 1px solid #FF8785;
 }
 
 .menu_btn.light:hover:not(.theme_switch) {
-  background-color: rgb(205, 205, 205);
+  background-color: #F479FC;
 }
 
 .theme_switch.light {
@@ -36,7 +36,7 @@ html.light, body.light {
 }
 
 .dropdown-content {
-  background-color: #f1f1f1;
+  background-color: #F479FC;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -46,7 +46,7 @@ html.light, body.light {
 
 .dropdown-content-todo.light:hover, .dropdown-content-doing.light:hover, .dropdown-content-done.light:hover,
 .sorting_name.light:hover, .sorting_priority.light:hover, .sorting_timeline.light:hover {
-  background-color: rgb(195, 195, 195);
+  background-color: #E67AB4;
 }
 
 /*
@@ -124,6 +124,17 @@ header {
   padding-right: 15px;
   font-size: large;
 }
+@media (max-width: 240px) {
+  .menu_btn {
+    text-align: center;
+  }
+}
+
+@media (max-width: 240px) {
+  .main_title {
+    margin-top: 15px;
+  }
+}
 
 .theme_switch {
   margin-left: auto;
@@ -156,15 +167,19 @@ header {
   z-index: 1;
 }
 
-.dropdown-content a {
-  padding: 12px 16px;
+.dropdown-content p {
+  padding: 10px 10px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content label {
-  padding: 12px 16px;
+.dropdown-content div {
+  padding: 10px 10px;
   text-decoration: none;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
 }
 
 .taskbook {
