@@ -10,3 +10,25 @@ console.log(NewApi.getEventList())
 console.log('test');
 
 
+
+const id = '81baeca1afc0'
+
+const newEvent = {
+    name: 'mega event',
+    dates: [
+        '2022-10-05',
+        '2022-10-06',
+    ],
+    author: 'Jean',
+    description: 'un supermega event'
+}
+
+console.log(NewApi.getEvent(id))
+console.log(NewApi.getAttendees())
+console.log(NewApi.getAttendances('Michou'))
+console.log(NewApi.createEvent(newEvent))
+console.log(NewApi.updateEvent('1456bdbb8a97', { author: 'Jacques' }))
+// console.log(NewApi.deleteEvent('1456bdbb8a97'))
+
+
+
