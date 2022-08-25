@@ -2,23 +2,49 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./assets/css/styles.css"/>
         <script src="./assets/js/index.js" defer type="module"></script>
-
-        <link rel="stylesheet" href="./assets/css/styles.css" />
-
         <title>DidlyDoo</title>
     </head>
     <body>
         <header>
-            <img src="assets/img/logo.png" alt="DidlyDoo">
+            <div class="header__div">
+            <img src="assets/img/logo.png" alt="DidlyDoo" class="header__div__img">
+            </div>
         </header>
-        <main id="main" class="main"></main>
-        <form class="event_new">
-            <button class="event_button">
-                <img src="/assets/img/add.png" alt="" class="event_img">
+        <main id="main" class="main">
+            <ul class="event__list">
+                <li class="event__list__items">
+                    <!--Test a supprimer-->
+                    
+                    <p>Mon Anniversaire</p>
+                    
+                    <div class="event__list__items__options">
+                        
+                        <button id="event__list__items__options__delete__id" class="event__list__items__options__delete">
+                            <img src="assets/img/delete_black.png" alt="delete" class="event__list__items__options__delete__img">
+                        </button>
+                        
+                        <button id="event__list__items__options__delete__id" class="event__list__items__options__edit">
+                            <img src="assets/img/edit_black.png" alt="edit" class="event__list__items__options__edit__img">
+                        </button>
+                        
+                        <button id="event__list__items__options__delete__id" class="event__list__items__options__join">
+                            <img src="assets/img/join_black.png" alt="join" class="event__list__items__options__join__img">
+                        
+                        </button>
+                    
+                    </div>
+                
+                </li>
+            </ul>
+        </main>
+        
+        <form class="event__new">
+            <button class="event__new__button">
+                <img src="/assets/img/add.png" alt="" class="event__new__button__img">
             </button>
         </form>
     </body>
