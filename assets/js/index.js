@@ -1,5 +1,3 @@
-
-import { FetchApi } from "./controllers/API/fetchApi.js";
 import { showEvent } from "./views/event/show-event.js";
 import { FetchApi } from "./controllers/API/fetchApi.js"
 import { DisplayEvenlist } from "./views/home/displays_items.js";
