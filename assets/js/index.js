@@ -1,5 +1,8 @@
+
 import { FetchApi } from "./controllers/API/fetchApi.js";
 import { showEvent } from "./views/event/show-event.js";
+import { FetchApi } from "./controllers/API/fetchApi.js"
+import { DisplayEvenlist } from "./views/home/displays_items.js";
 
 // const method = 'POST'
 
@@ -7,8 +10,8 @@ import { showEvent } from "./views/event/show-event.js";
 
 const NewApi = new FetchApi()
 
-console.log(NewApi.getEventList())
-console.log('test');
+// console.log(NewApi.getEventList())
+// console.log('test');
 
 
 
@@ -32,4 +35,7 @@ const newEvent = {
 // console.log(NewApi.deleteEvent('1456bdbb8a97'))
 const newId = "6620266b4947"
 showEvent(newId, NewApi);
+
+DisplayEvenlist();
+
 
