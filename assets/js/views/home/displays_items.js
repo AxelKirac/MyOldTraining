@@ -1,6 +1,6 @@
-import { TemplateItems } from "./item_template";
-import { templateElement } from "../templateElement";
-import { FetchApi } from "../../controllers/API/fetchApi";
+import { TemplateItems } from "./item_template.js";
+import { templateElement } from "../templateElement.js";
+import { FetchApi } from "../../controllers/API/fetchApi.js";
 
 
 export async function DisplayEvenlist(){

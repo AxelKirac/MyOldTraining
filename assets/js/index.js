@@ -8,7 +8,7 @@ import { DisplayEvenlist } from "./views/home/displays_items.js";
 
 const NewApi = new FetchApi()
 
-// console.log(NewApi.getEventList())
+console.log(NewApi.getEventList())
 // console.log('test');
 
 
@@ -34,6 +34,6 @@ const newEvent = {
 const newId = "6620266b4947"
 showEvent(newId, NewApi);
 
-DisplayEvenlist();
+// DisplayEvenlist();
 
 

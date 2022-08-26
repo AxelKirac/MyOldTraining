@@ -12,5 +12,5 @@ export const templateElement = (html) => {
     html = html.trim()
     template.innerHTML = html
 
-    return template.content.childNodes[0]
+    return template.content
 }
