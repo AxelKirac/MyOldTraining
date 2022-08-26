@@ -67,6 +67,20 @@ export class FetchApi {
     }
 
     /**
+     * Get a list of all attendees for a given event.
+     * 
+     * @param {String} id 
+     * @returns 
+     */
+    async getEventAttendees(id) {
+        const event = await this.getEvent(id)
+        const attendees = event.dates[0].attendees
+        let outpuArray = attendees.map((attendee) => attendee.name)
+
+        return outpuArray
+    }
+
+    /**
      * Get all attendances for a given name.
      * 
      * @param {String} name
