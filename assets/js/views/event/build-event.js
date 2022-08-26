@@ -3,10 +3,10 @@ import { templateElement } from "../templateElement.js";
 import { eventTemplate } from "./event-template.js";
 import { eventTableTemplate } from "./event-table-template.js";
 
-export function buildEvent(name) {
+export function buildEvent(event) {
     const theMain = document.querySelector('#main');
     theMain.innerHTML='';
-    mainContainer(name);
+    mainContainer(event.name);
     eventTable();
 }
 
