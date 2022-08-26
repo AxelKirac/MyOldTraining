@@ -1,7 +1,5 @@
 export function TemplateItems(name) {
     
-    
-    
     return ` <li class="event__list__items">
     
     <p>${name}</p>
