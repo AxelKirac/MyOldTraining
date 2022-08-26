@@ -1,20 +1,4 @@
-
-// export const fetchApi = async (method, body) => {
-//     const rawResponse = await fetch('http://localhost:3000/api/events/', {
-//         method: method,
-//         headers: {
-//             'Accept': 'application/json',
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(body)
-//     })
-
-//     const output = await rawResponse.json()
-
-//     return output
-
-// }
-
+import { SETTINGS } from "../../models/settings.js"
 
 export class FetchApi {
 
@@ -31,13 +15,13 @@ export class FetchApi {
             datas.body = JSON.stringify(body)
         }
 
+        const url = SETTINGS.apiUrl
 
-        const rawResponse = await fetch(`http://localhost:3000${route}`, datas)
+        const rawResponse = await fetch(`${url}${route}`, datas)
 
         const output = await rawResponse.json()
 
         return output
-
     }
 
     getEventList() {
