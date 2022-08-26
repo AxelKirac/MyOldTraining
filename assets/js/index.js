@@ -32,8 +32,8 @@ const newEvent = {
 // console.log(NewApi.updateEvent('1456bdbb8a97', { author: 'Jacques' }))
 // console.log(NewApi.deleteEvent('1456bdbb8a97'))
 const newId = "6620266b4947"
-showEvent(newId, NewApi);
+// showEvent(newId, NewApi);
 
-// DisplayEvenlist();
+DisplayEvenlist();
 
 
