@@ -1,4 +1,5 @@
-import { FetchApi } from "./controllers/API/fetchApi.js"
+import { FetchApi } from "./controllers/API/fetchApi.js";
+import { showEvent } from "./views/event/show-event.js";
 
 // const method = 'POST'
 
@@ -23,12 +24,12 @@ const newEvent = {
     description: 'un supermega event'
 }
 
-console.log(NewApi.getEvent(id))
-console.log(NewApi.getAttendees())
-console.log(NewApi.getAttendances('Michou'))
-console.log(NewApi.createEvent(newEvent))
-console.log(NewApi.updateEvent('1456bdbb8a97', { author: 'Jacques' }))
+// console.log(NewApi.getEvent(id))
+// console.log(NewApi.getAttendees())
+// console.log(NewApi.getAttendances('Michou'))
+// console.log(NewApi.createEvent(newEvent))
+// console.log(NewApi.updateEvent('1456bdbb8a97', { author: 'Jacques' }))
 // console.log(NewApi.deleteEvent('1456bdbb8a97'))
-
-
+const newId = "6620266b4947"
+showEvent(newId, NewApi);
 
