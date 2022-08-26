@@ -3,6 +3,7 @@ import { FetchApi } from "./controllers/API/fetchApi.js"
 import { DisplayEvenlist } from "./views/home/displays_items.js";
 // import { idForButtons } from "./views/home/id_forButtons.js";
 
+
 // const method = 'POST'
 
 // const data = { name: 'super event', dates: ['2023-10-24', '2023-10-25', '2023-10-26'], author: 'toto', description: 'test event' }
@@ -28,14 +29,17 @@ const newEvent = {
 
 // console.log(NewApi.getEvent(id))
 // console.log(NewApi.getAttendees())
-// console.log(NewApi.getAttendances('Michou'))
+console.log(NewApi.getAttendances('Michou'))
+console.log(NewApi.getEventAttendees('38b643aeb883'))
 // console.log(NewApi.createEvent(newEvent))
 // console.log(NewApi.updateEvent('1456bdbb8a97', { author: 'Jacques' }))
 // console.log(NewApi.deleteEvent('1456bdbb8a97'))
-const newId = "6620266b4947"
-// showEvent(newId, NewApi);
+
 
 DisplayEvenlist();
 idForButtons();
+
+// DisplayEvenlist();
+
 
 
