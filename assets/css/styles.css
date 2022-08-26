@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -314,10 +315,23 @@ body {
   align-items: center;
   justify-content: center;
   background-color: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: italic;
+  background-image: url("/assets/img/background_site.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header__div__img {
+  margin-top: 180px;
+  width: 600px;
 }
 
 .event__list {
-  border: 1px solid black;
+  border: 1px solid gray;
+  margin-top: 100px;
+  background-color: white;
+  opacity: 0.6;
 }
 .event__list__items {
   display: flex;
@@ -325,15 +339,24 @@ body {
   justify-content: center;
   align-items: center;
 }
-.event__list__items__options__delete {
-  width: 30px;
-  margin-left: 5px;
-}
-.event__list__items__options__delete:hover {
-  background-image: "assets/img/delete_white.png";
-}
 .event__list__items p {
   font-size: 40px;
+}
+
+.event__list__items__options__delete, .event__list__items__options__edit, .event__list__items__options__join {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-left: 5px;
+}
+.event__list__items__options__delete__img__black, .event__list__items__options__edit__img__black, .event__list__items__options__join__img__black {
+  width: 50px;
+}
+.event__list__items__options__delete__img__black:hover, .event__list__items__options__edit__img__black:hover, .event__list__items__options__join__img__black:hover {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
 }
 
 .event__new__button {
@@ -341,6 +364,56 @@ body {
   background-color: transparent;
   outline: none;
 }
-.event__new__button__img {
+.event__new__button__container {
+  background-color: red;
+  opacity: 0.4;
+  width: 400px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.event__new__button__container:hover {
+  background-color: green;
+  opacity: 0.8;
+}
+.event__new__button__container__img {
   width: 50px;
+  margin-right: 10px;
+}
+.event__new__button:hover {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
 }/*# sourceMappingURL=styles.css.map */
