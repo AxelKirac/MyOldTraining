@@ -3,6 +3,8 @@ import { FetchApi } from "./controllers/API/fetchApi.js"
 import { DisplayEvenlist } from "./views/home/displays_items.js";
 // import { idForButtons } from "./views/home/id_forButtons.js";
 
+import { showTask } from "./views/task/showTask.js"
+
 
 // const method = 'POST'
 
@@ -37,13 +39,14 @@ console.log(NewApi.getEventAttendees('38b643aeb883'))
 
 const newId = "38b643aeb883"
 
-showEvent(newId, NewApi);
+// showEvent(newId, NewApi);
 
-DisplayEvenlist();
-idForButtons();
+// DisplayEvenlist();
 
 
 // DisplayEvenlist();
+
+showTask()
 
 
 
