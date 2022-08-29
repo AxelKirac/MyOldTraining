@@ -1,7 +1,9 @@
 import { showEvent } from "./views/event/show-event.js";
 import { FetchApi } from "./controllers/API/fetchApi.js"
-import { DisplayEvenlist } from "./views/home/displays_items.js";
+import { displayItems } from "./views/home/displays_items.js";
 // import { idForButtons } from "./views/home/id_forButtons.js";
+
+import { showTask } from "./views/task/showTask.js"
 
 
 // const method = 'POST'
@@ -29,20 +31,33 @@ const newEvent = {
 
 // console.log(NewApi.getEvent(id))
 // console.log(NewApi.getAttendees())
-console.log(NewApi.getAttendances('Michou'))
-console.log(NewApi.getEventAttendees('38b643aeb883'))
+// console.log(NewApi.getAttendances('Michou'))
+// console.log(NewApi.getEventAttendees('38b643aeb883'))
 // console.log(NewApi.createEvent(newEvent))
 // console.log(NewApi.updateEvent('1456bdbb8a97', { author: 'Jacques' }))
 // console.log(NewApi.deleteEvent('1456bdbb8a97'))
 
-const newId = "38b643aeb883"
+const newId = "38b643aeb883";
+
+
 
 showEvent(newId, NewApi);
 
 // DisplayEvenlist();
 
 
+
+// showEvent(newId, NewApi);
+
+
+displayItems();
+
+
 // DisplayEvenlist();
+
+showTask(NewApi, newId)
+
+// showTask(NewApi)
 
 
 
