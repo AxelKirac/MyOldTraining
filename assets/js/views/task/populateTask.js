@@ -1,9 +1,12 @@
+import { populateTaskDates } from "./populateTaskDates.js"
+
 export const populateTask = async (id, NewApi) => {
     const event = await NewApi.getEvent(id)
 
     updateAuthorInput(event.author)
     updateEventNameInput(event.name)
     updateEventDescriptionInput(event.description)
+    populateTaskDates(event.dates)
 }
 
 const updateAuthorInput = (author) => {
