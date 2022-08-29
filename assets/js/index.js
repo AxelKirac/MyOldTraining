@@ -29,23 +29,18 @@ const newEvent = {
 
 // console.log(NewApi.getEvent(id))
 // console.log(NewApi.getAttendees())
-console.log(NewApi.getAttendances('Michou'))
-console.log(NewApi.getEventAttendees('38b643aeb883'))
+// console.log(NewApi.getAttendances('Michou'))
+// console.log(NewApi.getEventAttendees('38b643aeb883'))
 // console.log(NewApi.createEvent(newEvent))
 // console.log(NewApi.updateEvent('1456bdbb8a97', { author: 'Jacques' }))
 // console.log(NewApi.deleteEvent('1456bdbb8a97'))
 const newId = "38b643aeb883"
-showEvent(newId, NewApi);
 
-const newId = "38b643aeb883"
 
-showEvent(newId, NewApi);
+// showEvent(newId, NewApi);
+
 
 DisplayEvenlist();
-idForButtons();
-
-
-// DisplayEvenlist();
 
 
 

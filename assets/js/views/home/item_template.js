@@ -20,7 +20,6 @@ export function TemplateItems(name, id) {
     
     </div>
 
-</li>
-</ul>`
+</li>`
 
 }
