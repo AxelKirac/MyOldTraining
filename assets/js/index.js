@@ -37,9 +37,13 @@ console.log(NewApi.getEventAttendees('38b643aeb883'))
 const newId = "38b643aeb883"
 showEvent(newId, NewApi);
 
+const newId = "38b643aeb883"
+
+showEvent(newId, NewApi);
 
 DisplayEvenlist();
 idForButtons();
+
 
 // DisplayEvenlist();
 
