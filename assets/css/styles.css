@@ -320,6 +320,12 @@ body {
   background-image: url("/assets/img/background_site.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 1700px) {
+  body {
+    background-size: 10000px;
+  }
 }
 
 .header__div__img {
