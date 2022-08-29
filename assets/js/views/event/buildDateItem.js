@@ -1,5 +1,7 @@
 import {dateTemplate} from'./date-template.js'
 import { templateElement } from '../templateElement.js';
+import { buildAvailability } from './build-availability.js';
+
 export function buildDateItem(dates){
     console.log(dates);
    const parent = document.getElementById('event-table-dates');
@@ -8,5 +10,6 @@ export function buildDateItem(dates){
     const template = dateTemplate(date.date);
     const newElement = templateElement(template);
     parent.appendChild(newElement);
+    buildAvailability(date.attendees);
    });
 }
