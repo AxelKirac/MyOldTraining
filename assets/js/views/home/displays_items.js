@@ -3,6 +3,7 @@ import { templateElement } from "../templateElement.js";
 import { FetchApi } from "../../controllers/API/fetchApi.js";
 import { deleteButtonListeners } from "../../controllers/deleteButtonListeners.js";
 import { displayListTemplate } from "./displayList_template.js";
+import { addJoinButtonListener } from "../../controllers/showEventListener.js";
 
 export async function DisplayEvenlist(){
     const NewApi = new FetchApi()
@@ -18,6 +19,7 @@ export async function DisplayEvenlist(){
         const main = document.querySelector('#event--list');
         main.appendChild(element);
         addDeleteButtonListener(item.id, NewApi)
+        addJoinButtonListener(item.id, NewApi);
     });
 }
 
