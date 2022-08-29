@@ -5,7 +5,7 @@ import { deleteButtonListeners } from "../../controllers/deleteButtonListeners.j
 import { displayListTemplate } from "./displayList_template.js";
 import { addJoinButtonListener } from "../../controllers/showEventListener.js";
 
-export async function DisplayEvenlist(){
+export async function displayItems(){
     const NewApi = new FetchApi()
     const EventName = await NewApi.getEventList();
     const ulList = document.querySelector('#main');

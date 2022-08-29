@@ -1,6 +1,6 @@
 import { showEvent } from "./views/event/show-event.js";
 import { FetchApi } from "./controllers/API/fetchApi.js"
-import { DisplayEvenlist } from "./views/home/displays_items.js";
+import { displayItems } from "./views/home/displays_items.js";
 // import { idForButtons } from "./views/home/id_forButtons.js";
 
 
@@ -40,7 +40,7 @@ const newId = "38b643aeb883"
 // showEvent(newId, NewApi);
 
 
-DisplayEvenlist();
+displayItems();
 
 
 
