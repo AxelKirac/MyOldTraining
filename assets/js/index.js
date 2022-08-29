@@ -34,7 +34,7 @@ const newEvent = {
 // console.log(NewApi.createEvent(newEvent))
 // console.log(NewApi.updateEvent('1456bdbb8a97', { author: 'Jacques' }))
 // console.log(NewApi.deleteEvent('1456bdbb8a97'))
-const newId = "38b643aeb883"
+const newId = "38b643aeb883";
 
 
 // showEvent(newId, NewApi);
