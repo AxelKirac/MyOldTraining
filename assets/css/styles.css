@@ -309,11 +309,34 @@ template {
   display: none;
 }
 
+.event__main__container {
+  display: flex;
+  flex-direction: row-reverse;
+}
 .event__main__container .event__table__dates {
   display: flex;
   flex-direction: column;
+  margin-left: 80px;
 }
-.event__main__container .event__table__availability .table__availability__choice {
+.event__main__container .event__table__date {
+  display: flex;
+  flex-direction: column;
+}
+.event__main__container .event__table__availability {
+  display: flex;
+  flex-direction: column;
+}
+.event__main__container .event__table__names {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.event__main__container .event__table .attendee__name {
+  display: flex;
+}
+
+.table__availability__choice {
   display: flex;
 }
 

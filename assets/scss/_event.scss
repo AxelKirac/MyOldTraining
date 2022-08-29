@@ -7,21 +7,41 @@
 //     }
 // }
 
-
 .event__main__container {
-    .event__table__dates {
+    display: flex;
+    flex-direction: row-reverse;
+    .event__table{
+        &__dates {
         display: flex;
         flex-direction: column;
-    }
-    .event__table__availability {
-        .table__availability__choice {
-            display: flex;
+        margin-left: 80px;
+        
         }
+        &__date {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__availability {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &__names {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+    .attendee__name {
+        display: flex;
     }
 }
+}
 
-// .event__table__availability {
-//     &__choice {
-//         display: flex;
-//     }
-// }
+
+.table__availability__choice {
+    display: flex;
+    
+}
