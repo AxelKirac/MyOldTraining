@@ -309,6 +309,14 @@ template {
   display: none;
 }
 
+.event__main__container .event__table__dates {
+  display: flex;
+  flex-direction: column;
+}
+.event__main__container .event__table__availability .table__availability__choice {
+  display: flex;
+}
+
 body {
   display: flex;
   flex-direction: column;
