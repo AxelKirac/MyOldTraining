@@ -1,5 +1,5 @@
 import { buildDateInput } from "./buildDateInput.js"
-import { formatId } from "../../utils.js/formatId.js"
+import { formatId } from "../../utils/formatId.js"
 
 export const populateTaskDates = (dates) => {
     dates.forEach((date, index) => {

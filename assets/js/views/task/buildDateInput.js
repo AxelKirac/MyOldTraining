@@ -1,6 +1,6 @@
 import { templateElement } from "../templateElement.js"
 import { dateInputTemplate } from "./dateInputTemplate.js"
-import { formatId } from "../../utils.js/formatId.js"
+import { formatId } from "../../utils/formatId.js"
 
 export const buildDateInput = (id = 0) => {
     const datesContainer = document.getElementById('event-dates')
