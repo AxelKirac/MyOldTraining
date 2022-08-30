@@ -60,6 +60,41 @@ body {
         }
 
     }
+
+ .event {
+    display: flex;
+    flex-direction: row;
+ }
+    
+.event__back {
+    
+    h1 {
+        margin-right: 5px;
+    }
+    &__button {
+        border:none;
+        background-color: transparent;
+        outline: none;
+        &__container {
+            border-radius: 10%;
+            background-color: red;
+            opacity: 0.4;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: green;
+                opacity: 0.8;
+            }
+            &__img {
+                width: 50px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
 .event__new {
     &__button {
         border: none;
@@ -108,4 +143,3 @@ body {
   }
 
 }
-
