@@ -4,7 +4,6 @@ import { displayItems } from "./views/home/displays_items.js";
 
 // import { idForButtons } from "./views/home/id_forButtons.js";
 
-import { showTask } from "./views/task/showTask.js"
 
 
 // const method = 'POST'
@@ -51,12 +50,12 @@ const newId = "38b643aeb883";
 // showEvent(newId, NewApi);
 
 
-// displayItems();
+displayItems();
 
 
 // DisplayEvenlist();
 
-showTask(NewApi, newId)
+// showTask(NewApi, newId)
 
 // showTask(NewApi)
 
