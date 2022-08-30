@@ -453,4 +453,13 @@ body {
   40%, 60% {
     transform: translate3d(2px, 0, 0);
   }
+}
+.btn__task__choice {
+  display: flex;
+}
+.btn__task__choice__true {
+  display: flex;
+}
+.btn__task__choice__false {
+  display: flex;
 }/*# sourceMappingURL=styles.css.map */

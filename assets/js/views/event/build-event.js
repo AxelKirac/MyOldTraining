@@ -4,6 +4,7 @@ import { eventTemplate } from "./event-template.js";
 import { eventTableTemplate } from "./event-table-template.js";
 import { buildDateItem } from "./buildDateItem.js";
 import { buildNames } from "./build-names.js";
+import { eventValidateInput } from "./eventValidateInput.js";
 
 export function buildEvent(event, id) {
     const theMain = document.querySelector('#main');
@@ -11,7 +12,8 @@ export function buildEvent(event, id) {
     mainContainer(event.name);
     eventTable();
     buildDateItem(event.dates);
-    buildNames(id)
+    buildNames(id);
+    eventValidateInput();
 }
 
 function eventTable(){
