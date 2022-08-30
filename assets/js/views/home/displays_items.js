@@ -5,14 +5,14 @@ import { deleteButtonListeners } from "../../controllers/deleteButtonListeners.j
 import { displayListTemplate } from "./displayList_template.js";
 import { addJoinButtonListener } from "../../controllers/showEventListener.js";
 
-export async function displayItems(){
+export async function displayItems() {
     const NewApi = new FetchApi()
     const EventName = await NewApi.getEventList();
     const ulList = document.querySelector('#main');
     const ulTemplate = displayListTemplate();
-        const ulElement = templateElement(ulTemplate);
-        ulList.appendChild(ulElement);
-        console.log(EventName)
+    const ulElement = templateElement(ulTemplate);
+    ulList.appendChild(ulElement);
+    console.log(EventName)
     EventName.forEach(item => {
         const template = TemplateItems(item.name, item.id);
         const element = templateElement(template);
@@ -30,6 +30,5 @@ function getDeleteButtonId(id) {
 function addDeleteButtonListener(id, NewApi) {
     const buttonid = getDeleteButtonId(id);
     const buttonDelete = document.querySelector(getDeleteButtonId(id));
-    // console.log(buttonid)
     deleteButtonListeners(id, buttonDelete, NewApi);
 }

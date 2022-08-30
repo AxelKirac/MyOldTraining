@@ -1,6 +1,7 @@
 import { showEvent } from "./views/event/show-event.js";
 import { FetchApi } from "./controllers/API/fetchApi.js"
 import { displayItems } from "./views/home/displays_items.js";
+
 // import { idForButtons } from "./views/home/id_forButtons.js";
 
 import { showTask } from "./views/task/showTask.js"
@@ -12,7 +13,7 @@ import { showTask } from "./views/task/showTask.js"
 
 const NewApi = new FetchApi()
 
-console.log(NewApi.getEventList())
+// console.log(NewApi.getEventList())
 // console.log('test');
 
 
@@ -41,7 +42,7 @@ const newId = "38b643aeb883";
 
 
 
-showEvent(newId, NewApi);
+// showEvent(newId, NewApi);
 
 // DisplayEvenlist();
 
@@ -55,7 +56,7 @@ displayItems();
 
 // DisplayEvenlist();
 
-showTask(NewApi, newId)
+// showTask(NewApi, newId)
 
 // showTask(NewApi)
 

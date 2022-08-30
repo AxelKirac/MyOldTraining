@@ -5,5 +5,7 @@ import { populateTask } from "./populateTask.js"
 export const showTask = (NewApi, id = null) => {
     buildTask()
 
+    console.log('hello');
+
     id ? populateTask(id, NewApi) : buildDateInput()
 }

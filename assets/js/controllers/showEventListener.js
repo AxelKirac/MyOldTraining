@@ -1,4 +1,4 @@
-import { showEvent } from "../views/event/show-event";
+import { showEvent } from "../views/event/show-event.js";
 
 function getJoinButtonId(id) {
     return `#event__list__items__options__join__${id}`
