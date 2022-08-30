@@ -2,7 +2,8 @@ export const getTaskValues = () => {
     return {
         author: getAuthorInputValue(),
         name: getEventNameInputValue(),
-        description: getEventDescriptionInputValue()
+        description: getEventDescriptionInputValue(),
+        dates: getDatesInputValues()
     }
 }
 
@@ -28,5 +29,11 @@ const getEventDescriptionInputValue = () => {
 }
 
 const getDatesInputValues = () => {
+    const datesContainerId = 'event-dates'
+    const datesContainerElement = document.getElementById(datesContainerId)
+    const datesElements = [...document.querySelectorAll('.event__dates__date')]
+
+    return datesElements.map(date => date.value);
+
 
 }

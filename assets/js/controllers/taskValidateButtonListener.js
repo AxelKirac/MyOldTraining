@@ -6,16 +6,29 @@ export const taskValidateButtonListener = (element, NewApi, id = null) => {
 }
 
 async function taskValidateButtonHandler(id, NewApi) {
-    if (id) {
-        const datas = getTaskValues()
+    const datas = getTaskValues()
 
-        console.log(datas);
-        await NewApi.updateEvent(id, datas)
+    console.log(datas);
+
+    if (id) {
+        // Update an event
+        await NewApi.updateEvent(id, {
+            author: datas.author,
+            name: datas.name,
+            description: datas.description
+        })
+        await NewApi.addPossibleDates(id, {
+            dates: datas.dates
+        })
     } else {
-        // NewApi.createEvent(datas)
+        // Create an event
+        await NewApi.createEvent(datas)
     }
 
-    const main = document.querySelector('#main');
-    main.innerHTML = "";
-    displayItems();
+
+    console.log(NewApi.getEvent(id))
+
+    // const main = document.querySelector('#main');
+    // main.innerHTML = "";
+    // displayItems();
 } 
