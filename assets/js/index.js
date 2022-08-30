@@ -13,7 +13,7 @@ import { showTask } from "./views/task/showTask.js"
 
 const NewApi = new FetchApi()
 
-// console.log(NewApi.getEventList())
+console.log(NewApi.getEventList())
 // console.log('test');
 
 
@@ -38,7 +38,7 @@ const newEvent = {
 // console.log(NewApi.updateEvent('1456bdbb8a97', { author: 'Jacques' }))
 // console.log(NewApi.deleteEvent('1456bdbb8a97'))
 
-const newId = "38b643aeb883";
+const newId = "20e8e7d46fbc";
 
 
 
