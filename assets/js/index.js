@@ -57,7 +57,7 @@ displayItems();
 
 // showTask(NewApi, newId)
 
-showTask(NewApi)
+// showTask(NewApi)
 
 
 
