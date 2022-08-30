@@ -28,7 +28,7 @@ async function taskValidateButtonHandler(id, NewApi) {
 
     console.log(NewApi.getEvent(id))
 
-    // const main = document.querySelector('#main');
-    // main.innerHTML = "";
-    // displayItems();
+    const main = document.querySelector('#main');
+    main.innerHTML = "";
+    displayItems();
 } 
