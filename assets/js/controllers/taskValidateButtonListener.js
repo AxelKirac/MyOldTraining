@@ -8,8 +8,6 @@ export const taskValidateButtonListener = (element, NewApi, id = null) => {
 async function taskValidateButtonHandler(id, NewApi) {
     const datas = getTaskValues()
 
-    console.log(datas);
-
     if (id) {
         // Update an event
         await NewApi.updateEvent(id, {

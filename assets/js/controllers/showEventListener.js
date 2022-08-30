@@ -8,6 +8,4 @@ export function addJoinButtonListener(id, NewApi) {
     const buttonid = getJoinButtonId(id);
     const buttonJoin = document.querySelector(getJoinButtonId(id));
     buttonJoin.addEventListener('click', () => showEvent(id, NewApi))
-    // console.log(buttonid)
-    // deleteButtonListeners(id, buttonDelete, NewApi);
 }

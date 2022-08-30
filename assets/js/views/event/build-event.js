@@ -1,4 +1,3 @@
-
 import { templateElement } from "../templateElement.js";
 import { eventTemplate } from "./event-template.js";
 import { eventTableTemplate } from "./event-table-template.js";

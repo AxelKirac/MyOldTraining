@@ -1,6 +1,6 @@
 import { TemplateItems } from "./item_template.js";
 import { templateElement } from "../templateElement.js";
-import { FetchApi } from "../../controllers/API/fetchApi.js";
+import { FetchApi } from "../../models/API/fetchApi.js";
 import { deleteButtonListeners } from "../../controllers/deleteButtonListeners.js";
 import { displayListTemplate } from "./displayList_template.js";
 import { addJoinButtonListener } from "../../controllers/showEventListener.js";
@@ -13,7 +13,6 @@ export async function displayItems() {
     const ulTemplate = displayListTemplate();
     const ulElement = templateElement(ulTemplate);
     ulList.appendChild(ulElement);
-    console.log(EventName)
     EventName.forEach(item => {
         const template = TemplateItems(item.name, item.id);
         const element = templateElement(template);
@@ -42,8 +41,6 @@ function getEditButtonId(id) {
 
 export function addEditButtonListener(NewApi, id) {
     const idbutton = getEditButtonId(id);
-    console.log(idbutton)
     const editButton = document.querySelector(idbutton)
-    console.log(editButton)
     editButton.addEventListener('click', () => showTask(NewApi, id))
 }
