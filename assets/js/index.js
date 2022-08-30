@@ -51,12 +51,12 @@ const newId = "38b643aeb883";
 // showEvent(newId, NewApi);
 
 
-displayItems();
+// displayItems();
 
 
 // DisplayEvenlist();
 
-// showTask(NewApi, newId)
+showTask(NewApi, newId)
 
 // showTask(NewApi)
 
