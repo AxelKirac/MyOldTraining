@@ -12,7 +12,7 @@ class AllCompaniesController extends Controller
     */
     public function index()
     {
-        $db = new Query('cogip');
+        $db = new Query();
         $dbResult = $db->fetchAll("");
         return $this->view('allcompanies', $dbResult);
     } 

@@ -4,7 +4,7 @@ namespace App\Core;
 
 class Query {
     private $db;
-    public function __construct($dbName, $host = "localhost", $user = 'root', $pswd = '') {
+    public function __construct($dbName = 'cogip', $host = "localhost", $user = 'root', $pswd = '') {
         try
         {
             // On se connecte à MySQL
@@ -19,9 +19,9 @@ class Query {
     /**
      * Select every value from a query.
     */
-    public function fetchAll($query) {
+    public function fetchAll($query, $exec = null) {
         $req = $this->db->prepare($query);
-        $req->execute();
+        $req->execute($exec);
         $res = $req->fetchAll();
         $req = null;
         return $res;
@@ -29,10 +29,20 @@ class Query {
     /**
      * Select a specific value from a query.
     */
-    public function fetchAssoc($query) {
+    public function fetchAssoc($query, $exec = null) {
         $req = $this->db->prepare($query);
-        $req->execute();
+        $req->execute($exec);
         $res = $req->fetch(PDO::FETCH_ASSOC);
+        $req = null;
+        return $res;
+    }
+    /**
+     * Select a specific column from a query.
+    */
+    public function fetchColumn($query, $exec = null) {
+        $req = $this->db->prepare($query);
+        $req->execute($exec);
+        $res = $req->fetchColumn();
         $req = null;
         return $res;
     }
