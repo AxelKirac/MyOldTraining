@@ -1,5 +1,8 @@
 set SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 set time_zone = "+01:00";
+
+drop database if exists cogip;
 
 create database if not exists cogip;
 use cogip;
@@ -11,6 +14,8 @@ create table if not exists `roles` (
     `updated_at` datetime default CURRENT_TIMESTAMP,
     primary key (id)
 ) ENGINE=InnoDB default CHARSET=latin1 AUTO_INCREMENT=1;
+
+drop trigger if exists roles_update;
 
 delimiter $$
 create trigger roles_update before update on roles
@@ -29,6 +34,8 @@ create table if not exists `permissions` (
     `updated_at` datetime not null,
     primary key (id)
 ) ENGINE=InnoDB default CHARSET=latin1 AUTO_INCREMENT=1;
+
+drop trigger if exists permissions_update;
 
 delimiter $$
 create trigger permissions_update before update on `permissions`
@@ -63,8 +70,10 @@ create table if not exists `users` (
     foreign key (role_id) references roles(id)
 ) ENGINE=InnoDB default CHARSET=latin1 AUTO_INCREMENT=1;
 
+drop trigger if exists users_update;
+
 delimiter $$
-create trigger permissions_update before update on users
+create trigger users_update before update on users
 for each row
 begin
     if      new.first_name != old.first_name
@@ -85,8 +94,10 @@ create table if not exists `types` (
     primary key (id)
 ) ENGINE=InnoDB default CHARSET=latin1 AUTO_INCREMENT=1;
 
+drop trigger if exists types_update;
+
 delimiter $$
-create trigger permissions_update before update on `types`
+create trigger types_update before update on `types`
 for each row
 begin
     if new.name != old.name then
@@ -107,8 +118,10 @@ create table if not exists `companies` (
     foreign key (type_id) references types(id)
 ) ENGINE=InnoDB default CHARSET=latin1 AUTO_INCREMENT=1;
 
+drop trigger if exists companies_update;
+
 delimiter $$
-create trigger permissions_update before update on companies
+create trigger companies_update before update on companies
 for each row
 begin
     if      new.type_id != old.type_id
@@ -132,8 +145,10 @@ create table if not exists `contacts` (
     foreign key (company_id) references companies(id)
 ) ENGINE=InnoDB default CHARSET=latin1 AUTO_INCREMENT=1;
 
+drop trigger if exists contacts_update;
+
 delimiter $$
-create trigger permissions_update before update on contacts
+create trigger contacts_update before update on contacts
 for each row
 begin
     if      new.company_id != old.company_id
@@ -157,8 +172,10 @@ create table if not exists `invoices` (
     foreign key (id_company) references companies(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 
+drop trigger if exists invoices_update;
+
 delimiter $$
-create trigger permissions_update before update on invoices
+create trigger invoices_update before update on invoices
 for each row
 begin
     if      new.ref != old.ref
