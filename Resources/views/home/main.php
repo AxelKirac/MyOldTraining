@@ -2,7 +2,7 @@
     <div class="section_align">
         <h1>Last Invoices</h1>
        
-        <section class="table_title table_align">
+        <section class="table_title table_align_4">
            <div><p>Invoices number</p></div>
            <div><p>Due dates</p></div>
            <div><p>Company</p></div>
@@ -27,7 +27,7 @@
     <div class="section_align">
         <h1>Last contacts</h1>
        
-       <section class="table_title table_align">
+       <section class="table_title table_align_5">
            <div><p>Name</p></div>
            <div><p>Phone</p></div>
            <div><p>Mail</p></div>
@@ -53,7 +53,7 @@
     <div class="section_align">
        <h1>Last companies</h1>
        
-       <section class="table_title table_align">
+       <section class="table_title table_align_5">
            <div><p>Name</p></div>
            <div><p>TVA</p></div>
            <div><p>Country</p></div>

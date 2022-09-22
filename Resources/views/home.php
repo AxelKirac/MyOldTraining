@@ -9,5 +9,6 @@
     <body>
         <?php require ('home/header.php');?>
         <?php require ('home/main.php');?>
+        <?php require ('home/footer.php');?>
     </body>
 </html>
