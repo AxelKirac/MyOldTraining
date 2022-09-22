@@ -17,10 +17,17 @@ header {
      object-fit: fill;
 }
 
-.table_align {
+.table_align, .table_align_5, .table_align_4 {
   display: grid;
-  grid-template-columns: repeat(4, 150px);
   grid-template-rows: repeat(auto-fill, auto);
+}
+
+.table_align_4 {
+  grid-template-columns: repeat(4, 150px);
+}
+
+.table_align_5 {
+  grid-template-columns: repeat(5, 150px);
 }
 
 .section_align {
