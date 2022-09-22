@@ -12,7 +12,7 @@ class LastAllController extends Controller
     */
     public function index()
     {
-        $db = new Query();
+        $db = new Query('cogip');
         $invoicesResult=$db->fetchAll("SELECT ref, created_at FROM invoices ORDER BY created_at DESC LIMIT 5");
         $contactsResult=$db->fetchAll("SELECT name, phone, email, created_at FROM contacts ORDER BY created_at DESC LIMIT 5");
         $companiesResult=$db->fetchAll("SELECT name, tva, country, created_at FROM companies ORDER BY created_at DESC LIMIT 5");

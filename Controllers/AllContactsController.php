@@ -12,7 +12,8 @@ class AllContactsController extends Controller
     */
     public function index()
     {
-        $db = new Query();
+        $db = new Query('cogip');
+        
         $dbResult = $db->fetchAll("");
         return $this->view('allcontacts', $dbResult);
     } 

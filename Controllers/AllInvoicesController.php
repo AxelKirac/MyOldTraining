@@ -13,7 +13,8 @@ class AllInvoicesController extends Controller
     public function index()
     {
         $db = new Query();
-        $dbResult = $db->fetchAll("");
+        $AllInvoices = $db->fetchAll("SELECT ref, due_date, created_at FROM invoices");
+        $AllinvoicesResult= [""];
         return $this->view('allinvoices', $dbResult);
     } 
 }
