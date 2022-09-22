@@ -10,7 +10,7 @@
         </section>
 
         <div>
-            <section class="table_content table_align">
+            <section class="table_content table_align_4">
                 <?php
                 foreach($invoices as $invoice) { ?>
                     <div><p><?php echo $invoice['ref']; ?></p></div>
@@ -35,7 +35,7 @@
            <div><p>Created at</p></div>
        </section>
        <div>
-           <section class="table_content table_align">
+           <section class="table_content table_align_5">
                 <?php
                 foreach($contacts as $contact) { ?>
                     <div><p><?php echo $contact['name']; ?></p></div>
@@ -62,7 +62,7 @@
        </section>
 
        <div>
-           <section class="table_content table_align">
+           <section class="table_content table_align_5">
                 <?php
                 foreach($companies as $companie) { ?>
                     <div><p><?php echo $companie['name']; ?></p></div>
