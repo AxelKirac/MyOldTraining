@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-image: url(../img/Header.png);
+  width: 100%;
+  height: 700px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.table_align {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(auto-fill, auto);
+}
+
+.section_align {
+  width: 100%;
+  margin-left: 5em;
+  margin-right: 5em;
+}
