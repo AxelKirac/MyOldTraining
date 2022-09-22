@@ -10,10 +10,14 @@ class AllCompaniesController extends Controller
     /*
     * return view
     */
-    public function index()
+    public function index($pageNbr)
     {
+        $nbrPerPage = 10;
         $db = new Query('cogip');
-        $dbResult = $db->fetchAll("");
-        return $this->view('allcompanies', $dbResult);
+        $AllCompanies = $db->fetchAll("SELECT name, tva, country, created_at FROM companies limit ? offset ?", [
+            $nbrPerPage,
+            ($pageNbr - 1) * $nbrPerPage
+        ]);
+        return $this->view('allcompanies', $AllCompanies);
     } 
 }

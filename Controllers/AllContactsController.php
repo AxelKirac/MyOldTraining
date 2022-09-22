@@ -10,11 +10,15 @@ class AllContactsController extends Controller
     /*
     * return view
     */
-    public function index()
+    public function index($pageNbr)
     {
-        $db = new Query('cogip');
-        
-        $dbResult = $db->fetchAll("");
-        return $this->view('allcontacts', $dbResult);
+        $nbrPerPage = 10;
+        $db = new Query();
+        $AllContacts = $db->fetchAll("SELECT name, phone, mail, created_at FROM contacts limit ? offset ?",
+         [            
+            $nbrPerPage,
+            ($pageNbr - 1) * $nbrPerPage
+        ]);
+        return $this->view('allcontacts', $AllContacts);
     } 
 }

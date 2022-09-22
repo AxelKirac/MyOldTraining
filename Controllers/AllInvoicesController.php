@@ -10,11 +10,14 @@ class AllInvoicesController extends Controller
     /*
     * return view
     */
-    public function index()
+    public function index($pageNbr)
     {
+        $nbrPerPage = 10;
         $db = new Query();
-        $AllInvoices = $db->fetchAll("SELECT ref, due_date, created_at FROM invoices");
-        $AllinvoicesResult= [""];
-        return $this->view('allinvoices', $dbResult);
+        $AllInvoices = $db->fetchAll("SELECT ref, due_date, created_at FROM invoices limit ? offset ?", [
+            $nbrPerPage,
+            ($pageNbr - 1) * 2
+        ]);
+        return $this->view('allinvoices', $AllInvoices);
     } 
 }
