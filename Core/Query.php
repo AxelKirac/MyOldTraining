@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Core;
+use PDO;
 
 class Query {
     private $db;
-    public function __construct($dbName = 'cogip', $host = "localhost", $user = 'root', $pswd = '') {
+    public function __construct($dbName = "cogip", $host = "localhost", $user = 'root', $pswd = '') {
         try
         {
             // On se connecte à MySQL

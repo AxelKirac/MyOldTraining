@@ -14,5 +14,8 @@ $router = new Router();
 $router->get('/', function() {
     (new HomeController)->index();
 });
+$router->get('/allinvoices/(\d+)', function($pageNbr) {
+    (new AllInvoicesController)->index($pageNbr);
+});
 
 $router->run();
