@@ -8,15 +8,15 @@
             <input type="text">
         </div>
 
-        <section class="table_title table_align">
+        <section class="table_title table_align_4">
             <div><p>Invoices number</p></div>
-            <div><p>Dates due</p></div>
+            <div><p>Due dates</p></div>
             <div><p>Company</p></div>
             <div><p>Created at</p></div>
         </section>
 
         <div>
-            <section class="table_content table_align">
+            <section class="table_content table_align_4">
             <div><p><?php echo $invoice['ref']; ?></p></div>
             <div><p><?php echo $invoice['due_date'];?></p></div>
             <div><p><?php echo $invoice['company']; ?></p></div>

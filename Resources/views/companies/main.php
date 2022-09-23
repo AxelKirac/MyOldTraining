@@ -8,7 +8,7 @@
             <input type="text">
         </div>
 
-        <section class="table_title table_align_4">
+        <section class="table_title table_align_5">
             <div><p>Name</p></div>
             <div><p>TVA</p></div>
             <div><p>Country</p></div>
@@ -17,7 +17,7 @@
         </section>
 
         <div>
-            <section class="table_content table_align_4">
+            <section class="table_content table_align_5">
                 <?php
                 foreach($companies as $company) { ?>
                     <div><p><?php echo $company['name']; ?></p></div>
