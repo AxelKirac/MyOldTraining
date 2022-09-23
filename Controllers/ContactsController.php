@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\Controller;
 use App\Core\Query;
 
-class AllContactsController extends Controller
+class ContactsController extends Controller
 {
     /*
     * return view
@@ -19,6 +19,6 @@ class AllContactsController extends Controller
             $nbrPerPage,
             ($pageNbr - 1) * $nbrPerPage
         ]);
-        return $this->view('allcontacts', $AllContacts);
+        return $this->view('contacts', $AllContacts);
     } 
 }

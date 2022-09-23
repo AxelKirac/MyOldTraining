@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\Controller;
 use App\Core\Query;
 
-class AllInvoicesController extends Controller
+class InvoicesController extends Controller
 {
     /*
     * return view
@@ -18,6 +18,6 @@ class AllInvoicesController extends Controller
             $nbrPerPage,
             ($pageNbr - 1) * 2
         ]);
-        return $this->view('allinvoices', $AllInvoices);
+        return $this->view('invoices', $AllInvoices);
     } 
 }
