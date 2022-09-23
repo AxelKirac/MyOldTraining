@@ -21,22 +21,13 @@ $router->get('/login', function() {
 $router->get('/signup', function() {
     (new SignupController)->index();
 });
-$router->get('/invoices', function() {
-    (new InvoicesController)->index(1);
-});
-$router->get('/invoices/(\d+)', function($pageNbr) {
+$router->get('/invoices(/\d+)?', function($pageNbr) {
     (new InvoicesController)->index($pageNbr);
 });
-$router->get('/contacts', function() {
-    (new ContactsController)->index(1);
-});
-$router->get('/contacts/(\d+)', function($pageNbr) {
+$router->get('/contacts(/\d+)?', function($pageNbr) {
     (new ContactsController)->index($pageNbr);
 });
-$router->get('/companies', function() {
-    (new CompaniesController)->index(1);
-});
-$router->get('/companies/(\d+)', function($pageNbr) {
+$router->get('/companies(/\d+)?', function($pageNbr) {
     (new CompaniesController)->index($pageNbr);
 });
 

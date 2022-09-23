@@ -12,6 +12,10 @@ class CompaniesController extends Controller
     */
     public function index($pageNbr)
     {
+        if(!isset($pageNbr))
+        {
+            $pageNbr = 1;
+        }
         $nbrPerPage = 10;
         $pageoffset = ($pageNbr - 1) * $nbrPerPage;
         $db = new Query('cogip');
