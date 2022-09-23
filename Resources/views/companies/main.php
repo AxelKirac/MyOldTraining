@@ -17,10 +17,10 @@
 
         <div>
             <section class="table_content table_align">
-            <div><p><?php echo $invoice['ref']; ?></p></div>
-            <div><p><?php echo $invoice['due_date'];?></p></div>
-            <div><p><?php echo $invoice['company']; ?></p></div>
-            <div><p><?php echo $invoice['created_at'];?></p></div>
+            <div><p><?php echo $companies['name']; ?></p></div>
+            <div><p><?php echo $companies['tva'];?></p></div>
+            <div><p><?php echo $companies['country'];?></p></div>
+            <div><p><?php echo $companies['created_at'];?></p></div>
             </section>
         </div>
 
