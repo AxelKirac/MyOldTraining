@@ -22,7 +22,12 @@ class SignupController extends Controller
     public function validation()
     {
         $db = new Query('cogip');
-        $result = [];
+        $someError = false;
+        $errorArray = [];
+
+        // Do your stuff here to sanitize datas !
+
+        $result = ["hasError" => $someError, "errors" => $errorArray];
         return $this->api('signing-up', $result);
     }
 }
