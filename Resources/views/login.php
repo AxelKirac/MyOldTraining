@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <?php require ('_shared/head.php');?>
-        <script src="../assets/scripts/login.js" defer></script>
+        <script type="module" src="../assets/scripts/login.js"></script>
     </head>
     <body>
         <?php require ('_shared/header.php');?>
