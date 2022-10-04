@@ -14,6 +14,6 @@ class SignupController extends Controller
     {
         $db = new Query('cogip');
         $result = [];
-        return $this->view('login', $result);
+        return $this->view('signup', $result);
     }
 }
