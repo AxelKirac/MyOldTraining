@@ -1,4 +1,4 @@
-<form action="post">
+<form action="" method="" id="registering">
     <input type="text" name="firstname" id="firstname" placeholder="Enter your first name...">
     <input type="text" name="lastname" id="lastname" placeholder="Enter your last name...">
     <input type="email" name="mail" id="mail" placeholder="Enter your email adress...">
