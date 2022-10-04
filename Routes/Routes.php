@@ -11,16 +11,25 @@ use App\Controllers\LoginController;
 use App\Controllers\SignupController;
 
 $router = new Router();
-
+// Home
 $router->get('/', function() {
     (new HomeController)->index();
 });
-$router->get('/login', function() {
-    (new LoginController)->index();
-});
+// Sign up
 $router->get('/signup', function() {
     (new SignupController)->index();
 });
+$router->post('/register', function() {
+    (new SignupController)->validation();
+});
+// Login
+$router->get('/login', function() {
+    (new LoginController)->index();
+});
+$router->post('/connect', function() {
+    (new LoginController)->validation();
+});
+// Pages
 $router->get('/invoices(/\d+)?', function($pageNbr) {
     (new InvoicesController)->index($pageNbr);
 });

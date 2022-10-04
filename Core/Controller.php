@@ -13,4 +13,13 @@ class Controller
         extract($data); 
         require_once(__ROOT__.'/Resources/views/'.$view.'.php');
     }
+    /*
+    * @var $page, $data
+    * return api
+    */
+    public function api($page, $data = [])
+    {
+        extract($data);
+        require_once(__ROOT__.'/Resources/api/'.$page.'.php');
+    }
 }

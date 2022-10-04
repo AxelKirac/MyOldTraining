@@ -16,4 +16,13 @@ class SignupController extends Controller
         $result = [];
         return $this->view('signup', $result);
     }
+    /*
+    * return api
+    */
+    public function validation()
+    {
+        $db = new Query('cogip');
+        $result = [];
+        return $this->api('signing-up', $result);
+    }
 }
