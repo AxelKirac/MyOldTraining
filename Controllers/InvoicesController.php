@@ -12,12 +12,14 @@ class InvoicesController extends Controller
     */
     public function index($pageNbr)
     {
+        if(!isset($pageNbr))
+        {
+            $pageNbr = 1;
+        }
         $nbrPerPage = 10;
-        $db = new Query();
-        $AllInvoices = $db->fetchAll("SELECT ref, due_date, created_at FROM invoices limit ? offset ?", [
-            $nbrPerPage,
-            ($pageNbr - 1) * 2
-        ]);
-        return $this->view('invoices', $AllInvoices);
+        $pageoffset = ($pageNbr - 1) * $nbrPerPage;
+        $db = new Query('cogip');
+        $AllInvoices = $db->fetchAll("SELECT invoices.ref as ref, invoices.created_at as created_at, invoices.due_date as due_date, companies.name as company FROM invoices JOIN companies ON invoices.id_company = companies.id ORDER BY invoices.created_at DESC LIMIT 5; ");
+        return $this->view('invoices', ['invoices' => $AllInvoices]);
     } 
 }

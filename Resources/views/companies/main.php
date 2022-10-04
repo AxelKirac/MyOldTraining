@@ -17,18 +17,19 @@
         </section>
 
         <div>
-            <section class="table_content table_align_5">
+           <section class="table_content_5 table_align_5">
                 <?php
-                foreach($companies as $company) { ?>
-                    <div><p><?php echo $company['name']; ?></p></div>
-                    <div><p><?php echo $company['tva'];?></p></div>
-                    <div><p><?php echo $company['country'];?></p></div>
-                    <div><p><?php echo $company['created_at'];?></p></div>
+                foreach($companies as $companie) { ?>
+                    <div><p><?php echo $companie['name']; ?></p></div>
+                    <div><p><?php echo $companie['tva']; ?></p></div>
+                    <div><p><?php echo $companie['country']; ?></p></div>
+                    <div><p><?php echo $companie['type']; ?></p></div>
+                    <div><p><?php echo $companie['created_at']; ?></p></div>
                 <?php
                 }
                 ?>
-            </section>
-        </div>
+           </section>
+       </div>
 
         <div class="navigateur_pages">
             <a href=""></a>

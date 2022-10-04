@@ -17,14 +17,19 @@
         </section>
 
         <div>
-            <section class="table_content table_align_5">
-            <div><p><?php echo $contacts['name']; ?></p></div>
-            <div><p><?php echo $contacts['phone'];?></p></div>
-            <div><p><?php echo $contacts['mail']; ?></p></div>
-            <div><p><?php echo $contacts['company']; ?></p></div>
-            <div><p><?php echo $contacts['created_at'];?></p></div>
-            </section>
-        </div>
+           <section class="table_content_5 table_align_5">
+                <?php
+                foreach($contacts as $contact) { ?>
+                    <div><p><?php echo $contact['name']; ?></p></div>
+                    <div><p><?php echo $contact['phone']; ?></p></div>
+                    <div><p><?php echo $contact['email']; ?></p></div>
+                    <div><p><?php echo $contact['company']; ?></p></div>
+                    <div><p><?php echo $contact['created_at']; ?></p></div>
+                <?php
+                }
+                ?>
+           </section>
+       </div>
 
         <div class="navigateur_pages">
             <a href=""></a>

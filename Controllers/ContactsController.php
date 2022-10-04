@@ -12,13 +12,14 @@ class ContactsController extends Controller
     */
     public function index($pageNbr)
     {
+        if(!isset($pageNbr))
+        {
+            $pageNbr = 1;
+        }
         $nbrPerPage = 10;
-        $db = new Query();
-        $AllContacts = $db->fetchAll("SELECT name, phone, mail, created_at FROM contacts limit ? offset ?",
-         [            
-            $nbrPerPage,
-            ($pageNbr - 1) * $nbrPerPage
-        ]);
-        return $this->view('contacts', $AllContacts);
+        $pageoffset = ($pageNbr - 1) * $nbrPerPage;
+        $db = new Query('cogip');
+        $AllContacts = $db->fetchAll("SELECT contacts.name as `name`, contacts.phone as phone, contacts.email as email, contacts.created_at as created_at, companies.name as company FROM contacts INNER JOIN companies ON contacts.company_id = companies.id ORDER BY contacts.created_at DESC LIMIT 5; ");
+        return $this->view('contacts', ['contacts' => $AllContacts]);
     } 
 }

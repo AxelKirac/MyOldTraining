@@ -16,11 +16,16 @@
         </section>
 
         <div>
-            <section class="table_content table_align_4">
-            <div><p><?php echo $invoice['ref']; ?></p></div>
-            <div><p><?php echo $invoice['due_date'];?></p></div>
-            <div><p><?php echo $invoice['company']; ?></p></div>
-            <div><p><?php echo $invoice['created_at'];?></p></div>
+            <section class="table_content_4 table_align_4">
+                <?php
+                foreach($invoices as $invoice) { ?>
+                    <div><p><?php echo $invoice['ref']; ?></p></div>
+                    <div><p><?php echo $invoice['due_date']; ?></p></div>
+                    <div><p><?php echo $invoice['company']; ?></p></div>
+                    <div><p><?php echo $invoice['created_at']; ?></p></div>
+                <?php
+                }
+                ?>
             </section>
         </div>
 
