@@ -20,7 +20,7 @@
                 <img src="assets/img/logo_instagram.svg" alt="">
                 <img src="assets/img/logo_googleplus.svg" alt="">
                 <img src="assets/img/logo_pinterest.svg" alt="">
-                <img src="assets/img/logo_wifi_access.svg" alt="">
+                <img src="assets/img/icon_wifi_access.svg" alt="">
             </div>
         </div>
 
