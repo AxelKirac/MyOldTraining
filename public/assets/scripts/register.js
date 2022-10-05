@@ -10,6 +10,7 @@ const possibleErrors = {
     'lastname-max': () => {},
     'mail-max': () => {},
     'mail-valid': () => {},
+    'mail-used': () => {},
     'password-required': () => {},
     'password-min': () => {},
     'password-max': () => {},

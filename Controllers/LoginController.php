@@ -28,7 +28,6 @@ class LoginController extends Controller
             'mail' => 'required|email|max:50',
             'password' => 'required|min:6|max:50'
         ]);
-
         $validation->setMessages([
             'mail:max' => 'mail-max',
             'mail:email' => 'mail-valid',
@@ -36,7 +35,6 @@ class LoginController extends Controller
             'password:min' => 'password-min',
             'password:max' => 'password-max'
         ]);
-
         $validation->validate();
         $result = [];
         if ($validation->fails()) {
@@ -45,21 +43,21 @@ class LoginController extends Controller
         } else {
             $insertDatas = $validation->getValidData();
             $mailExist = 'select count(users.email) as mail from users where email=?';
-            $countMail = $db->fetchAssoc($mailExist, [
+            $mailCount = $db->fetchColumn($mailExist, [
                 $insertDatas['mail']
             ]);
-            if($countMail['mail'] > 0) { // mail exist
+            if($mailCount > 0) { // mail exist
                 $checkLogin = 'select id from users where email=? and password=?';
-                $count = $db->fetchAssoc($checkLogin, [
+                $id = $db->fetchColumn($checkLogin, [
                     $insertDatas['mail'],
                     $insertDatas['password']
                 ]);
-                $userExist = $countMail['mail'] == 1;
+                $userExist = $mailCount == 1;
                 if($userExist) {
                     $result['userData'] = ['valid' => $userExist];
                     session_start();
                     $_SESSION['mail'] = $insertDatas['mail'];
-                    $_SESSION['id'] = $count['id'];
+                    $_SESSION['id'] = $id;
                 } else {
                     $result['userData'] = ['valid' => $userExist, 'errors' => ['password-error']];
                 }
