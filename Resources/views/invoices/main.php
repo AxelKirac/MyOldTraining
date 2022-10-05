@@ -1,6 +1,6 @@
 <main>
-    <div>
-        <div class="title">
+    <div class="section_align_invoices">
+        <div class="title_invoices">
             <h1>All invoices</h1>
         </div>
 
@@ -41,4 +41,5 @@
         </div>
 
     </div>
+    
 </main>

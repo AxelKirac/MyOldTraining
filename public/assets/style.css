@@ -245,3 +245,14 @@ body {
 .basic_header .top_header_basic .login_basic > a:first-child:hover {
   border: solid 2px rgb(142, 190, 190);
 }
+
+.section_align_invoices {
+  width: 100%;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+.section_align_invoices h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
