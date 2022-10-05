@@ -13,6 +13,6 @@ class DashboardController extends Controller {
     {
         $db = new Query('cogip');
         $result = [];
-        return $this->view('dashboard', $result);
+        return $this->logView('dashboard', $result);
     }
 }

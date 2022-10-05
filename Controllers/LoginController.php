@@ -52,7 +52,7 @@ class LoginController extends Controller
                     $insertDatas['mail'],
                     $insertDatas['password']
                 ]);
-                $userExist = $mailCount == 1;
+                $userExist = isset($id);
                 if($userExist) {
                     $result['userData'] = ['valid' => $userExist];
                     session_start();

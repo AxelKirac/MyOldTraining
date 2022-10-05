@@ -10,6 +10,7 @@ use App\Controllers\CompaniesController;
 use App\Controllers\LoginController;
 use App\Controllers\SignupController;
 use App\Controllers\DashboardController;
+use App\Controllers\LogoutController;
 
 $router = new Router();
 // Home
@@ -29,6 +30,10 @@ $router->get('/login', function() {
 });
 $router->post('/connect', function() {
     (new LoginController)->validation();
+});
+// Logout
+$router->get('/logout', function() {
+    (new LogoutController)->index();
 });
 // Logged pages
 $router->get('/dashboard', function() {

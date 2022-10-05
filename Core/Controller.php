@@ -19,13 +19,14 @@ class Controller
     */
     public function logView($view, $data = [])
     {
+        session_start();
         if (!isset($_SESSION['mail']) || !isset($_SESSION['id'])) {
-            header('Location: index.php');
+            session_destroy();
+            header('Location: ../login');
             die();
         }
         else
         {
-            session_start();
             extract($data);
             require_once(__ROOT__.'/Resources/views/'.$view.'.php');
         }
