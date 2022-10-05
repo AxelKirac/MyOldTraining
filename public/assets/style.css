@@ -568,6 +568,7 @@ body {
   font-weight: bold;
   color: white;
   text-align: center;
+  padding-top: 15px;
 }
 
 .element__lastcompanies__items {
@@ -598,4 +599,4 @@ th, td {
 
 .lastinvoices__table {
   padding-right: 70px;
-}
+}/*# sourceMappingURL=style.css.map */
