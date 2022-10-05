@@ -11,10 +11,17 @@
             <a href="http://localhost:8080/contacts">Contacts</a>
         </div>
         
-        <div class="login">
-            <a href="http://localhost:8080/signup">Sign up</a>
-            <a href="http://localhost:8080/login">Login</a>
-        </div>
+        <?php
+        if($isConnected) { ?>
+            <div class="login">
+                <a href="http://localhost:8080/logout">Logout</a>
+            </div>
+        <?php } else { ?>
+            <div class="login">
+                <a href="http://localhost:8080/signup">Sign up</a>
+                <a href="http://localhost:8080/login">Login</a>
+            </div>
+        <?php } ?>
     </div>
         
     
