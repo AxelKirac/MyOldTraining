@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Core\Controller;
 use App\Core\Query;
+use Rakit\Validation\Validator;
 
 class SignupController extends Controller
 {
@@ -21,13 +22,44 @@ class SignupController extends Controller
     */
     public function validation()
     {
-        $db = new Query('cogip');
-        $someError = false;
-        $errorArray = [];
+        //$db = new Query('cogip');
+        $validator = new Validator;
+        $validation = $validator->make($_POST + $_FILES, [
+            'firstname' => 'required|min:2|max:50',
+            'lastname' => 'required|min:2|max:50',
+            'mail' => 'required|email|max:50',
+            'password' => 'required|min:6|max:50',
+            'passwordconfirm' => 'required|same:password'
+        ]);
 
-        // Do your stuff here to sanitize datas !
+        $validation->setMessages([
+            'firstname:min' => 'firstname-min',
+            'firstname:max' => 'firstname-max',
+            'firstname:required' => 'firstname-required',
+            'lastname:min' => 'lastname-min',
+            'lastname:max' => 'lastname-max',
+            'lastname:required' => 'lastname-required',
+            'mail:max' => 'mail-max',
+            'mail:email' => 'mail-valid',
+            'password:required' => 'password-required',
+            'password:min' => 'password-min',
+            'password:max' => 'password-max',
+            'passwordconfirm:required' => 'passwordconfirm-required',
+            'passwordconfirm:same' => 'passwordconfirm-same'
+        ]);
 
-        $result = ["hasError" => $someError, "errors" => $errorArray];
+        $validation->validate();
+        $result = [];
+        if ($validation->fails()) {
+            $errors = $validation->errors();
+            $result['userData'] = ['valid' => false, 'errors' => $errors->all()];
+        } else {
+            $insertDatas = $validation->getValidData();
+
+            // SQL somewhere around here
+
+            $result['userData'] = ['valid' => true];
+        }
         return $this->api('signing-up', $result);
     }
 }
