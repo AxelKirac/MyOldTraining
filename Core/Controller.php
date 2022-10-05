@@ -10,6 +10,13 @@ class Controller
     */
     public function view($view, $data = [])
     {
+        $isConnected = true;
+        session_start();
+        if (!isset($_SESSION['mail']) || !isset($_SESSION['id'])) {
+            session_destroy();
+            $isConnected = false;
+        }
+        $data['isConnected'] = $isConnected;
         extract($data); 
         require_once(__ROOT__.'/Resources/views/'.$view.'.php');
     }
