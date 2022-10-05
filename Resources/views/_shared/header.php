@@ -4,20 +4,20 @@
     <h1>COGIP</h1>
     <div class="menu_basic">
         <div class="option_basic">
-            <a href="http://localhost:8080">Home</a>
-            <a href="http://localhost:8080/invoices">Invoices</a>
-            <a href="http://localhost:8080/companies">Companies</a>
-            <a href="http://localhost:8080/contacts">Contacts</a>
+            <a href="./">Home</a>
+            <a href="./invoices">Invoices</a>
+            <a href="./companies">Companies</a>
+            <a href="./contacts">Contacts</a>
         </div>
         <?php
         if($isConnected) { ?>
             <div class="login_basic">
-                <a href="http://localhost:8080/logout">Logout</a>
+                <a href="./logout">Logout</a>
             </div>
         <?php } else { ?>
             <div class="login_basic">
-                <a href="http://localhost:8080/signup">Sign up</a>
-                <a href="http://localhost:8080/login">Login</a>
+                <a href="./signup">Sign up</a>
+                <a href="./login">Login</a>
             </div>
         <?php } ?>
     </div>

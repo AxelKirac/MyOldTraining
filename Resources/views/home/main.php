@@ -82,7 +82,7 @@
             </div>
             <div class="text_bottom">
 
-                <img src="../../assets/img/DrawKit.png" alt="">
+                <img src="./assets/img/DrawKit.png" alt="">
 
             </div>
        </div>
