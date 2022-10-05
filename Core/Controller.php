@@ -14,6 +14,23 @@ class Controller
         require_once(__ROOT__.'/Resources/views/'.$view.'.php');
     }
     /*
+    * @var $view, $data
+    * return view
+    */
+    public function logView($view, $data = [])
+    {
+        if (!isset($_SESSION['mail']) || !isset($_SESSION['id'])) {
+            header('Location: index.php');
+            die();
+        }
+        else
+        {
+            session_start();
+            extract($data);
+            require_once(__ROOT__.'/Resources/views/'.$view.'.php');
+        }
+    }
+    /*
     * @var $page, $data
     * return api
     */

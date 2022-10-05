@@ -9,6 +9,7 @@ use App\Controllers\ContactsController;
 use App\Controllers\CompaniesController;
 use App\Controllers\LoginController;
 use App\Controllers\SignupController;
+use App\Controllers\DashboardController;
 
 $router = new Router();
 // Home
@@ -28,6 +29,10 @@ $router->get('/login', function() {
 });
 $router->post('/connect', function() {
     (new LoginController)->validation();
+});
+// Logged pages
+$router->get('/dashboard', function() {
+    (new DashboardController)->index();
 });
 // Pages
 $router->get('/invoices(/\d+)?', function($pageNbr) {

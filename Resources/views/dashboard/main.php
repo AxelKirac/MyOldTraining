@@ -1,44 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Dashboard</title>
-</head>
-<body>
-    <section class="left">
-        <img class="profilepic" src="../asset/img/pic.png" alt="profilePic">
-        <p class="firstname">Henry</p>
-        <p class="lastname">George</p>
-        <div class="underline"></div>
-        <div class="element__dashboard">
-            <img class="icons" src="../asset/img/dashboard.png" alt="dashboard">
-            <p class="element__dashboard__title">Dashboard</p>
-        </div>
-        <div class="element__invoices">
-            <img class="icons" src="../asset/img/invoice.png" alt="invoices">
-            <p class="element__invoices__title">Invoices</p>
-        </div>
-        <div class="element__compagnies">
-            <img class="icons" src="../asset/img/companies.png" alt="companies">
-            <p class="element__companies__title">Companies</p>
-        </div>
-        <div class="element__contact">
-            <img class="icons" src="../asset/img/contact.png" alt="contact">
-            <p class="element__contact__title">Contacts</p>
-        </div>
-        
-        <div class="underline"></div>
-        
-        <div class="userlogout">
-            <img class="userlogout__profilepic" src="../asset/img/pic.png" alt="profilePic">
-            <p class="logout">Logout</p>
-        </div>
-    </section>
     <main class="right">
-        <img class="dashboard__illustration" src="../asset/img/illu.png" alt="Illustration">
+        <img class="dashboard__illustration" src="../assets/img/illu.png" alt="Illustration">
         <h1 class="dashboard__title">Dashboard</h1>
         <p class="dashboard__position">dashboard/</p>
         <div class="element__user">
@@ -121,6 +82,3 @@
         </div>
 
     </main>
-    
-</body>
-</html>

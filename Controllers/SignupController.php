@@ -66,8 +66,6 @@ class SignupController extends Controller
                 2
 
             ]);
-
-
             $result['userData'] = ['valid' => true];
         }
         return $this->api('signing-up', $result);
