@@ -51,12 +51,8 @@ class Query {
      * Execute a query. (Ex: delete, trigger, update, ...).
      */
     public function execute($query, $exec = null, $error = null) {
-        try {
-            $req = $this->db->prepare($query);
-            $req->execute($exec);
-        } catch (Exception $e) {
-            $error($e);
-        }
+        $req = $this->db->prepare($query);
+        $req->execute($exec);
         $req = null;
     }
     /**
