@@ -9,25 +9,25 @@ body {
   height: 100%;
 }
 
-header {
+.home_header {
   background-image: url(../../assets/img/Header.png);
   width: 100%;
   height: 700px;
   -o-object-fit: fill;
      object-fit: fill;
 }
-header .top_header {
+.home_header .top_header {
   padding-top: 4.5em;
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
 }
-header .top_header h1 {
+.home_header .top_header h1 {
   font-size: 35px;
   padding-left: 2.5em;
 }
-header .top_header .menu {
+.home_header .top_header .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,7 +36,7 @@ header .top_header .menu {
   width: 100%;
   height: 100%;
 }
-header .top_header .menu a {
+.home_header .top_header .menu a {
   text-decoration: none;
   color: black;
   margin-left: 15px;
@@ -44,10 +44,10 @@ header .top_header .menu a {
   height: -moz-fit-content;
   height: fit-content;
 }
-header .top_header .menu a:hover {
+.home_header .top_header .menu a:hover {
   border: solid 2px black;
 }
-header .top_header .option {
+.home_header .top_header .option {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -58,33 +58,33 @@ header .top_header .option {
   align-items: center;
   padding-left: 5em;
 }
-header .top_header .option a {
+.home_header .top_header .option a {
   padding: 13px;
 }
-header .top_header .login {
+.home_header .top_header .login {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 100%;
 }
-header .top_header .login a {
+.home_header .top_header .login a {
   margin-left: 10px;
   margin-right: 10px;
   padding: 7px;
 }
-header .top_header .login a:hover {
+.home_header .top_header .login a:hover {
   border-radius: 15px;
   border-color: azure;
   border: solid 2px azure;
   background-color: azure;
 }
-header .top_header .login > a:first-child {
+.home_header .top_header .login > a:first-child {
   border-radius: 15px;
   border-color: azure;
   border: solid 2px azure;
   background-color: azure;
 }
-header .top_header .login > a:first-child:hover {
+.home_header .top_header .login > a:first-child:hover {
   border: solid 2px rgb(142, 190, 190);
 }
 
@@ -167,4 +167,81 @@ header .top_header .login > a:first-child:hover {
 .text_bottom img {
   width: 310px;
   height: 250px;
+}
+
+.basic_header {
+  background-color: #F9DE4E;
+  width: 100%;
+  height: 287px;
+}
+.basic_header .top_header_basic {
+  padding-top: 4.5em;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+.basic_header .top_header_basic h1 {
+  font-size: 35px;
+  padding-left: 2.5em;
+}
+.basic_header .top_header_basic .menu_basic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.basic_header .top_header_basic .menu_basic a {
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.basic_header .top_header_basic .menu_basic a:hover {
+  border: solid 2px black;
+}
+.basic_header .top_header_basic .option_basic {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  padding-left: 5em;
+}
+.basic_header .top_header_basic .option_basic a {
+  padding: 13px;
+}
+.basic_header .top_header_basic .login_basic {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+.basic_header .top_header_basic .login_basic a {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 7px;
+}
+.basic_header .top_header_basic .login_basic a:hover {
+  border-radius: 15px;
+  border-color: azure;
+  border: solid 2px azure;
+  background-color: azure;
+}
+.basic_header .top_header_basic .login_basic > a:first-child {
+  border-radius: 15px;
+  border-color: azure;
+  border: solid 2px azure;
+  background-color: azure;
+}
+.basic_header .top_header_basic .login_basic > a:first-child:hover {
+  border: solid 2px rgb(142, 190, 190);
 }

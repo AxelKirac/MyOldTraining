@@ -1,9 +1,8 @@
-.home_header {
-    background-image: url(../../assets/img/Header.png);
+.basic_header {
+    background-color: #F9DE4E;
     width: 100%;
-    height: 700px;
-    object-fit: fill;
-    .top_header {
+    height: 287px;
+    .top_header_basic {
         padding-top: 4.5em;
         display: flex;
         flex-direction: row;
@@ -15,7 +14,7 @@
             padding-left: 2.5em;
         }
     
-        .menu{
+        .menu_basic{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -34,7 +33,7 @@
                 border: solid 2px black;
             }
         }
-        .option {
+        .option_basic {
             width: fit-content;
             display: flex;
             flex-direction: row;
@@ -46,7 +45,7 @@
                 padding: 13px;
             }
         }
-        .login{
+        .login_basic{
             width: fit-content;
             height: 100%;
             a{
@@ -61,7 +60,7 @@
                 background-color: azure;
             }
         }
-        .login > a:first-child {
+        .login_basic > a:first-child {
             border-radius: 15px;
             border-color: azure;
             border: solid 2px azure;

@@ -1,19 +1,19 @@
-<header>
+<header class="home_header">
 
 <div class="top_header">
 <h1>COGIP</h1>
     <div class="menu">
 
         <div class="option">
-            <a href="">Home</a>
-            <a href="">Invoices</a>
-            <a href="">Companies</a>
-            <a href="">Contacts</a>
+            <a href="http://localhost:8080">Home</a>
+            <a href="http://localhost:8080/invoices">Invoices</a>
+            <a href="http://localhost:8080/companies">Companies</a>
+            <a href="http://localhost:8080/contacts">Contacts</a>
         </div>
         
         <div class="login">
-            <a href="">Sign up</a>
-            <a href="">Login</a>
+            <a href="http://localhost:8080/signup">Sign up</a>
+            <a href="http://localhost:8080/login">Login</a>
         </div>
     </div>
         
