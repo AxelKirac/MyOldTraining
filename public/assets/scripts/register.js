@@ -25,6 +25,7 @@ registerForm.addEventListener('submit', (e) => {
         password: document.getElementById('pswd').value,
         passwordconfirm: document.getElementById('pswdconfirm').value
     }, (e) => { 
+        console.log(JSON.stringify(e))
         if(!e['valid'])
         {
             const errors = e['errors'];

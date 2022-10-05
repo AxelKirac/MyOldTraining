@@ -22,7 +22,7 @@ class SignupController extends Controller
     */
     public function validation()
     {
-        //$db = new Query('cogip');
+        $db = new Query('cogip');
         $validator = new Validator;
         $validation = $validator->make($_POST + $_FILES, [
             'firstname' => 'required|min:2|max:50',
@@ -57,6 +57,16 @@ class SignupController extends Controller
             $insertDatas = $validation->getValidData();
 
             // SQL somewhere around here
+            $reqUsers = 'INSERT INTO users (first_name, last_name, email, password, role_id) VALUES(?,?,?,?,?)' ;
+            $db->execute($reqUsers, [
+                $insertDatas['firstname'],
+                $insertDatas['lastname'],
+                $insertDatas['mail'],
+                $insertDatas['password'],
+                2
+
+            ]);
+
 
             $result['userData'] = ['valid' => true];
         }
