@@ -50,9 +50,9 @@ class Query {
     /**
      * Execute a query. (Ex: delete, trigger, update, ...).
      */
-    public function execute($query, $exec = null) {
+    public function execute($query, $exec = null, $error = null) {
         $req = $this->db->prepare($query);
-        $req->execute($exec) or die(print_r($this->db->errorInfo()));
+        $req->execute($exec);
         $req = null;
     }
     /**

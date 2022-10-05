@@ -10,6 +10,7 @@ const possibleErrors = {
     'lastname-max': () => {},
     'mail-max': () => {},
     'mail-valid': () => {},
+    'mail-used': () => {},
     'password-required': () => {},
     'password-min': () => {},
     'password-max': () => {},
@@ -24,7 +25,8 @@ registerForm.addEventListener('submit', (e) => {
         mail: document.getElementById('mail').value,
         password: document.getElementById('pswd').value,
         passwordconfirm: document.getElementById('pswdconfirm').value
-    }, (e) => { 
+    }, (e) => {
+        console.log(JSON.stringify(e));
         if(!e['valid'])
         {
             const errors = e['errors'];
@@ -34,8 +36,7 @@ registerForm.addEventListener('submit', (e) => {
         }
         else
         {
-            // Redirect to dashboard
-            // window.location.href = "http://localhost:8080/dashboard";
+            window.location.href = "http://localhost:8080/login";
         }
     });
 });
