@@ -31,7 +31,6 @@ class SignupController extends Controller
             'password' => 'required|min:6|max:50',
             'passwordconfirm' => 'required|same:password'
         ]);
-
         $validation->setMessages([
             'firstname:min' => 'firstname-min',
             'firstname:max' => 'firstname-max',
@@ -47,7 +46,6 @@ class SignupController extends Controller
             'passwordconfirm:required' => 'passwordconfirm-required',
             'passwordconfirm:same' => 'passwordconfirm-same'
         ]);
-
         $validation->validate();
         $result = [];
         if ($validation->fails()) {
@@ -55,18 +53,23 @@ class SignupController extends Controller
             $result['userData'] = ['valid' => false, 'errors' => $errors->all()];
         } else {
             $insertDatas = $validation->getValidData();
-
-            // SQL somewhere around here
-            $reqUsers = 'INSERT INTO users (first_name, last_name, email, password, role_id) VALUES(?,?,?,?,?)' ;
-            $db->execute($reqUsers, [
-                $insertDatas['firstname'],
-                $insertDatas['lastname'],
-                $insertDatas['mail'],
-                $insertDatas['password'],
-                2
-
+            $mailExist = 'select count(users.email) as mail from users where email=?';
+            $mailCount = $db->fetchColumn($mailExist, [
+                $insertDatas['mail']
             ]);
-            $result['userData'] = ['valid' => true];
+            if($mailCount > 0) {
+                $result['userData'] = ['valid' => false, 'errors' => ['mail-used']];
+            } else {
+                $reqUsers = 'INSERT INTO users (first_name, last_name, email, password, role_id) VALUES(?,?,?,?,?)' ;
+                $db->execute($reqUsers, [
+                    $insertDatas['firstname'],
+                    $insertDatas['lastname'],
+                    $insertDatas['mail'],
+                    $insertDatas['password'],
+                    2
+                ]);
+                $result['userData'] = ['valid' => true];
+            }
         }
         return $this->api('signing-up', $result);
     }

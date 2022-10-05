@@ -4,9 +4,11 @@ const loggingForm = document.getElementById('logging');
 const possibleErrors = {
     'mail-max': () => {},
     'mail-valid': () => {},
+    'mail-error': () => {},
     'password-required': () => {},
     'password-min': () => {},
-    'password-max': () => {}
+    'password-max': () => {},
+    'password-error': () => {}
 };
 loggingForm.addEventListener('submit', (e) => {
     e.preventDefault();
