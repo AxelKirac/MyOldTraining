@@ -607,7 +607,7 @@ th, td {
   width: 100%;
   background-color: yellow;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 .cogip_footer .separator2 {
   display: flex;
@@ -615,7 +615,7 @@ th, td {
   height: 2px;
   width: 100%;
   background-color: grey;
-  margin-top: 20px;
+  margin-top: 45px;
   margin-bottom: 20px;
 }
 .cogip_footer .menu_bottom {
@@ -631,9 +631,6 @@ th, td {
 .cogip_footer p {
   margin: 2%;
 }
-.cogip_footer .Information {
-  margin-left: 57%;
-}
 .cogip_footer .information > p {
   display: flex;
   align-items: center;
@@ -642,7 +639,6 @@ th, td {
 .cogip_footer .number_align {
   display: flex;
   align-items: center;
-  padding-right: 20%;
 }
 
 .icon_align > img {
@@ -664,7 +660,9 @@ th, td {
 }
 .cogip_social .title_footer {
   font-size: 28px;
-  border: solid 2px rgb(242, 255, 0);
+  padding: 5px;
+  border: solid 4px rgb(242, 255, 0);
+  margin-right: 550px;
 }
 
 .menu_basic {
