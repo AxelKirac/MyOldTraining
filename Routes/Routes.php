@@ -11,6 +11,7 @@ use App\Controllers\LoginController;
 use App\Controllers\SignupController;
 use App\Controllers\DashboardController;
 use App\Controllers\LogoutController;
+use App\Controllers\Error404Controller;
 
 $router = new Router();
 // Home
@@ -49,5 +50,8 @@ $router->get('/contacts(/\d+)?', function($pageNbr) {
 $router->get('/companies(/\d+)?', function($pageNbr) {
     (new CompaniesController)->index($pageNbr);
 });
-
+$router->set404(function() {
+    header('HTTP/1.1 404 Not Found');
+    (new Error404Controller)->index();
+});
 $router->run();
