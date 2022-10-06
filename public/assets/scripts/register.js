@@ -1,21 +1,21 @@
-import {HtNetwork} from './HtNetwork.js';
-const connectLink = 'http://localhost:8080/register';
+import { HtNetwork } from './HtNetwork.js';
+const connectLink = './register';
 const registerForm = document.getElementById('registering');
 const possibleErrors = {
-    'firstname-required': () => {},
-    'firstname-min': () => {},
-    'firstname-max': () => {},
-    'lastname-required': () => {},
-    'lastname-min': () => {},
-    'lastname-max': () => {},
-    'mail-max': () => {},
-    'mail-valid': () => {},
-    'mail-used': () => {},
-    'password-required': () => {},
-    'password-min': () => {},
-    'password-max': () => {},
-    'passwordconfirm-required': () => {},
-    'passwordconfirm-same': () => {}
+    'firstname-required': () => { },
+    'firstname-min': () => { },
+    'firstname-max': () => { },
+    'lastname-required': () => { },
+    'lastname-min': () => { },
+    'lastname-max': () => { },
+    'mail-max': () => { },
+    'mail-valid': () => { },
+    'mail-used': () => { },
+    'password-required': () => { },
+    'password-min': () => { },
+    'password-max': () => { },
+    'passwordconfirm-required': () => { },
+    'passwordconfirm-same': () => { }
 };
 registerForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -27,16 +27,14 @@ registerForm.addEventListener('submit', (e) => {
         passwordconfirm: document.getElementById('pswdconfirm').value
     }, (e) => {
         console.log(JSON.stringify(e));
-        if(!e['valid'])
-        {
+        if (!e['valid']) {
             const errors = e['errors'];
-            for(const error of errors) {
+            for (const error of errors) {
                 const actualError = possibleErrors[error];
             }
         }
-        else
-        {
-            window.location.href = "http://localhost:8080/login";
+        else {
+            window.location.href = "./login";
         }
     });
 });

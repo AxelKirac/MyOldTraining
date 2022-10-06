@@ -1,14 +1,14 @@
-import {HtNetwork} from './HtNetwork.js';
-const connectLink = 'http://localhost:8080/connect';
+import { HtNetwork } from './HtNetwork.js';
+const connectLink = './connect';
 const loggingForm = document.getElementById('logging');
 const possibleErrors = {
-    'mail-max': () => {},
-    'mail-valid': () => {},
-    'mail-error': () => {},
-    'password-required': () => {},
-    'password-min': () => {},
-    'password-max': () => {},
-    'password-error': () => {}
+    'mail-max': () => { },
+    'mail-valid': () => { },
+    'mail-error': () => { },
+    'password-required': () => { },
+    'password-min': () => { },
+    'password-max': () => { },
+    'password-error': () => { }
 };
 loggingForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -17,16 +17,14 @@ loggingForm.addEventListener('submit', (e) => {
         password: document.getElementById('pswd').value
     }, (e) => {
         console.log(JSON.stringify(e));
-        if(!e['valid'])
-        {
+        if (!e['valid']) {
             const errors = e['errors'];
-            for(const error of errors) {
+            for (const error of errors) {
                 const actualError = possibleErrors[error];
             }
         }
-        else
-        {
-            window.location.href = "http://localhost:8080/dashboard";
+        else {
+            window.location.href = "./dashboard";
         }
     });
 });

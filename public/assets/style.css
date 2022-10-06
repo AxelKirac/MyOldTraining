@@ -387,7 +387,7 @@ input[type=submit]:hover {
   color: black;
 }
 
-body {
+.body_dash {
   margin: 0 0 0 0px;
   display: flex;
   flex-direction: row;
@@ -599,4 +599,4 @@ th, td {
 
 .lastinvoices__table {
   padding-right: 70px;
-}/*# sourceMappingURL=style.css.map */
+}

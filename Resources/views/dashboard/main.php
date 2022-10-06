@@ -1,5 +1,5 @@
     <main class="right">
-        <img class="dashboard__illustration" src="../assets/img/illu.png" alt="Illustration">
+        <img class="dashboard__illustration" src="assets/img/illu.png" alt="Illustration">
         <h1 class="dashboard__title">Dashboard</h1>
         <p class="dashboard__position">dashboard/</p>
         <div class="element__user">
