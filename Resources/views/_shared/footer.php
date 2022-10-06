@@ -1,10 +1,10 @@
-<footer>
-    <section>
-    <div class="separator"></div>
+<footer class="cogip_footer">
+    <section class="sep">
+    <hr class="separator">
     </section>
     
-    <section>
-        <div class="title"><h1>COGIP</h1></div>
+    <section class="cogip_social">
+        <div class="title_footer"><h1>COGIP</h1></div>
         <div class="Information">
             <p> <img src="assets/img/Place.svg" alt=""> Square des Martyrs , 6000 Charleroi</p>
             <div class="number_align">
@@ -26,12 +26,18 @@
 
     </section>
 
-    <div class="menu">
-        <a href="">HOME</a>
-        <a href="">INVOICES</a>
-        <a href="">COMPANIES</a>
-        <a href="">CONTACTS</a>
-        <a href="">PRIVACY POLICY</a>  
+    <section class="sep">
+        <hr class="separator2">
+        </section>
+
+    <div class="menu_basic">
+        <div class="option_basic">
+            <a href="./" class="option_basic_value">HOME</a>
+            <a href="./invoices" class="option_basic_value">INVOICES</a>
+            <a href="./companies" class="option_basic_value">COMPANIES</a>
+            <a href="./contacts" class="option_basic_value">CONTACTS</a>
+            <a href="./privacy" class="option_basic_value">PRIVACY POLICY</a>
+        </div>
     </div>
     <div>
         <p>Copyright © 2022 • COGIP Inc.</p>

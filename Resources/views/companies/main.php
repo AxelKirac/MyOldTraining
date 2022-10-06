@@ -1,11 +1,11 @@
 <main>
-    <div>
-        <div class="title">
-            <h1>All companies</h1>
+    <div class="section_align_invoices">
+        <div class="title_invoices">
+            <h1 class="invoices">All companies</h1>
         </div>
 
-        <div class="input_search">
-            <input type="text">
+        <div class="input_search_invoices">
+            <input type="text" class="invoices_input_search" placeholder="Search company">
         </div>
 
         <section class="table_title table_align_5">

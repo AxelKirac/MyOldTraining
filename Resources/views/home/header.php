@@ -26,6 +26,11 @@
         
     
 </div>
+<div class="white_design">
+
+       <img src="assets/img/white_design.svg" alt="decoration">     
+
+</div>
     
     
 </header>

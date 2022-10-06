@@ -3,9 +3,20 @@
     width: 100%;
     padding-left: 8em;
     padding-right: 8em;
-    h1{
+
+    .title_invoices > .invoices{
         margin-top: 30px;
         margin-bottom: 30px;
         font-size: 45px;
     }
+
+}
+.input_search_invoices > .invoices_input_search {
+ 
+    height: 45px;
+    width: 200px;
+    margin-left: 84%;
+    border-radius: 12px;
+    
+
 }

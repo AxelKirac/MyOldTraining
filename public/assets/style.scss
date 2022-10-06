@@ -8,9 +8,11 @@ body {
     height: 100%;
     
 }
+
+@import 'scss/signuplogin';
+@import 'scss/dashboard';
+@import 'scss/tables_invoices';
 @import 'scss/header';
 @import 'scss/tables';
 @import 'scss/header_classic';
-@import 'scss/tables_invoices';
-@import 'scss/signuplogin';
-@import 'scss/dashboard';
+@import 'scss/footer';
