@@ -262,12 +262,7 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Nunito", sans-serif;
-  color: #384047;
-}
-
-form {
+.signuploginform {
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
@@ -280,16 +275,9 @@ h1 {
   text-align: center;
 }
 
-input[type=text],
-input[type=password],
-input[type=date],
-input[type=datetime],
-input[type=email],
-input[type=number],
-input[type=search],
-input[type=tel],
-input[type=time],
-input[type=url],
+.text,
+.password,
+.email,
 textarea,
 select {
   background: rgba(255, 255, 255, 0.1);
@@ -304,11 +292,6 @@ select {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   margin-bottom: 30px;
-}
-
-input[type=radio],
-input[type=checkbox] {
-  margin: 0 4px 8px 0;
 }
 
 select {
@@ -371,7 +354,7 @@ label.light {
     max-width: 480px;
   }
 }
-input[type=submit] {
+.submit {
   background-color: black; /* Green */
   border: none;
   color: white;
@@ -382,7 +365,7 @@ input[type=submit] {
   font-size: 16px;
   border-radius: 40px;
 }
-input[type=submit]:hover {
+.submit:hover {
   background-color: lightgray;
   color: black;
 }
@@ -599,4 +582,4 @@ th, td {
 
 .lastinvoices__table {
   padding-right: 70px;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -4,12 +4,8 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Nunito', sans-serif;
-    color: #384047;
-  }
   
-  form {
+  .signuploginform {
     max-width: 300px;
     margin: 10px auto;
     padding: 10px 20px;
@@ -22,16 +18,9 @@
     text-align: center;
   }
   
-  input[type="text"],
-  input[type="password"],
-  input[type="date"],
-  input[type="datetime"],
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="time"],
-  input[type="url"],
+  .text,
+  .password,
+  .email,
   textarea,
   select {
     background: rgba(255,255,255,0.1);
@@ -48,10 +37,6 @@
     margin-bottom: 30px;
   }
   
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin: 0 4px 8px 0;
-  }
   
   select {
     padding: 6px;
@@ -116,7 +101,7 @@
   
   }
 
-  input[type="submit"] {
+  .submit {
     background-color: black; /* Green */
     border: none;
     color: white;
