@@ -5,25 +5,25 @@
     <div class="underline"></div>
     <div class="element__dashboard">
         <img class="icons" src="assets/img/dashboard.png" alt="dashboard">
-        <p class="element__dashboard__title">Dashboard</p>
+        <a href="./dashboard"><p class="element__dashboard__title">Dashboard</p></a>
     </div>
     <div class="element__invoices">
         <img class="icons" src="assets/img/invoice.png" alt="invoices">
-        <p class="element__invoices__title">Invoices</p>
+        <a href="./dashboard/invoices"><p class="element__invoices__title">Invoices</p></a>
     </div>
     <div class="element__compagnies">
         <img class="icons" src="assets/img/companies.png" alt="companies">
-        <p class="element__companies__title">Companies</p>
+        <a href="./dashboard/companies"><p class="element__companies__title">Companies</p></a>
     </div>
     <div class="element__contact">
         <img class="icons" src="assets/img/contact.png" alt="contact">
-        <p class="element__contact__title">Contacts</p>
+        <a href="./dashboard/contacts"><p class="element__contact__title">Contacts</p></a>
     </div>
     
     <div class="underline"></div>
     
     <div class="userlogout">
         <!-- <img class="userlogout__profilepic" src="assets/img/pic.png" alt="profilePic"> -->
-        <p class="logout">Logout</p>
+        <a href="./logout"><p class="logout">Logout</p></a>
     </div>
 </header>

@@ -3,6 +3,8 @@ if(!isset($_SESSION))
 { 
     session_start(); 
 }
-session_destroy();
-header('Location: ../');
+if (isset($_SESSION['mail']) || isset($_SESSION['id'])) {
+    session_destroy();
+}
+header('Location: ./');
 die();
