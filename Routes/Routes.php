@@ -12,6 +12,7 @@ use App\Controllers\SignupController;
 use App\Controllers\DashboardController;
 use App\Controllers\LogoutController;
 use App\Controllers\Error404Controller;
+use App\Controllers\DashboardInvoicesController;
 
 $router = new Router();
 // Home
@@ -36,10 +37,6 @@ $router->post('/connect', function() {
 $router->get('/logout', function() {
     (new LogoutController)->index();
 });
-// Logged pages
-$router->get('/dashboard', function() {
-    (new DashboardController)->index();
-});
 // Pages
 $router->get('/invoices(/\d+)?', function($pageNbr) {
     (new InvoicesController)->index($pageNbr);
@@ -54,4 +51,12 @@ $router->set404(function() {
     header('HTTP/1.1 404 Not Found');
     (new Error404Controller)->index();
 });
+// Logged pages
+$router->get('/dashboard', function() {
+    (new DashboardController)->index();
+});
+$router->get('/newinvoices', function() {
+    (new DashboardInvoicesController)->index();
+});
+
 $router->run();

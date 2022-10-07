@@ -121,7 +121,6 @@
   .icons {
     width: 30px;
     height: 30px;
-    margin-top: 10px;
   }
 
   .profilepic {
@@ -144,7 +143,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 470px;
     .logout:hover {
       background-color: grey;
       border-radius: 10px;
@@ -219,4 +217,8 @@ th, td {
 
 .lastinvoices__table {
   padding-right: 70px;
+}
+
+.element_contact > a {
+  text-decoration: none;
 }
