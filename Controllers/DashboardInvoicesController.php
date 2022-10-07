@@ -12,7 +12,10 @@ class DashboardInvoicesController extends Controller {
     public function index()
     {
         $db = new Query('cogip');
-        $result = [];
+        $this->isConnected();
+        $result = [
+            "user" => $db->fetchAssoc("SELECT first_name as firstname, last_name as lastname FROM users where id=?", [ $_SESSION['id'] ]),
+        ];
         return $this->logView('dashboardnewinvoices', $result);
     }
 }
