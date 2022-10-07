@@ -13,6 +13,8 @@ use App\Controllers\DashboardController;
 use App\Controllers\LogoutController;
 use App\Controllers\Error404Controller;
 use App\Controllers\DashboardInvoicesController;
+use App\Controllers\DashboardCompaniesController;
+use App\Controllers\DashboardContactsController;
 
 $router = new Router();
 // Home
