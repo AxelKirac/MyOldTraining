@@ -23,7 +23,7 @@
     <div class="underline"></div>
     
     <div class="userlogout">
-        <img class="userlogout__profilepic" src="assets/img/pic.png" alt="profilePic">
+        <!-- <img class="userlogout__profilepic" src="assets/img/pic.png" alt="profilePic"> -->
         <p class="logout">Logout</p>
     </div>
 </header>

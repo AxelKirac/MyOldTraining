@@ -231,7 +231,6 @@ label.light {
 .icons {
   width: 30px;
   height: 30px;
-  margin-top: 10px;
 }
 
 .profilepic {
@@ -254,7 +253,6 @@ label.light {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 470px;
 }
 .userlogout .logout:hover {
   background-color: grey;
@@ -676,4 +674,4 @@ th, td {
   margin: 30px;
   text-decoration: none;
   color: black;
-}
+}/*# sourceMappingURL=style.css.map */
