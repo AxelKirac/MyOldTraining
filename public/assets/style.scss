@@ -9,6 +9,20 @@ body {
     
 }
 
+.error{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.error_404{
+    width: 50%;
+    
+
+}
+
 @import 'scss/signuplogin';
 @import 'scss/dashboard';
 @import 'scss/tables_invoices';
