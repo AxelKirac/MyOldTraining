@@ -1,5 +1,5 @@
 <main>
-    <div class="section_align_invoices">
+    <div class="section_align">
         <div class="title_invoices">
             <h1 class="invoices">All companies</h1>
         </div>
