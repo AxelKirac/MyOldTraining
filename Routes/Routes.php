@@ -55,7 +55,7 @@ $router->set404(function() {
 $router->get('/dashboard', function() {
     (new DashboardController)->index();
 });
-$router->get('/dashboard/invoices', function() {
+$router->get('/newinvoices', function() {
     (new DashboardInvoicesController)->index();
 });
 

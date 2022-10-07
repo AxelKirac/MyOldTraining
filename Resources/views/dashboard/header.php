@@ -9,7 +9,7 @@
     </div>
     <div class="element__invoices">
         <img class="icons" src="assets/img/invoice.png" alt="invoices">
-        <a href="./dashboard/invoices"><p class="element__invoices__title">Invoices</p></a>
+        <a href="./newinvoices"><p class="element__invoices__title">Invoices</p></a>
     </div>
     <div class="element__compagnies">
         <img class="icons" src="assets/img/companies.png" alt="companies">
