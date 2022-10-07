@@ -3,7 +3,7 @@
         <h1 class="dashboard__title">Dashboard</h1>
         <p class="dashboard__position">dashboard/</p>
         <div class="element__user">
-            <h2 class="element__user__welcome">Welcome back Henry!</h2>
+            <h2 class="element__user__welcome">Welcome back <?php echo $user['firstname']; ?>!</h2>
             <p class="element__user__describe">You can here add an invoice, a company <br/> and some contacts</p>
         </div>
        
@@ -34,11 +34,13 @@
                             <th>Dates</th>
                             <th>Company</th>
                         </tr>
-                        <tr>
-                            <td>valeur1</td>
-                            <td>valeur2</td>
-                            <td>valeur3</td>
-                        </tr>
+                        <?php foreach($invoices as $invoice) { ?>
+                            <tr>
+                                <td><?php echo $invoice['ref']; ?></td>
+                                <td><?php echo $invoice['due_date']; ?></td>
+                                <td><?php echo $invoice['company']; ?></td>
+                            </tr>
+                        <?php } ?>
                     </table>
                 </div>
             </article>

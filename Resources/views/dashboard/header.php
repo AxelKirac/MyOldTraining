@@ -1,7 +1,7 @@
 <header class="left">
     <img class="profilepic" src="assets/img/pic.png" alt="profilePic">
-    <p class="firstname">Henry</p>
-    <p class="lastname">George</p>
+    <p class="firstname"><?php echo $user['firstname']; ?></p>
+    <p class="lastname"><?php echo $user['lastname']; ?></p>
     <div class="underline"></div>
     <div class="element__dashboard">
         <img class="icons" src="assets/img/dashboard.png" alt="dashboard">

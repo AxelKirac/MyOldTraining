@@ -4,6 +4,18 @@ namespace App\Core;
 
 class Controller 
 {
+    protected function isConnected() {
+        if(session_status() != PHP_SESSION_ACTIVE)
+        {
+            session_start();
+        }
+        $isConnected = true;
+        if (!isset($_SESSION['mail']) || !isset($_SESSION['id'])) {
+            session_destroy();
+            $isConnected = false;
+        }
+        return $isConnected;
+    }
     /*
     * @var $view, $data
     * return view
@@ -11,7 +23,10 @@ class Controller
     public function view($view, $data = [])
     {
         $isConnected = true;
-        session_start();
+        if(session_status() != PHP_SESSION_ACTIVE)
+        {
+            session_start();
+        }
         if (!isset($_SESSION['mail']) || !isset($_SESSION['id'])) {
             session_destroy();
             $isConnected = false;
@@ -26,7 +41,10 @@ class Controller
     */
     public function logView($view, $data = [])
     {
-        session_start();
+        if(session_status() != PHP_SESSION_ACTIVE)
+        {
+            session_start();
+        }
         if (!isset($_SESSION['mail']) || !isset($_SESSION['id'])) {
             session_destroy();
             header('Location: ../login');
