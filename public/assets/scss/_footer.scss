@@ -7,9 +7,9 @@
     .separator{
         display: flex;
         border: none;
-        height:5px;
+        height:3px;
         width: 100%;
-        background-color: yellow;
+        background-color: #F9DE4E;
         margin-top: 20px;
         margin-bottom: 45px;
     }
@@ -79,7 +79,7 @@
     .title_footer{
         font-size: 28px;
         padding: 5px;
-        border: solid 4px rgb(242, 255, 0);
+        border: solid 4px #F9DE4E;
         margin-right: 550px;
     }
 }
