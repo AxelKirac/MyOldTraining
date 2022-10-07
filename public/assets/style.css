@@ -367,6 +367,7 @@ th, td {
 .home_header .top_header h1 {
   font-size: 35px;
   padding-left: 2.5em;
+  font-family: "Inter";
 }
 .home_header .top_header .menu {
   display: flex;
@@ -534,6 +535,7 @@ th, td {
 .basic_header .top_header_basic h1 {
   font-size: 35px;
   padding-left: 2.5em;
+  font-family: "Inter";
 }
 .basic_header .top_header_basic .menu_basic {
   display: flex;
@@ -645,17 +647,13 @@ th, td {
   padding-left: 20px;
 }
 
-.copyright > p {
-  margin-left: 82%;
-}
-
 .cogip_social {
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 50vw;
+  margin-right: 50vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .cogip_social .title_footer {
@@ -670,10 +668,16 @@ th, td {
   flex-direction: row;
 }
 .menu_basic .option_basic {
-  margin-left: 75px;
+  width: 100%;
+  padding-left: 130px;
+  padding-top: 20px;
 }
 .menu_basic .option_basic .option_basic_value {
-  margin: 30px;
   text-decoration: none;
   color: black;
+  margin: 20px;
+}
+
+.copyright {
+  width: 300px;
 }

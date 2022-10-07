@@ -5,6 +5,7 @@
     
     <section class="cogip_social">
         <div class="title_footer"><h1>COGIP</h1></div>
+        
         <div class="Information">
             <p> <img src="assets/img/Place.svg" alt=""> Square des Martyrs , 6000 Charleroi</p>
             <div class="number_align">
@@ -37,10 +38,9 @@
             <a href="./companies" class="option_basic_value">COMPANIES</a>
             <a href="./contacts" class="option_basic_value">CONTACTS</a>
             <a href="./privacy" class="option_basic_value">PRIVACY POLICY</a>
+            
         </div>
-    </div>
-    <div>
-        <p>Copyright © 2022 • COGIP Inc.</p>
+        <p class ="copyright">Copyright © 2022 • COGIP Inc.</p>
     </div>
     
 </footer>
