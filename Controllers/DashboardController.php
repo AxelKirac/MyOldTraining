@@ -14,7 +14,7 @@ class DashboardController extends Controller {
         $db = new Query('cogip');
         $this->isConnected();
         $result = [
-            "user" => $db->fetchAssoc("SELECT first_name as firstname, last_name as lastname FROM users where id=?", [ $_SESSION['id'] ]),
+            "user" => $db->fetchAssoc("SELECT first_name as firstname, last_name as lastname FROM users where id=?", [ (int)$_SESSION['id'] ]),
             "invoiceCount" => $db->fetchColumn("SELECT count(id) as invoiceCount FROM invoices"),
             "companyCount" => $db->fetchColumn("SELECT count(id) as companyCount FROM companies"),
             "contactCount" => $db->fetchColumn("SELECT count(id) as contactCount FROM contacts"),
