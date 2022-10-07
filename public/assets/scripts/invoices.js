@@ -2,13 +2,14 @@ import { HtNetwork } from './HtNetwork.js';
 const connectLink = './sendinvoice';
 const registerForm = document.getElementById('registering');
 const possibleErrors = {
-    'firstname-required': () => { },
-    'firstname-min': () => { },
-    'firstname-max': () => { },
-    'mail-max': () => { },
-    'mail-valid': () => { },
-    'mail-used': () => { },
-    'price-number': () => { }
+    'reference-min': () => { },
+    'reference-max': () => { },
+    'reference-required': () => { },
+    'price-required': () => { },
+    'price-numeric': () => { },
+    'company-min': () => { },
+    'company-max': () => { },
+    'company-required': () => { }
 };
 registerForm.addEventListener('submit', (e) => {
     e.preventDefault();
