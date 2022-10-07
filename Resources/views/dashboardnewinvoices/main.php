@@ -3,7 +3,7 @@
             <h1 class="dashboard__title">Dashboard</h1>
             <p class="dashboard__position">dashboard/new-invoices</p>
             <div class="element__user">
-                <h2 class="element__user__welcome">Welcome back Henry!</h2>
+                <h2 class="element__user__welcome">Welcome back <?php echo $user['firstname']; ?>!</h2>
                 <p class="element__user__describe">You can here add an invoice, a company <br/> and some contacts</p>
             </div>
             <div class="taskscreate">
