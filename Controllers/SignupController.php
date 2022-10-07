@@ -13,9 +13,7 @@ class SignupController extends Controller
     */
     public function index()
     {
-        $db = new Query('cogip');
-        $result = [];
-        return $this->view('signup', $result);
+        return $this->view('signup', []);
     }
     /*
     * return api

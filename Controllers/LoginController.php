@@ -13,9 +13,7 @@ class LoginController extends Controller
      */
     public function index()
     {
-        $db = new Query('cogip');
-        $result = [];
-        return $this->view('login', $result);
+        return $this->view('login', []);
     }
     /*
      * return api

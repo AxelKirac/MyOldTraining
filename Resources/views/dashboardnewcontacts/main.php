@@ -11,8 +11,8 @@
                 <div class="underline"></div>
                 <form class="newtasksforms" action="" method="" id="registering">
                     <input type="text" class="newtasks" name="firstname" id="firstname" placeholder="Name">
-                    <input type="value" class="newtasks" name="lastname" id="lastname" placeholder="Phone">
-                    <input type="text" class="newtasks" name="mail" id="mail" placeholder="Email">
+                    <input type="tel" class="newtasks" name="lastname" id="lastname" placeholder="Phone">
+                    <input type="mail" class="newtasks" name="mail" id="mail" placeholder="Email">
                     <input type="submit" class="save" value="Save">
                 </form>
             </div>
