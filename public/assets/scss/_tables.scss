@@ -36,6 +36,8 @@
 .table_content_5 > div {
     background-color: #FFFF;
     padding: 9px;
+    font-family: "Roboto";
+    font-size: 15px;
 
     &:nth-child(10n-4), &:nth-child(10n-3), &:nth-child(10n-2), &:nth-child(10n-1), &:nth-child(10n) {
         background-color: #F5F5F5;
@@ -44,6 +46,8 @@
 .table_content_4 > div {
     background-color: #FFFF;
     padding: 9px;
+    font-family: "Roboto";
+    font-size: 15px;
 
     &:nth-child(8n), &:nth-child(8n-1), &:nth-child(8n-2), &:nth-child(8n-3) {
         background-color:#F5F5F5;

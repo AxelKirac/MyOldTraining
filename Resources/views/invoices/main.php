@@ -5,7 +5,7 @@
         </div>
 
         <div class="input_search_invoices">
-            <input type="text" class="invoices_input_search" placeholder="Search company">
+            <input type="text" class="invoices_input_search" placeholder="Search invoices">
         </div>
 
         <section class="table_title table_align_4">

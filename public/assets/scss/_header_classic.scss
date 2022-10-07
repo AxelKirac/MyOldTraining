@@ -49,6 +49,7 @@
         .login_basic{
             width: fit-content;
             height: 100%;
+            margin-right: 80px;
             a{
                 margin-left: 10px;
                 margin-right: 10px;
@@ -72,6 +73,14 @@
         }
     }
     
+}
+.white_design {
+    width: 100%;
+    margin-top: 40px;
+    height: calc(100% - 4.5em - 42px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
 }
 
 

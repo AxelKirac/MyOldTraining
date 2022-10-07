@@ -30,10 +30,13 @@
                 text-decoration: none;
                 color: black;
                 margin-left: 15px; 
-                height: fit-content;
+                font-family: "Roboto";
+                font-size: 17px;
+               
             }
             a:hover{
-                border: solid 2px black;
+                outline: solid 2px black;
+
             }
         }
         .option {
@@ -56,6 +59,8 @@
                 margin-left: 10px;
                 margin-right: 10px;
                 padding:7px;
+                font-family: "Roboto";
+                font-size: 17px;
             }
             a:hover {
                 border-radius: 15px;
@@ -82,7 +87,7 @@
 .white_design {
     width: 100%;
     margin-top: 40px;
-    height: calc(100% - 4.5em - 42px);
+    height: 200px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: end;

@@ -14,14 +14,14 @@
             </div>
             <div class="number_align">
                 <p>social Media</p>
-                <img src="assets/img/logo_facebook.svg" alt="">
-                <img src="assets/img/logo_twitter.svg" alt="">
-                <img src="assets/img/logo_linkedin.svg" alt="">
-                <img src="assets/img/logo_youtube.svg" alt="">
-                <img src="assets/img/logo_instagram.svg" alt="">
-                <img src="assets/img/logo_googleplus.svg" alt="">
-                <img src="assets/img/logo_pinterest.svg" alt="">
-                <img src="assets/img/icon_wifi_access.svg" alt="">
+                <img src="assets/img/logo_facebook.svg" class="picture__logo" alt="">
+                <img src="assets/img/logo_twitter.svg" class="picture__logo" alt="">
+                <img src="assets/img/logo_linkedin.svg" class="picture__logo" alt="">
+                <img src="assets/img/logo_youtube.svg" class="picture__logo" alt="">
+                <img src="assets/img/logo_instagram.svg" class="picture__logo" alt="">
+                <img src="assets/img/logo_googleplus.svg" class="picture__logo" alt="">
+                <img src="assets/img/logo_pinterest.svg" class="picture__logo" alt="">
+                <img src="assets/img/icon_wifi_access.svg" class="picture__logo" alt="">
             </div>
         </div>
 

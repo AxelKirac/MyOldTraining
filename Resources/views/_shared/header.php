@@ -1,5 +1,5 @@
 <header class="basic_header">
-
+    
 <div class="top_header_basic">
     <h1>COGIP</h1>
     <div class="menu_basic">
@@ -21,6 +21,12 @@
             </div>
         <?php } ?>
     </div>
+    
 </div>
+<div class="white_design">
+
+       <img src="assets/img/white_design.svg" alt="decoration">     
+
+    </div>
     
 </header>

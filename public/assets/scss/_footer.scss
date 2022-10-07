@@ -54,7 +54,8 @@
     .number_align{
     display: flex;
     align-items: center;
-    //padding-right: 250px;
+   margin-right: 80px;
+
     }
 
 }
@@ -80,7 +81,10 @@
         font-size: 28px;
         padding: 5px;
         border: solid 4px #F9DE4E;
-        margin-right: 550px;
+        margin-right: 220px;
+        font-family: "Inter";
+        font-weight: 900;
+        
     }
 }
 .menu_basic{
@@ -107,4 +111,9 @@
 .copyright{
 
    width: 300px;
+}
+
+.picture__logo {
+     margin-right: 15px;
+
 }
