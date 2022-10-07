@@ -13,11 +13,11 @@
     </div>
     <div class="element__compagnies">
         <img class="icons" src="assets/img/companies.png" alt="companies">
-        <a href="./dashboard/companies"><p class="element__companies__title">Companies</p></a>
+        <a href="./newcompanies"><p class="element__companies__title">Companies</p></a>
     </div>
     <div class="element__contact">
         <img class="icons" src="assets/img/contact.png" alt="contact">
-        <a href="./dashboard/contacts"><p class="element__contact__title">Contacts</p></a>
+        <a href="./newcontacts"><p class="element__contact__title">Contacts</p></a>
     </div>
     
     <div class="underline"></div>
