@@ -58,5 +58,11 @@ $router->get('/dashboard', function() {
 $router->get('/newinvoices', function() {
     (new DashboardInvoicesController)->index();
 });
+$router->get('/newcompanies', function() {
+    (new DashboardCompaniesController)->index();
+});
+$router->get('/newcontacts', function() {
+    (new DashboardContactsController)->index();
+});
 
 $router->run();
