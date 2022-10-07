@@ -12,7 +12,17 @@ class DashboardController extends Controller {
     public function index()
     {
         $db = new Query('cogip');
-        $result = [];
+        $iCount = $db->fetchColumn("SELECT count(id) as invoiceCount FROM invoices");
+        $comCount = $db->fetchColumn("SELECT count(id) as companyCount FROM companies");
+        $conCount = $db->fetchColumn("SELECT count(id) as contactCount FROM contacts");
+
+        $result = [
+            "invoiceCount" => $iCount,
+            "companyCount" => $comCount,
+            "contactCount" => $conCount
+        ];
+
+
         return $this->logView('dashboard', $result);
     }
 }

@@ -13,13 +13,13 @@
                 <div class="underline"></div>
                 <div class="element__statistics__container">
                     <div class="element__statistics__container__circle1">
-                        <p class="element__statistics__container__circle1__invoices">XXX invoices</p>
+                        <p class="element__statistics__container__circle1__invoices"><?php echo $invoiceCount; ?><br>invoices</p>
                     </div>
                     <div class="element__statistics__container__circle2">
-                        <p class="element__statistics__container__circle2__contacts">XXX Contacts</p>
+                        <p class="element__statistics__container__circle2__contacts"><?php echo $contactCount; ?><br>Contacts</p>
                     </div>
                     <div class="element__statistics__container__circle3">
-                        <p class="element__statistics__container__circle2__companies">XXX Companies</p>
+                        <p class="element__statistics__container__circle2__companies"><?php echo $companyCount; ?><br>Companies</p>
                     </div>
                 </div>
             </article>
