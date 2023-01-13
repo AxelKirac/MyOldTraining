@@ -1,3 +1,5 @@
+# Didlydoo App Project
+
 ![DidlyDoo App](assets/img/logo.png)
 
 ##### By Rinaldo, Axel, Guillaume
