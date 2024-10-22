@@ -1,0 +1,47 @@
+// .event__main__container {
+//     .event__table__dates {
+//         &__date {
+//         display: flex;
+//         flex-direction: column;
+//         }
+//     }
+// }
+
+.event__main__container {
+    display: flex;
+    flex-direction: row-reverse;
+    .event__table{
+        &__dates {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        
+        }
+        &__date {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__availability {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &__names {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+    .attendee__name {
+        display: flex;
+    }
+}
+}
+
+
+.table__availability__choice {
+    display: flex;
+    
+}
