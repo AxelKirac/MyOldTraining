@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    &-thumb {
+        background-color: $LIGHT_TEXT_COLOR_A;
+        border-radius: 5px;
+    }
+    &-corner {
+        background-color: transparent;
+    }
+    &-thumb:vertical {
+        background-color: $LIGHT_TEXT_COLOR_A_HOVER;
+        border-width: 5px 4px;
+    }
+}
+* {
+    scrollbar-width: thin !important;
+}

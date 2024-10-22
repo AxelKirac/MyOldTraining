@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project Planner</title>
+        <!--<link rel="icon" href="assets/img/logo.jpg">-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Variables -->
+        <script src="assets/scripts/declarations.js"></script>
+        <!-- Classes -->
+        <script src="assets/scripts/dragAndDrop.js"></script>
+        <script defer src="assets/scripts/loadSave.js"></script>
+        <script defer src="assets/scripts/customTask.js"></script>
+        <script defer src="assets/scripts/filter.js"></script>
+        <script defer src="assets/scripts/handleElements.js"></script>
+        <script defer src="assets/scripts/sorting.js"></script>
+        <script defer src="assets/scripts/taskCreator.js"></script>
+        <script defer src="assets/scripts/toggleTheme.js"></script>
+        <script defer src="main.js"></script>
+        <script defer src="assets/scripts/taskMaker.js"></script>
+    </head>
+    <body class="light">
+        <header>
+            <nav class="menu light">
+                <div class="menu_btn sort dropdown light noselect">
+                    <div class="dropbtn light">Sort</div>
+                    <div class="dropdown-content light">
+                      <p class="sorting_name light">Name</p>
+                      <p class="sorting_priority light">Priority</p>
+                      <p class="sorting_timeline light">Timeline</p>
+                    </div>
+                </div>
+                <div class="menu_btn sort dropdown light noselect">
+                    <div class="dropbtn light">Filter</div>
+                    <div class="dropdown-content light">
+                        <div class="dropdown-content-todo light">
+                            <img class="dropdown-content-checkbox light" src="assets/img/eye-icon.png" alt="V" value="true">
+                            <p>To do</p>
+                        </div>
+                        <div class="dropdown-content-doing light">
+                            <img class="dropdown-content-checkbox light" src="assets/img/eye-icon.png" alt="V" value="true">
+                            <p>Doing</p>
+                        </div>
+                        <div class="dropdown-content-done light">
+                            <img class="dropdown-content-checkbox light" src="assets/img/eye-icon.png" alt="V" value="true">
+                            <p>Done</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_btn theme_switch light noselect">Dark mode</div>
+            </nav>
+        </header>
+        <main class="light">
+            <h1 class="main_title light">Planner</h1>
+            <div class="taskbook light">
+                <section class="toDo light">
+                    <div class="toDo_header light">
+                        <h1 class="toDo_header_title light">To Do</h1>
+                        <hr>
+                    </div>
+                    <div class="toDo_tasks light" content="todo">
+                    </div>
+                    <div class="toDo_newTask light">
+                        <div class="toDo_newTask_title light noselect">
+                            <p class="toDo_newTask_icon light">+</p>
+                            <p class="toDo_newTask_title light">New task</p>
+                        </div>
+                        <div class="maketask light"></div>
+                    </div>
+                </section>
+                <section class="doing light">
+                    <div class="doing_header light">
+                        <h1 class="doing_header_title light">Doing</h1>
+                        <hr>
+                    </div>
+                    <div class="doing_tasks light" content="doing">
+                    </div>
+                    <div class="doing_newTask light">
+                        <div class="doing_newTask_title light noselect">
+                            <p class="doing_newTask_icon light">+</p>
+                            <p class="doing_newTask_title light">New task</p>
+                        </div>
+                        <div class="maketask light"></div>
+                    </div>
+                </section>
+                <section class="done light">
+                    <div class="done_header light">
+                        <h1 class="done_header_title light">Done</h1>
+                        <hr>
+                    </div>
+                    <div class="done_tasks light" content="done">
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="light">
+            <div class="footer light">
+                <label for="languages" class="footer_languages_label light">Language</label>
+                <select id="languages" class="footer_languages light">
+                    <option class="footer_languages_language" value="en" selected>English</option>
+                    <option class="footer_languages_language" value="fr">French</option>
+                </select>
+            </div>
+            <p class="footer_text">&copy; 2022 Planner</p>
+        </footer>
+    </body>
+</html>

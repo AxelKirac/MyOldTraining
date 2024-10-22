@@ -1,0 +1,57 @@
+header {
+    height: 40px;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 2;
+    &_btn {
+        display: block;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: large;
+    }
+}
+.dropdown {
+    display: inline-block;
+    &:hover &-content {
+        display: block;
+    }
+    &-content {
+        display: none;
+        position: absolute;
+        transform: translate(-15px, 5px);
+        min-width: 160px;
+        z-index: 1;
+        &-todo, &-doing, &-done {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+        &-checkbox {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &-content p {
+        padding: 10px 10px;
+        text-decoration: none;
+        display: block;
+    }
+    &-content div {
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+}
+.theme_switch {
+    cursor: pointer;
+    margin-left: auto;
+}
+.dropbtn {
+    border: none;
+}

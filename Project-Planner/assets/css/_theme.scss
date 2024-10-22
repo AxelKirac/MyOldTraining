@@ -1,0 +1,272 @@
+$LIGHT_COLOR_Z: #b83dff;
+$LIGHT_COLOR_A: #C374F2;
+$LIGHT_COLOR_B: #F479FC;
+$LIGHT_COLOR_C: #E67AB4;
+$LIGHT_COLOR_D: #FF8785;
+$LIGHT_COLOR_E: #e88670;
+$LIGHT_COLOR_W:rgb(235, 235, 235);
+$LIGHT_COLOR_X:#fff;
+$LIGHT_COLOR_Y:#000;
+$LIGHT_COLOR_U: $LIGHT_COLOR_C;// #b8168d;
+
+
+$LIGHT_TEXT_COLOR_A:rgb(35, 35, 35);
+$LIGHT_TEXT_COLOR_A_HOVER:rgb(100, 100, 100);
+
+$DT_COLOR_B:rgb(35, 35, 35);
+
+$DARK_COLOR_Z: #5f1f85;
+$DARK_COLOR_A: #452A57;
+$DARK_COLOR_B: #5D2F61;
+$DARK_COLOR_C: #4A273A;
+$DARK_COLOR_D: #3b201f;
+$DARK_COLOR_E: #57322A;
+$DARK_COLOR_W:rgb(255 - 235, 255 - 235, 255 - 235);
+$DARK_COLOR_X:#000;
+$DARK_COLOR_Y:#fff;
+$DARK_COLOR_U: $DARK_COLOR_C;
+
+
+$DARK_TEXT_COLOR_A:rgb(255 - 35, 255 - 35, 255 - 35);
+$DARK_TEXT_COLOR_A_HOVER:rgb(255 - 100, 255 - 100, 255 - 100);
+
+$DT_COLOR_BD:rgb(255 - 35, 255 - 35, 255 - 35);
+
+html, body {
+    &.light {
+        color: $LIGHT_COLOR_Y;
+        background-color: $LIGHT_COLOR_A;
+    }
+    &.dark {
+        color: $DARK_COLOR_Y;
+        background-color: $DARK_COLOR_A;
+    }
+}
+main {
+    &.light {
+        color: $LIGHT_COLOR_Y;
+    }
+    &.dark {
+        color: $DARK_COLOR_Y;
+    }
+}
+.name_error, .description_error {
+    color: red;
+}
+.task {
+    &.light {
+        background-color: $LIGHT_COLOR_U;
+    }
+    &.dark {
+        background-color: $DARK_COLOR_U;
+    }
+    &_name.light {
+        color: $LIGHT_TEXT_COLOR_A;
+    }
+    &_name.dark {
+        color: $DARK_TEXT_COLOR_A;
+    }
+    &_description.dark {
+        background-color: $DARK_COLOR_B;
+    }
+    &_description.light {
+        background-color: $LIGHT_COLOR_B;
+    }
+    // Same color in both cases, who cares..
+    &_delete {
+        color: rgb(225, 0, 0);
+        &:hover {
+            color: red;
+        }
+    }
+}
+.dropdown-content {
+    &.light {
+        background-color: $LIGHT_COLOR_B;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    &.light:hover {
+        p:hover {
+            color: $LIGHT_TEXT_COLOR_A_HOVER;
+        }
+    }
+    &.light p {
+        color: $LIGHT_TEXT_COLOR_A;
+    }
+    &.dark {
+        background-color: $DARK_COLOR_B;
+        box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+    }
+    &.dark:hover {
+        p:hover {
+            color: $DARK_TEXT_COLOR_A_HOVER;
+        }
+    }
+    &.dark p {
+        color: $DARK_TEXT_COLOR_A;
+    }
+    &-todo, &-doing, &-done {
+        &.light {
+            color: $LIGHT_TEXT_COLOR_A;
+            &:hover {
+                p {
+                    color: $LIGHT_TEXT_COLOR_A_HOVER;
+                }
+            }
+        }
+        .dark {
+            color: $DARK_TEXT_COLOR_A;
+            &:hover {
+                p {
+                    color: $DARK_TEXT_COLOR_A_HOVER;
+                }
+            }
+        }
+        
+    }
+    &-todo, &-doing, &-done, .sorting_name, .sorting_priority, .sorting_timeline {
+        &.light:hover {
+            background-color: $LIGHT_COLOR_C;
+        }
+        &.dark:hover {
+            background-color: $DARK_COLOR_C;
+        }
+    }
+}
+.menu {
+    &.light {
+        background-color: $LIGHT_COLOR_Z;
+        border-bottom: 2px solid $LIGHT_COLOR_E;
+    }
+    &.dark {
+        background-color: $DARK_COLOR_Z;
+        border-bottom: 2px solid $DARK_COLOR_E;
+    }
+    &_btn { // HOVER MENU
+        &.light:hover:not(.theme_switch) {
+            color: $LIGHT_TEXT_COLOR_A_HOVER;
+            background-color: $LIGHT_COLOR_B;
+        }
+        &.dark:hover:not(.theme_switch) {
+            color: $DARK_TEXT_COLOR_A_HOVER;
+            background-color: $DARK_COLOR_B;
+        }
+    }
+}
+.toDo, .doing, .done {
+    &.light {
+        background-color:$LIGHT_COLOR_D;
+    }
+    &.dark {
+        background-color:$DARK_COLOR_D;
+    }
+    &_tasks {
+        &.light {
+            background-color: $LIGHT_COLOR_E;
+        }
+        &.dark {
+            background-color: $DARK_COLOR_E;
+        }
+    }
+}
+.doing, .toDo {
+    &_newTask {
+        &.light {
+            background-color: $LIGHT_COLOR_C;
+            &:hover {
+                background-color: $LIGHT_COLOR_E;
+            }
+        }
+        &.dark {
+            background-color: $DARK_COLOR_C;
+            &:hover {
+                background-color: $DARK_COLOR_E;
+            }
+        }
+    }
+}
+footer {
+    &.dark {
+        border-top: 2px solid $DARK_COLOR_E;
+    }
+    &.light {
+        border-top: 2px solid $LIGHT_COLOR_E;
+    }
+}
+
+#languages, .footer_languages_language {
+    &.light {
+        color: $LIGHT_COLOR_Y;
+        background-color: $LIGHT_COLOR_B;
+    }
+    &.dark {
+        color: $DARK_COLOR_Y;
+        background-color: $DARK_COLOR_B;
+    }
+}
+.theme_switch {
+    &.light {
+        color: $LIGHT_COLOR_W;
+        background-color: $DT_COLOR_B;
+        &:hover {
+            background-color: $LIGHT_COLOR_Y;
+        }
+    }
+    &.dark {
+        color: $DARK_COLOR_W;
+        background-color: $DT_COLOR_BD;
+        &:hover {
+            background-color: $DARK_COLOR_Y;
+        }
+    }
+}
+textarea.description {
+    &.light {
+        color: $LIGHT_COLOR_Y;
+        caret-color: $LIGHT_COLOR_Y;
+        background-color: $LIGHT_COLOR_W;
+    }
+    &.dark {
+        color: $DARK_COLOR_Y;
+        caret-color: $DARK_COLOR_Y;
+        background-color: $DARK_COLOR_W;
+    }
+}
+select.priority {
+    &.light {
+        color: $LIGHT_COLOR_Y;
+        background-color: $LIGHT_COLOR_W;
+    }
+    &.dark {
+        color: $DARK_COLOR_Y;
+        background-color: $DARK_COLOR_W;
+    }
+}
+input.postToDoTask, input.postDoingTask {
+    &.light:hover {
+        color: $LIGHT_COLOR_Y;
+        background-color: $LIGHT_COLOR_X;
+    }
+    &.dark:hover {
+        color: $DARK_COLOR_Y;
+        background-color: $DARK_COLOR_X;
+    }
+}
+input.name {
+    &.light {
+        caret-color: $LIGHT_COLOR_Y;
+    }
+    &.dark {
+        caret-color: $DARK_COLOR_Y;
+    }
+}
+input.name, input.dueTo, input.postToDoTask, input.postDoingTask {
+    &.light {
+        color: $LIGHT_COLOR_Y;
+        background-color: $LIGHT_COLOR_W;
+    }
+    &.dark {
+        color: $DARK_COLOR_Y;
+        background-color: $DARK_COLOR_W;
+    }
+}

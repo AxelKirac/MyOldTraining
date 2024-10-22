@@ -1,0 +1,30 @@
+.maketask {
+    display: none;
+    flex-direction: column;
+}
+textarea, .name {
+    padding: 3px;
+    resize: none;
+    border: none;
+    white-space: pre;
+    caret-color: #000;
+    &:focus {
+        outline: none;
+    }
+}
+.dueTo, .priority {
+    padding: 3px;
+    resize: none;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+.postToDoTask, .postDoingTask {
+    margin-top: 5px;
+    border: none;
+    border-radius: 25px;
+}
+input.postToDoTask, input.postDoingTask {
+    cursor: pointer;
+}
