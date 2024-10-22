@@ -1,0 +1,86 @@
+.basic_header {
+    background-color: #F9DE4E;
+    width: 100%;
+    height: 287px;
+    .top_header_basic {
+        padding-top: 4.5em;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        
+        h1{
+            font-size: 35px;
+            padding-left: 2.5em;
+            font-family: "Inter";
+        }
+    
+        .menu_basic{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            a{  
+                
+                text-decoration: none;
+                color: black;
+                margin-left: 15px; 
+                height: fit-content;
+            }
+            a:hover{
+                border: solid 2px black;
+            }
+        }
+        .option_basic {
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+            padding-left: 5em;
+            a{
+                padding: 13px;
+            }
+        }
+        .login_basic{
+            width: fit-content;
+            height: 100%;
+            margin-right: 80px;
+            a{
+                margin-left: 10px;
+                margin-right: 10px;
+                padding:7px;
+            }
+            a:hover {
+                border-radius: 15px;
+                border-color: azure;
+                border: solid 2px azure;
+                background-color: azure;
+            }
+        }
+        .login_basic > a:first-child {
+            border-radius: 15px;
+            border-color: azure;
+            border: solid 2px azure;
+            background-color: azure;
+            &:hover {
+                border: solid 2px rgb(142, 190, 190);
+            }
+        }
+    }
+    
+}
+.white_design {
+    width: 100%;
+    margin-top: 40px;
+    height: calc(100% - 4.5em - 42px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+}
+
+

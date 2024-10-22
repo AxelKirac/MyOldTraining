@@ -1,0 +1,4 @@
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+RewriteRule assets/(.*) public/assets/$1 [L]
+RewriteRule ^((?!index\.php).+)$ index.php [L]

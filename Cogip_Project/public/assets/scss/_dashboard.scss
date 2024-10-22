@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+.body_dash {
+    margin: 0 0 0 0px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.underline {
+    background-color: #E0E0E0 ;
+    width: 281px;
+    height: 1px;
+    opacity: 50%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    background-color: #F5F5FB;
+    width: 100%;
+    height:1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.element {
+    &__dashboard, &__invoices, &__compagnies, &__contact {
+    display: flex;
+    flex-direction: row;
+    width: 281px;
+    &:hover {
+        background-color: grey;
+        color: white;
+    }
+    }
+}
+
+.element__user {
+    width: 1044px;
+    height: 206px;
+    border-radius: 10px;
+    background-color: #9698D6;
+}
+
+.containerall {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". ."
+      ". ."; 
+  }
+
+  .element {
+    &__lastinvoices__container, &__lastcontacts__container, &__lastcompanies__container {
+      display: flex;
+      flex-direction: row;
+        &__name, &__invoicenumber, &__dates, &__company, &__phone, &__email, &__tva, &__country {
+            margin-right: 70px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+    }
+    &__user {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 50px;
+        &__welcome, &__describe {
+            color: white;
+            margin-left: 100px;
+        }
+        &__welcome {
+            margin-top: 50px;
+            font-size: 35px;
+        }
+        &__describe {
+            margin-bottom: 50px;
+        }
+
+    }
+  }
+
+  .dashboard__illustration {
+    width: 500px;
+    margin-left: 300px;
+    position:absolute;
+  }
+
+  .element__statistics, .element__lastinvoices, .element__lastcontacts, .element__lastcompanies {
+    background-color: white;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+  }
+
+  .dashboard__title, .dashboard__position {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 15px;
+  }
+
+  .icons {
+    width: 30px;
+    height: 30px;
+  }
+
+  .profilepic {
+    width: 100px;
+    padding-top: 10px;
+  }
+
+  .firstname, .lastname {
+    font-weight: bolder;
+    width: 70px;
+    justify-self: center;
+    padding-left: 10px;
+  }
+
+  .firstname {
+    padding-left: 25px;
+  }
+
+  .userlogout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .logout:hover {
+      background-color: grey;
+      border-radius: 10px;
+      color: white;
+    }
+    &__profilepic {
+        width: 20px;
+        height: 20px;
+        padding-top: 15px;
+        padding-right: 190px;
+    }
+  }
+
+.element__statistics__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  &__circle1 {
+    background-color: #4D4CAC;
+  }
+  &__circle2 {
+    background: #9698D6;
+}
+&__circle3 {
+  background: #FF808B;
+}
+  &__circle1, &__circle2, &__circle3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    &__invoices, &__contacts, &__companies {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px ;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      padding-top: 15px;
+    }
+  }
+}
+
+.element__lastcompanies__items {
+  display: flex;
+  flex-direction: row;
+   font-size: 15px;
+    margin-left: 20px;
+}
+
+.items {
+  word-spacing: 30px;
+}
+
+.element__lastcompanies__container {
+  margin-left: 20px;
+  word-spacing: 70px;
+}
+
+.lastcompanies__table, .lastcontacts__table, .lastinvoices__table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+th, td {
+  padding-left: 70px;
+}
+
+.lastinvoices__table {
+  padding-right: 70px;
+}
+
+.element_contact > a {
+  text-decoration: none;
+}
+
+
+.save {
+  background-color: #9698D6;
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  &:hover {
+    background-color: #6164c2;
+  }
+}
+
+.newtasks {
+background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .newtasksforms {
+    max-width: 1044px;
+    width: 1044px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+
+  .taskscreate {
+    background-color: white;
+    border-radius: 10px;
+    width: 1044px;
+  }
+
+  .newinvoices {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+

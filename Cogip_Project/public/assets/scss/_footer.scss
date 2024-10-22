@@ -1,0 +1,119 @@
+.cogip_footer{
+    .sep{
+        width: 80%;
+        margin: auto;
+        
+    }
+    .separator{
+        display: flex;
+        border: none;
+        height:3px;
+        width: 100%;
+        background-color: #F9DE4E;
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+    .separator2{
+        display: flex;
+        border: none;
+        height:2px;
+        width: 100%;
+        background-color: grey;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+
+    .menu_bottom{
+    padding-left: 50px;
+    margin : 2%;
+    }
+    .menu_bottom > a {
+        margin : 15px;
+        padding : 5px;
+        text-decoration: none;
+        border : solid 2px black;
+        
+    }
+
+    p{
+        margin: 2%;
+    }
+
+    .Information{
+        
+        
+        //margin-left: 57%;
+    }
+    .information > p {
+        display: flex;
+        align-items: center;
+        padding-right: 20%;
+        
+
+    }
+    .number_align{
+    display: flex;
+    align-items: center;
+   margin-right: 80px;
+
+    }
+
+}
+.icon_align > img {
+    padding-left: 20px;
+
+}
+
+
+.cogip_social{
+   margin :  {
+    left: 50vw;
+    right: 50vw;
+   }
+
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .title_footer{
+        font-size: 28px;
+        padding: 5px;
+        border: solid 4px #F9DE4E;
+        margin-right: 220px;
+        font-family: "Inter";
+        font-weight: 900;
+        
+    }
+}
+.menu_basic{
+
+    display: flex;
+    flex-direction: row;
+    
+    .option_basic{
+        
+        width: 100%;
+        padding-left: 130px;
+        padding-top: 20px;
+
+
+        .option_basic_value{
+            
+             text-decoration: none;
+            color: black;
+            margin: 20px;
+        }
+    }
+
+}
+.copyright{
+
+   width: 300px;
+}
+
+.picture__logo {
+     margin-right: 15px;
+
+}
