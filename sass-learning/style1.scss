@@ -1,0 +1,106 @@
+div.main {
+    border: 1px solid red;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    
+
+    p.describe {
+        display: flex;
+        justify-content: center;
+    }
+    h1, h2 {
+        padding-left: 40px;
+    }
+
+    h2 {
+        color: aqua;
+    }
+    
+
+    div.image, .plage, p.describe {
+
+        transition:all 1.0s;
+       
+    }
+
+    div.image{
+        height: 300px;
+    }
+    
+    
+    p.describe {
+        opacity: 0;
+    }
+    
+    div.filtre {
+        display:none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+
+    .plage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    
+        
+    }
+
+    div.date {
+        
+        width:350px;
+        height: 50px;
+        position: absolute;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    div.nav {
+        width: 50px;
+        height: 50px;
+       
+        position: absolute;
+        display: block;
+    }
+
+    .bas {
+        width: 50px;
+        height:50px;
+    }
+  
+
+
+
+
+
+
+&:hover {
+
+    p {
+        opacity: 1;
+    }
+
+    div.image {
+        
+        height: 150px;
+        
+    
+    }
+
+
+    div.filtre {
+        background-color:rgba($color: #fff, $alpha: 0.3);
+        display:block;
+
+    }
+
+}
+
+}
