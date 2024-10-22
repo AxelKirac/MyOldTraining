@@ -1,0 +1,120 @@
+body {
+    background-color: pink;
+}
+
+.small {
+    border: 1px solid purple;
+}
+
+.medium {
+    border: 1px solid red;
+}
+
+.large {
+    border: 1px solid orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mobile coding ---------------------------*/
+@media screen and (max-width:480px){
+    
+    body {
+        background-color: red;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* excercice 1.large {
+        display: none;
+    }
+    .medium {
+        display: none;
+    }*/
+
+
+    
+}
+
+
+@media screen and (max-width:1024px) and (min-width:480px) {
+    
+    body {
+        background-color: green;
+        font-size: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .small {
+        width: 75%;
+    }
+
+    .medium {
+        width: 25%;
+    }
+
+    .large {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+    }
+
+
+
+    /* excercice 1.small {
+        display: none;
+    }
+    .large {
+        display: none;
+    } */
+
+    
+}
+
+@media screen and (min-width:1024px) {
+    
+    body {
+        background-color: blue;
+        font-size: 100px;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /* Excercice 1.medium {
+        display:none;
+        
+    }
+    .small {
+        display: none;
+    } */
+
+    
+}
